@@ -1,0 +1,765 @@
+Project Name,Package Name,Type Name,Method Name,LOC,CC,PC,Line no,IsTest,Main prod class tested,Production classes tested
+superword,org.apdplat.superword.rule,WordVectorTest,testOf,27,1,0,32,1,org.apdplat.superword.rule.WordVector,org.apdplat.superword.rule.WordVector
+superword,org.apdplat.superword.rule,CompoundWordTest,testFind,11,1,0,41,1,,
+superword,org.apdplat.superword.rule,SimilarWord,SimilarWord,4,1,0,56,0,,
+superword,org.apdplat.superword.rule,SimilarWord,getLimit,3,1,0,64,0,,
+superword,org.apdplat.superword.rule,SimilarWord,setLimit,4,1,1,68,0,,
+superword,org.apdplat.superword.rule,SimilarWord,getTextSimilarity,3,1,0,73,0,,
+superword,org.apdplat.superword.rule,SimilarWord,setTextSimilarity,5,1,1,77,0,,
+superword,org.apdplat.superword.rule,SimilarWord,compute,9,1,4,83,0,,
+superword,org.apdplat.superword.rule,SimilarWord,compute,3,1,4,92,0,,
+superword,org.apdplat.superword.rule,SimilarWord,tip,11,1,0,96,0,,
+superword,org.apdplat.superword.rule,SimilarWord,interact,51,10,2,108,0,org.apdplat.superword.rule.SimilarWord,org.apdplat.superword.rule.SimilarWord
+superword,org.apdplat.superword.rule,SimilarWord,process,3,1,3,145,0,,
+superword,org.apdplat.superword.rule,SimilarWord,process,13,2,3,148,0,org.apdplat.superword.rule.SimilarWord,org.apdplat.superword.rule.SimilarWord
+superword,org.apdplat.superword.rule,SimilarWord,getTimeDes,34,8,1,162,0,,
+superword,org.apdplat.superword.rule,SimilarWord,main,9,2,1,206,0,org.apdplat.superword.tools.WordSources,org.apdplat.superword.tools.WordSources; org.apdplat.superword.rule.SimilarWord; org.apdplat.superword.model.Word
+superword,org.apdplat.superword.rule,IndependentWordRule,IndependentWordRule,2,1,0,41,0,,
+superword,org.apdplat.superword.rule,IndependentWordRule,getIndependentWord,3,1,0,43,0,org.apdplat.superword.rule.IndependentWordRule,org.apdplat.superword.rule.IndependentWordRule; org.apdplat.superword.tools.WordSources
+superword,org.apdplat.superword.rule,IndependentWordRule,getIndependentWord,3,1,1,46,0,org.apdplat.superword.rule.IndependentWordRule,org.apdplat.superword.rule.IndependentWordRule
+superword,org.apdplat.superword.rule,IndependentWordRule,getIndependentWord,13,1,2,49,0,org.apdplat.superword.rule.SuffixRule,org.apdplat.superword.rule.SuffixRule; org.apdplat.superword.tools.WordLinker; org.apdplat.superword.rule.PrefixRule; org.apdplat.superword.rule.RootRule; org.apdplat.superword.tools.WordSources; org.apdplat.superword.model.Word
+superword,org.apdplat.superword.rule,IndependentWordRule,main,5,1,1,70,0,org.apdplat.superword.rule.IndependentWordRule,org.apdplat.superword.rule.IndependentWordRule
+superword,org.apdplat.superword.rule,DependenceWordRule,DependenceWordRule,2,1,0,38,0,,
+superword,org.apdplat.superword.rule,DependenceWordRule,getDependentWord,47,4,1,40,0,org.apdplat.superword.rule.SuffixRule,org.apdplat.superword.rule.SuffixRule; org.apdplat.superword.rule.PrefixRule; org.apdplat.superword.rule.RootRule; org.apdplat.superword.tools.WordSources; org.apdplat.superword.model.Prefix; org.apdplat.superword.model.Suffix
+superword,org.apdplat.superword.rule,DependenceWordRule,main,8,2,1,92,0,org.apdplat.superword.rule.DependenceWordRule,org.apdplat.superword.rule.DependenceWordRule; org.apdplat.superword.tools.HtmlFormatter; org.apdplat.superword.tools.WordSources
+superword,org.apdplat.superword.rule,CharTransformRule,CharTransformRule,2,1,0,47,0,,
+superword,org.apdplat.superword.rule,CharTransformRule,toHtmlFragmentForWord,24,2,1,129,0,org.apdplat.superword.model.CharMap,org.apdplat.superword.model.CharMap; org.apdplat.superword.model.Word
+superword,org.apdplat.superword.rule,CharTransformRule,transforms,3,1,2,165,0,,
+superword,org.apdplat.superword.rule,CharTransformRule,transforms,31,5,2,169,0,org.apdplat.superword.model.CharMap,org.apdplat.superword.model.CharMap; org.apdplat.superword.rule.CharTransformRule; org.apdplat.superword.model.Word
+superword,org.apdplat.superword.rule,CharTransformRule,transforms,5,1,1,197,0,org.apdplat.superword.rule.CharTransformRule,org.apdplat.superword.rule.CharTransformRule
+superword,org.apdplat.superword.rule,CharTransformRule,transform,10,2,2,205,0,org.apdplat.superword.model.CharMap,org.apdplat.superword.model.CharMap; org.apdplat.superword.model.Word
+superword,org.apdplat.superword.rule,CharTransformRule,toHtmlFragmentForRule,16,1,1,229,0,org.apdplat.superword.model.CharMap,org.apdplat.superword.model.CharMap; org.apdplat.superword.tools.WordLinker; org.apdplat.superword.model.Word
+superword,org.apdplat.superword.rule,CharTransformRule,main,9,1,1,262,0,org.apdplat.superword.tools.WordSources,org.apdplat.superword.tools.WordSources; org.apdplat.superword.rule.CharTransformRule
+superword,org.apdplat.superword.rule,WordVector,WordVector,2,1,0,38,0,,
+superword,org.apdplat.superword.rule,WordVector,of,22,4,1,39,0,,
+superword,org.apdplat.superword.rule,WordVector,score,3,1,1,64,0,org.apdplat.superword.rule.WordVector,org.apdplat.superword.rule.WordVector
+superword,org.apdplat.superword.rule,WordVector,score,43,9,2,67,0,,
+superword,org.apdplat.superword.rule,WordVector,main,8,1,1,154,0,org.apdplat.superword.rule.WordVector,org.apdplat.superword.rule.WordVector
+superword,org.apdplat.superword.rule,PrefixRule,PrefixRule,2,1,0,43,0,,
+superword,org.apdplat.superword.rule,PrefixRule,getAllPrefixes,30,5,0,47,0,org.apdplat.superword.model.ComplexPrefix,org.apdplat.superword.model.ComplexPrefix
+superword,org.apdplat.superword.rule,PrefixRule,findByPrefix,7,2,3,78,0,,
+superword,org.apdplat.superword.rule,PrefixRule,findByPrefix,19,5,3,86,0,org.apdplat.superword.model.Prefix,org.apdplat.superword.model.Prefix; org.apdplat.superword.model.Word
+superword,org.apdplat.superword.rule,PrefixRule,convert,5,1,1,112,0,org.apdplat.superword.model.Prefix,org.apdplat.superword.model.Prefix
+superword,org.apdplat.superword.rule,PrefixRule,main,7,1,1,118,0,org.apdplat.superword.tools.HtmlFormatter,org.apdplat.superword.tools.HtmlFormatter; org.apdplat.superword.rule.PrefixRule; org.apdplat.superword.tools.WordSources
+superword,org.apdplat.superword.rule,SuffixRule,SuffixRule,2,1,0,43,0,,
+superword,org.apdplat.superword.rule,SuffixRule,getAllSuffixes,30,5,0,47,0,org.apdplat.superword.model.ComplexSuffix,org.apdplat.superword.model.ComplexSuffix
+superword,org.apdplat.superword.rule,SuffixRule,findBySuffix,7,2,3,78,0,,
+superword,org.apdplat.superword.rule,SuffixRule,findBySuffix,19,5,3,86,0,org.apdplat.superword.model.Suffix,org.apdplat.superword.model.Suffix; org.apdplat.superword.model.Word
+superword,org.apdplat.superword.rule,SuffixRule,convert,5,1,1,112,0,org.apdplat.superword.model.Suffix,org.apdplat.superword.model.Suffix
+superword,org.apdplat.superword.rule,SuffixRule,main,7,1,1,118,0,org.apdplat.superword.rule.SuffixRule,org.apdplat.superword.rule.SuffixRule; org.apdplat.superword.tools.HtmlFormatter; org.apdplat.superword.tools.WordSources
+superword,org.apdplat.superword.rule,RootAffixRule,RootAffixRule,2,1,0,36,0,,
+superword,org.apdplat.superword.rule,RootAffixRule,getWord,39,1,2,38,0,org.apdplat.superword.rule.SuffixRule,org.apdplat.superword.rule.SuffixRule; org.apdplat.superword.rule.PrefixRule; org.apdplat.superword.rule.RootRule; org.apdplat.superword.model.Prefix; org.apdplat.superword.model.Suffix
+superword,org.apdplat.superword.rule,RootAffixRule,main,8,2,1,77,0,org.apdplat.superword.rule.RootAffixRule,org.apdplat.superword.rule.RootAffixRule; org.apdplat.superword.tools.HtmlFormatter; org.apdplat.superword.tools.WordSources
+superword,org.apdplat.superword.rule,RootRule,RootRule,2,1,0,41,0,,
+superword,org.apdplat.superword.rule,RootRule,getAllRoots,24,4,0,45,0,,
+superword,org.apdplat.superword.rule,RootRule,findByRoot,5,1,2,71,0,,
+superword,org.apdplat.superword.rule,RootRule,findByRoot,16,4,2,77,0,org.apdplat.superword.model.Word,org.apdplat.superword.model.Word
+superword,org.apdplat.superword.rule,RootRule,main,8,1,1,100,0,org.apdplat.superword.tools.HtmlFormatter,org.apdplat.superword.tools.HtmlFormatter; org.apdplat.superword.rule.RootRule; org.apdplat.superword.tools.WordSources
+superword,org.apdplat.superword.rule,DynamicPrefixRule,DynamicPrefixRule,2,1,0,46,0,,
+superword,org.apdplat.superword.rule,DynamicPrefixRule,findByPrefix,23,5,2,48,0,org.apdplat.superword.model.Prefix,org.apdplat.superword.model.Prefix; org.apdplat.superword.model.Word
+superword,org.apdplat.superword.rule,DynamicPrefixRule,toHtmlFragment,3,1,2,80,0,org.apdplat.superword.rule.DynamicPrefixRule,org.apdplat.superword.rule.DynamicPrefixRule
+superword,org.apdplat.superword.rule,DynamicPrefixRule,toHtmlFragment,36,5,3,84,0,org.apdplat.superword.tools.WordLinker,org.apdplat.superword.tools.WordLinker; org.apdplat.superword.model.Prefix; org.apdplat.superword.model.Word
+superword,org.apdplat.superword.rule,DynamicPrefixRule,main,8,1,1,130,0,org.apdplat.superword.tools.WordSources,org.apdplat.superword.tools.WordSources; org.apdplat.superword.rule.DynamicPrefixRule
+superword,org.apdplat.superword.rule,SimilarityRule,similarity,8,1,2,47,0,org.apdplat.superword.rule.WordVector,org.apdplat.superword.rule.WordVector; org.apdplat.superword.model.Word
+superword,org.apdplat.superword.rule,SimilarityRule,main,5,1,1,59,0,org.apdplat.superword.tools.WordSources,org.apdplat.superword.tools.WordSources; org.apdplat.superword.rule.SimilarityRule
+superword,org.apdplat.superword.rule,WordLengthStatistics,WordLengthStatistics,2,1,0,35,0,,
+superword,org.apdplat.superword.rule,WordLengthStatistics,stat,10,1,1,37,0,org.apdplat.superword.model.Word,org.apdplat.superword.model.Word
+superword,org.apdplat.superword.rule,WordLengthStatistics,toHtmlFragment,3,1,2,47,0,,
+superword,org.apdplat.superword.rule,WordLengthStatistics,toHtmlFragment,14,3,3,51,0,org.apdplat.superword.tools.WordLinker,org.apdplat.superword.tools.WordLinker; org.apdplat.superword.model.Word
+superword,org.apdplat.superword.rule,WordLengthStatistics,main,6,1,1,77,0,org.apdplat.superword.rule.WordLengthStatistics,org.apdplat.superword.rule.WordLengthStatistics; org.apdplat.superword.tools.WordSources
+superword,org.apdplat.superword.rule,DefinitionSimilarRule,run,26,5,4,59,0,org.apdplat.superword.tools.WordLinker,org.apdplat.superword.tools.WordLinker; org.apdplat.superword.tools.MySQLUtils
+superword,org.apdplat.superword.rule,DynamicSuffixRule,DynamicSuffixRule,2,1,0,45,0,,
+superword,org.apdplat.superword.rule,DynamicSuffixRule,findBySuffix,23,5,2,49,0,org.apdplat.superword.model.Suffix,org.apdplat.superword.model.Suffix; org.apdplat.superword.model.Word
+superword,org.apdplat.superword.rule,DynamicSuffixRule,toHtmlFragment,3,1,2,81,0,org.apdplat.superword.rule.DynamicSuffixRule,org.apdplat.superword.rule.DynamicSuffixRule
+superword,org.apdplat.superword.rule,DynamicSuffixRule,toHtmlFragment,43,6,3,85,0,org.apdplat.superword.tools.WordLinker,org.apdplat.superword.tools.WordLinker; org.apdplat.superword.model.Suffix; org.apdplat.superword.model.Word
+superword,org.apdplat.superword.rule,DynamicSuffixRule,main,8,1,1,139,0,org.apdplat.superword.tools.WordSources,org.apdplat.superword.tools.WordSources; org.apdplat.superword.rule.DynamicSuffixRule
+superword,org.apdplat.superword.rule,CompoundWord,CompoundWord,2,1,0,35,0,,
+superword,org.apdplat.superword.rule,CompoundWord,find,3,1,1,37,0,org.apdplat.superword.rule.CompoundWord,org.apdplat.superword.rule.CompoundWord
+superword,org.apdplat.superword.rule,CompoundWord,find,11,2,2,40,0,,
+superword,org.apdplat.superword.rule,CompoundWord,find,3,1,2,51,0,,
+superword,org.apdplat.superword.rule,CompoundWord,find,8,2,2,55,0,org.apdplat.superword.rule.CompoundWord,org.apdplat.superword.rule.CompoundWord; org.apdplat.superword.model.Word
+superword,org.apdplat.superword.rule,CompoundWord,check,12,3,4,65,0,,
+superword,org.apdplat.superword.rule,CompoundWord,main,8,1,1,80,0,org.apdplat.superword.rule.CompoundWord,org.apdplat.superword.rule.CompoundWord; org.apdplat.superword.tools.WordSources; org.apdplat.superword.tools.HtmlFormatter
+superword,org.apdplat.superword.rule,PartOfSpeech,PartOfSpeech,2,1,0,37,0,,
+superword,org.apdplat.superword.rule,PartOfSpeech,getMeaning,3,1,1,64,0,,
+superword,org.apdplat.superword.rule,PartOfSpeech,main,3,1,1,68,0,org.apdplat.superword.rule.PartOfSpeech,org.apdplat.superword.rule.PartOfSpeech
+superword,org.apdplat.superword.tools,FootNSentence,footN,3,1,2,31,0,org.apdplat.superword.tools.TextAnalyzer,org.apdplat.superword.tools.TextAnalyzer
+superword,org.apdplat.superword.tools,FootNSentence,main,5,1,1,34,0,org.apdplat.superword.tools.FootNSentence,org.apdplat.superword.tools.FootNSentence
+superword,org.apdplat.superword.tools,PrefixSuffixOptimizer,main,10,1,1,45,0,,
+superword,org.apdplat.superword.tools,PrefixSuffixOptimizer,replace,25,5,1,64,0,,
+superword,org.apdplat.superword.tools,Definition,getDefinitionString,3,1,3,62,0,org.apdplat.superword.tools.Definition,org.apdplat.superword.tools.Definition
+superword,org.apdplat.superword.tools,Definition,concat,13,3,2,66,0,,
+superword,org.apdplat.superword.tools,Definition,getDefinition,27,12,2,80,0,org.apdplat.superword.tools.Definition,org.apdplat.superword.tools.Definition
+superword,org.apdplat.superword.tools,Definition,getDefinitionForICIBA,3,1,1,97,0,org.apdplat.superword.tools.Definition,org.apdplat.superword.tools.Definition
+superword,org.apdplat.superword.tools,Definition,getDefinitionForYOUDAO,3,1,1,100,0,org.apdplat.superword.tools.Definition,org.apdplat.superword.tools.Definition
+superword,org.apdplat.superword.tools,Definition,getDefinitionForCOLLINS,3,1,1,103,0,org.apdplat.superword.tools.Definition,org.apdplat.superword.tools.Definition
+superword,org.apdplat.superword.tools,Definition,getDefinitionForWEBSTER,3,1,1,106,0,org.apdplat.superword.tools.Definition,org.apdplat.superword.tools.Definition
+superword,org.apdplat.superword.tools,Definition,getDefinitionForOXFORD,3,1,1,109,0,org.apdplat.superword.tools.Definition,org.apdplat.superword.tools.Definition
+superword,org.apdplat.superword.tools,Definition,getDefinitionForCAMBRIDGE,3,1,1,112,0,org.apdplat.superword.tools.Definition,org.apdplat.superword.tools.Definition
+superword,org.apdplat.superword.tools,Definition,getDefinitionForMACMILLAN,3,1,1,115,0,org.apdplat.superword.tools.Definition,org.apdplat.superword.tools.Definition
+superword,org.apdplat.superword.tools,Definition,getDefinitionForHERITAGE,3,1,1,118,0,org.apdplat.superword.tools.Definition,org.apdplat.superword.tools.Definition
+superword,org.apdplat.superword.tools,Definition,getDefinitionForWIKTIONARY,3,1,1,121,0,org.apdplat.superword.tools.Definition,org.apdplat.superword.tools.Definition
+superword,org.apdplat.superword.tools,Definition,getDefinitionForWORDNET,3,1,1,124,0,org.apdplat.superword.tools.Definition,org.apdplat.superword.tools.Definition
+superword,org.apdplat.superword.tools,Definition,getDefinitionForRANDOMHOUSE,3,1,1,127,0,org.apdplat.superword.tools.Definition,org.apdplat.superword.tools.Definition
+superword,org.apdplat.superword.tools,Definition,parseDefinition,12,3,4,131,0,org.apdplat.superword.tools.MySQLUtils,org.apdplat.superword.tools.MySQLUtils; org.apdplat.superword.tools.Definition
+superword,org.apdplat.superword.tools,Definition,parseDefinitionFromHtml,34,9,4,144,0,org.apdplat.superword.tools.Definition,org.apdplat.superword.tools.Definition
+superword,org.apdplat.superword.tools,Definition,parseDefinitionForWebster,31,6,2,178,0,,
+superword,org.apdplat.superword.tools,Definition,parseDefinitionForOxford,23,4,2,211,0,,
+superword,org.apdplat.superword.tools,Definition,getContent,14,3,1,238,0,org.apdplat.superword.tools.Definition,org.apdplat.superword.tools.Definition; org.apdplat.superword.tools.TimeUtils; org.apdplat.superword.tools.ProxyIp
+superword,org.apdplat.superword.tools,Definition,_getContent,11,1,2,254,0,org.apdplat.superword.tools.Definition,org.apdplat.superword.tools.Definition
+superword,org.apdplat.superword.tools,Definition,_getContent,12,1,1,265,0,,
+superword,org.apdplat.superword.tools,Definition,main,3,1,1,286,0,org.apdplat.superword.tools.Definition,org.apdplat.superword.tools.Definition
+superword,org.apdplat.superword.tools,WordLinker,WordLinker,2,1,0,45,0,,
+superword,org.apdplat.superword.tools,WordLinker,getLink,3,1,2,70,0,org.apdplat.superword.tools.WordLinker,org.apdplat.superword.tools.WordLinker
+superword,org.apdplat.superword.tools,WordLinker,getLinkPrefix,27,12,1,74,0,,
+superword,org.apdplat.superword.tools,WordLinker,getValidDictionary,8,1,1,91,0,,
+superword,org.apdplat.superword.tools,WordLinker,Dictionary,3,1,1,103,0,,
+superword,org.apdplat.superword.tools,WordLinker,getDes,3,1,0,106,0,,
+superword,org.apdplat.superword.tools,WordLinker,toLink,3,1,1,111,0,org.apdplat.superword.tools.WordLinker,org.apdplat.superword.tools.WordLinker
+superword,org.apdplat.superword.tools,WordLinker,toLink,3,1,2,115,0,org.apdplat.superword.tools.WordLinker,org.apdplat.superword.tools.WordLinker
+superword,org.apdplat.superword.tools,WordLinker,toLink,3,1,2,119,0,org.apdplat.superword.tools.WordLinker,org.apdplat.superword.tools.WordLinker
+superword,org.apdplat.superword.tools,WordLinker,toLink,3,1,3,123,0,org.apdplat.superword.tools.WordLinker,org.apdplat.superword.tools.WordLinker
+superword,org.apdplat.superword.tools,WordLinker,toLink,3,1,4,126,0,org.apdplat.superword.tools.WordLinker,org.apdplat.superword.tools.WordLinker
+superword,org.apdplat.superword.tools,WordLinker,toLink,30,13,5,129,0,org.apdplat.superword.tools.WordLinker,org.apdplat.superword.tools.WordLinker
+superword,org.apdplat.superword.tools,WordLinker,linkToICIBA,3,1,4,150,0,org.apdplat.superword.tools.WordLinker,org.apdplat.superword.tools.WordLinker
+superword,org.apdplat.superword.tools,WordLinker,linkToYOUDAO,3,1,4,153,0,org.apdplat.superword.tools.WordLinker,org.apdplat.superword.tools.WordLinker
+superword,org.apdplat.superword.tools,WordLinker,linkToCOLLINS,3,1,4,156,0,org.apdplat.superword.tools.WordLinker,org.apdplat.superword.tools.WordLinker
+superword,org.apdplat.superword.tools,WordLinker,linkToWEBSTER,3,1,4,159,0,org.apdplat.superword.tools.WordLinker,org.apdplat.superword.tools.WordLinker
+superword,org.apdplat.superword.tools,WordLinker,linkToOXFORD,3,1,4,162,0,org.apdplat.superword.tools.WordLinker,org.apdplat.superword.tools.WordLinker
+superword,org.apdplat.superword.tools,WordLinker,linkToCAMBRIDGE,3,1,4,165,0,org.apdplat.superword.tools.WordLinker,org.apdplat.superword.tools.WordLinker
+superword,org.apdplat.superword.tools,WordLinker,linkToMACMILLAN,3,1,4,168,0,org.apdplat.superword.tools.WordLinker,org.apdplat.superword.tools.WordLinker
+superword,org.apdplat.superword.tools,WordLinker,linkToHERITAGE,3,1,4,171,0,org.apdplat.superword.tools.WordLinker,org.apdplat.superword.tools.WordLinker
+superword,org.apdplat.superword.tools,WordLinker,linkToWIKTIONARY,3,1,4,174,0,org.apdplat.superword.tools.WordLinker,org.apdplat.superword.tools.WordLinker
+superword,org.apdplat.superword.tools,WordLinker,linkToWORDNET,3,1,4,177,0,org.apdplat.superword.tools.WordLinker,org.apdplat.superword.tools.WordLinker
+superword,org.apdplat.superword.tools,WordLinker,linkToRANDOMHOUSE,3,1,4,180,0,org.apdplat.superword.tools.WordLinker,org.apdplat.superword.tools.WordLinker
+superword,org.apdplat.superword.tools,WordLinker,linkTo,31,7,6,183,0,,
+superword,org.apdplat.superword.tools,WordLinker,main,25,1,1,224,0,org.apdplat.superword.tools.WordLinker,org.apdplat.superword.tools.WordLinker
+superword,org.apdplat.superword.tools,WordClassifierForWebster,WordClassifierForWebster,2,1,0,48,0,,
+superword,org.apdplat.superword.tools,WordClassifierForWebster,download,24,4,1,64,0,org.apdplat.superword.tools.WordClassifierForWebster,org.apdplat.superword.tools.WordClassifierForWebster; org.apdplat.superword.model.Word
+superword,org.apdplat.superword.tools,WordClassifierForWebster,parse,11,3,1,90,0,org.apdplat.superword.tools.WordClassifierForWebster,org.apdplat.superword.tools.WordClassifierForWebster
+superword,org.apdplat.superword.tools,WordClassifierForWebster,parseDir,15,1,1,100,0,org.apdplat.superword.tools.WordClassifierForWebster,org.apdplat.superword.tools.WordClassifierForWebster
+superword,org.apdplat.superword.tools,WordClassifierForWebster,visitFile,4,1,2,105,0,org.apdplat.superword.tools.WordClassifierForWebster,org.apdplat.superword.tools.WordClassifierForWebster
+superword,org.apdplat.superword.tools,WordClassifierForWebster,parseZip,21,2,1,117,0,org.apdplat.superword.tools.WordClassifierForWebster,org.apdplat.superword.tools.WordClassifierForWebster
+superword,org.apdplat.superword.tools,WordClassifierForWebster,visitFile,7,1,2,124,0,org.apdplat.superword.tools.WordClassifierForWebster,org.apdplat.superword.tools.WordClassifierForWebster
+superword,org.apdplat.superword.tools,WordClassifierForWebster,parseFile,12,2,1,141,0,org.apdplat.superword.tools.WordClassifierForWebster,org.apdplat.superword.tools.WordClassifierForWebster
+superword,org.apdplat.superword.tools,WordClassifierForWebster,parseHtml,11,2,1,155,0,org.apdplat.superword.tools.WordClassifierForWebster,org.apdplat.superword.tools.WordClassifierForWebster
+superword,org.apdplat.superword.tools,WordClassifierForWebster,showStatus,3,1,3,167,0,,
+superword,org.apdplat.superword.tools,WordClassifierForWebster,save,22,3,0,171,0,,
+superword,org.apdplat.superword.tools,WordClassifierForWebster,getContent,14,1,1,199,0,,
+superword,org.apdplat.superword.tools,WordClassifierForWebster,parse,17,4,2,223,0,org.apdplat.superword.tools.MySQLUtils,org.apdplat.superword.tools.MySQLUtils; org.apdplat.superword.tools.Definition
+superword,org.apdplat.superword.tools,WordClassifierForWebster,main,3,1,1,241,0,org.apdplat.superword.tools.WordClassifierForWebster,org.apdplat.superword.tools.WordClassifierForWebster
+superword,org.apdplat.superword.tools,PdfParser,PdfParser,2,1,0,46,0,,
+superword,org.apdplat.superword.tools,PdfParser,parsePdfFileToPlainText,12,1,1,89,0,,
+superword,org.apdplat.superword.tools,PdfParser,parseDirectory,3,1,1,105,0,,
+superword,org.apdplat.superword.tools,PdfParser,parseDirectory,23,2,1,108,0,,
+superword,org.apdplat.superword.tools,PdfParser,visitFile,7,2,2,115,0,,
+superword,org.apdplat.superword.tools,PdfParser,parseZip,24,2,1,132,0,org.apdplat.superword.tools.PdfParser,org.apdplat.superword.tools.PdfParser
+superword,org.apdplat.superword.tools,PdfParser,visitFile,7,1,2,140,0,org.apdplat.superword.tools.PdfParser,org.apdplat.superword.tools.PdfParser
+superword,org.apdplat.superword.tools,PdfParser,parseFile,3,1,1,158,0,,
+superword,org.apdplat.superword.tools,PdfParser,parseFile,19,2,1,161,0,org.apdplat.superword.tools.PdfParser,org.apdplat.superword.tools.PdfParser
+superword,org.apdplat.superword.tools,PdfParser,paragraphFinish,6,2,1,182,0,,
+superword,org.apdplat.superword.tools,PdfParser,toSentence,41,8,1,189,0,org.apdplat.superword.tools.PdfParser,org.apdplat.superword.tools.PdfParser
+superword,org.apdplat.superword.tools,PdfParser,addLineToParagraph,12,4,4,249,0,,
+superword,org.apdplat.superword.tools,PdfParser,isProgramCode,6,2,1,268,0,,
+superword,org.apdplat.superword.tools,PdfParser,process,11,4,2,285,0,org.apdplat.superword.tools.PdfParser,org.apdplat.superword.tools.PdfParser
+superword,org.apdplat.superword.tools,PdfParser,paragraphValid,23,6,1,299,0,org.apdplat.superword.tools.PdfParser,org.apdplat.superword.tools.PdfParser
+superword,org.apdplat.superword.tools,PdfParser,segSentence,29,7,1,458,0,org.apdplat.superword.tools.PdfParser,org.apdplat.superword.tools.PdfParser
+superword,org.apdplat.superword.tools,PdfParser,processSentence,144,36,1,497,0,org.apdplat.superword.tools.TextAnalyzer,org.apdplat.superword.tools.TextAnalyzer
+superword,org.apdplat.superword.tools,PdfParser,prepareSeg,39,9,1,640,0,,
+superword,org.apdplat.superword.tools,PdfParser,invalid,11,3,1,684,0,,
+superword,org.apdplat.superword.tools,PdfParser,prepareTarget,16,2,1,701,0,,
+superword,org.apdplat.superword.tools,PdfParser,resetSentenceWordLengthInfo,3,1,0,725,0,,
+superword,org.apdplat.superword.tools,PdfParser,showSentenceWordLengthInfo,9,1,0,728,0,,
+superword,org.apdplat.superword.tools,PdfParser,main,5,1,1,740,0,org.apdplat.superword.tools.PdfParser,org.apdplat.superword.tools.PdfParser
+superword,org.apdplat.superword.tools,WordClassifierForOxford,WordClassifierForOxford,2,1,0,48,0,,
+superword,org.apdplat.superword.tools,WordClassifierForOxford,download,24,4,1,64,0,org.apdplat.superword.tools.WordClassifierForOxford,org.apdplat.superword.tools.WordClassifierForOxford; org.apdplat.superword.model.Word
+superword,org.apdplat.superword.tools,WordClassifierForOxford,parse,11,3,1,91,0,org.apdplat.superword.tools.WordClassifierForOxford,org.apdplat.superword.tools.WordClassifierForOxford
+superword,org.apdplat.superword.tools,WordClassifierForOxford,parseDir,15,1,1,101,0,org.apdplat.superword.tools.WordClassifierForOxford,org.apdplat.superword.tools.WordClassifierForOxford
+superword,org.apdplat.superword.tools,WordClassifierForOxford,visitFile,4,1,2,106,0,org.apdplat.superword.tools.WordClassifierForOxford,org.apdplat.superword.tools.WordClassifierForOxford
+superword,org.apdplat.superword.tools,WordClassifierForOxford,parseZip,21,2,1,118,0,org.apdplat.superword.tools.WordClassifierForOxford,org.apdplat.superword.tools.WordClassifierForOxford
+superword,org.apdplat.superword.tools,WordClassifierForOxford,visitFile,7,1,2,125,0,org.apdplat.superword.tools.WordClassifierForOxford,org.apdplat.superword.tools.WordClassifierForOxford
+superword,org.apdplat.superword.tools,WordClassifierForOxford,parseFile,12,2,1,142,0,org.apdplat.superword.tools.WordClassifierForOxford,org.apdplat.superword.tools.WordClassifierForOxford
+superword,org.apdplat.superword.tools,WordClassifierForOxford,parseHtml,11,2,1,156,0,org.apdplat.superword.tools.WordClassifierForOxford,org.apdplat.superword.tools.WordClassifierForOxford
+superword,org.apdplat.superword.tools,WordClassifierForOxford,showStatus,3,1,3,168,0,,
+superword,org.apdplat.superword.tools,WordClassifierForOxford,save,22,3,0,172,0,,
+superword,org.apdplat.superword.tools,WordClassifierForOxford,getContent,14,1,1,200,0,,
+superword,org.apdplat.superword.tools,WordClassifierForOxford,parse,15,3,2,224,0,org.apdplat.superword.tools.MySQLUtils,org.apdplat.superword.tools.MySQLUtils; org.apdplat.superword.tools.Definition
+superword,org.apdplat.superword.tools,WordClassifierForOxford,main,3,1,1,239,0,org.apdplat.superword.tools.WordClassifierForOxford,org.apdplat.superword.tools.WordClassifierForOxford
+superword,org.apdplat.superword.tools,IrregularVerbs,getBaseForm,10,3,1,41,0,,
+superword,org.apdplat.superword.tools,TopNSentence,topN,3,1,2,31,0,org.apdplat.superword.tools.TextAnalyzer,org.apdplat.superword.tools.TextAnalyzer
+superword,org.apdplat.superword.tools,TopNSentence,main,5,1,1,34,0,org.apdplat.superword.tools.TopNSentence,org.apdplat.superword.tools.TopNSentence
+superword,org.apdplat.superword.tools,Pronunciation,getPronunciationString,3,1,3,61,0,org.apdplat.superword.tools.Pronunciation,org.apdplat.superword.tools.Pronunciation
+superword,org.apdplat.superword.tools,Pronunciation,concat,13,3,2,65,0,,
+superword,org.apdplat.superword.tools,Pronunciation,getPronunciation,27,12,2,79,0,org.apdplat.superword.tools.Pronunciation,org.apdplat.superword.tools.Pronunciation
+superword,org.apdplat.superword.tools,Pronunciation,getPronunciationForICIBA,3,1,1,96,0,org.apdplat.superword.tools.Pronunciation,org.apdplat.superword.tools.Pronunciation
+superword,org.apdplat.superword.tools,Pronunciation,getPronunciationForYOUDAO,3,1,1,99,0,org.apdplat.superword.tools.Pronunciation,org.apdplat.superword.tools.Pronunciation
+superword,org.apdplat.superword.tools,Pronunciation,getPronunciationForCOLLINS,3,1,1,102,0,org.apdplat.superword.tools.Pronunciation,org.apdplat.superword.tools.Pronunciation
+superword,org.apdplat.superword.tools,Pronunciation,getPronunciationForWEBSTER,3,1,1,105,0,org.apdplat.superword.tools.Pronunciation,org.apdplat.superword.tools.Pronunciation
+superword,org.apdplat.superword.tools,Pronunciation,getPronunciationForOXFORD,3,1,1,108,0,org.apdplat.superword.tools.Pronunciation,org.apdplat.superword.tools.Pronunciation
+superword,org.apdplat.superword.tools,Pronunciation,getPronunciationForCAMBRIDGE,3,1,1,111,0,org.apdplat.superword.tools.Pronunciation,org.apdplat.superword.tools.Pronunciation
+superword,org.apdplat.superword.tools,Pronunciation,getPronunciationForMACMILLAN,3,1,1,114,0,org.apdplat.superword.tools.Pronunciation,org.apdplat.superword.tools.Pronunciation
+superword,org.apdplat.superword.tools,Pronunciation,getPronunciationForHERITAGE,3,1,1,117,0,org.apdplat.superword.tools.Pronunciation,org.apdplat.superword.tools.Pronunciation
+superword,org.apdplat.superword.tools,Pronunciation,getPronunciationForWIKTIONARY,3,1,1,120,0,org.apdplat.superword.tools.Pronunciation,org.apdplat.superword.tools.Pronunciation
+superword,org.apdplat.superword.tools,Pronunciation,getPronunciationForWORDNET,3,1,1,123,0,org.apdplat.superword.tools.Pronunciation,org.apdplat.superword.tools.Pronunciation
+superword,org.apdplat.superword.tools,Pronunciation,getPronunciationForRANDOMHOUSE,3,1,1,126,0,org.apdplat.superword.tools.Pronunciation,org.apdplat.superword.tools.Pronunciation
+superword,org.apdplat.superword.tools,Pronunciation,parsePronunciation,12,3,4,130,0,org.apdplat.superword.tools.MySQLUtils,org.apdplat.superword.tools.MySQLUtils; org.apdplat.superword.tools.Pronunciation
+superword,org.apdplat.superword.tools,Pronunciation,parsePronunciationFromHtml,19,4,4,143,0,,
+superword,org.apdplat.superword.tools,Pronunciation,getContent,14,3,1,162,0,org.apdplat.superword.tools.TimeUtils,org.apdplat.superword.tools.TimeUtils; org.apdplat.superword.tools.ProxyIp; org.apdplat.superword.tools.Pronunciation
+superword,org.apdplat.superword.tools,Pronunciation,_getContent,11,1,2,178,0,org.apdplat.superword.tools.Pronunciation,org.apdplat.superword.tools.Pronunciation
+superword,org.apdplat.superword.tools,Pronunciation,_getContent,12,1,1,189,0,,
+superword,org.apdplat.superword.tools,Pronunciation,main,6,1,1,210,0,org.apdplat.superword.tools.Pronunciation,org.apdplat.superword.tools.Pronunciation
+superword,org.apdplat.superword.tools,WordClassifier,WordClassifier,2,1,0,49,0,,
+superword,org.apdplat.superword.tools,WordClassifier,classify,32,6,1,67,0,org.apdplat.superword.tools.WordClassifier,org.apdplat.superword.tools.WordClassifier; org.apdplat.superword.tools.DynamicIp; org.apdplat.superword.model.Word
+superword,org.apdplat.superword.tools,WordClassifier,parse,11,3,1,103,0,org.apdplat.superword.tools.WordClassifier,org.apdplat.superword.tools.WordClassifier
+superword,org.apdplat.superword.tools,WordClassifier,parseDir,15,1,1,113,0,org.apdplat.superword.tools.WordClassifier,org.apdplat.superword.tools.WordClassifier
+superword,org.apdplat.superword.tools,WordClassifier,visitFile,4,1,2,118,0,org.apdplat.superword.tools.WordClassifier,org.apdplat.superword.tools.WordClassifier
+superword,org.apdplat.superword.tools,WordClassifier,parseZip,21,2,1,130,0,org.apdplat.superword.tools.WordClassifier,org.apdplat.superword.tools.WordClassifier
+superword,org.apdplat.superword.tools,WordClassifier,visitFile,7,1,2,137,0,org.apdplat.superword.tools.WordClassifier,org.apdplat.superword.tools.WordClassifier
+superword,org.apdplat.superword.tools,WordClassifier,parseFile,14,2,1,154,0,org.apdplat.superword.tools.WordClassifier,org.apdplat.superword.tools.WordClassifier
+superword,org.apdplat.superword.tools,WordClassifier,parse,12,2,2,170,0,org.apdplat.superword.tools.WordClassifier,org.apdplat.superword.tools.WordClassifier
+superword,org.apdplat.superword.tools,WordClassifier,showStatus,7,1,4,183,0,,
+superword,org.apdplat.superword.tools,WordClassifier,save,61,8,1,190,0,,
+superword,org.apdplat.superword.tools,WordClassifier,getContent,14,1,1,258,0,,
+superword,org.apdplat.superword.tools,WordClassifier,parse,20,5,3,281,0,,
+superword,org.apdplat.superword.tools,WordClassifier,main,3,1,1,304,0,org.apdplat.superword.tools.WordClassifier,org.apdplat.superword.tools.WordClassifier
+superword,org.apdplat.superword.tools,FileUtils,readResource,17,3,1,32,0,,
+superword,org.apdplat.superword.tools,JavaCodeAnalyzer,JavaCodeAnalyzer,2,1,0,43,0,,
+superword,org.apdplat.superword.tools,JavaCodeAnalyzer,parseDir,23,1,1,47,0,org.apdplat.superword.tools.JavaCodeAnalyzer,org.apdplat.superword.tools.JavaCodeAnalyzer
+superword,org.apdplat.superword.tools,JavaCodeAnalyzer,visitFile,10,1,2,53,0,org.apdplat.superword.tools.JavaCodeAnalyzer,org.apdplat.superword.tools.JavaCodeAnalyzer
+superword,org.apdplat.superword.tools,JavaCodeAnalyzer,parseZip,29,2,1,71,0,org.apdplat.superword.tools.JavaCodeAnalyzer,org.apdplat.superword.tools.JavaCodeAnalyzer
+superword,org.apdplat.superword.tools,JavaCodeAnalyzer,visitFile,13,1,2,79,0,org.apdplat.superword.tools.JavaCodeAnalyzer,org.apdplat.superword.tools.JavaCodeAnalyzer
+superword,org.apdplat.superword.tools,JavaCodeAnalyzer,parseFile,20,2,1,102,0,org.apdplat.superword.tools.TextAnalyzer,org.apdplat.superword.tools.TextAnalyzer
+superword,org.apdplat.superword.tools,JavaCodeAnalyzer,importantWords,6,1,1,124,0,org.apdplat.superword.tools.WordSources,org.apdplat.superword.tools.WordSources; org.apdplat.superword.tools.JavaCodeAnalyzer
+superword,org.apdplat.superword.tools,JavaCodeAnalyzer,toDic,10,1,2,145,0,org.apdplat.superword.tools.JavaCodeAnalyzer,org.apdplat.superword.tools.JavaCodeAnalyzer
+superword,org.apdplat.superword.tools,JavaCodeAnalyzer,main,4,1,1,167,0,org.apdplat.superword.tools.JavaCodeAnalyzer,org.apdplat.superword.tools.JavaCodeAnalyzer
+superword,org.apdplat.superword.tools,IPUtils,getIPLocation,19,4,1,39,0,,
+superword,org.apdplat.superword.tools,IPUtils,main,5,1,1,60,0,org.apdplat.superword.tools.IPUtils,org.apdplat.superword.tools.IPUtils
+superword,org.apdplat.superword.tools,ProxyIp,ProxyIp,2,1,0,60,0,,
+superword,org.apdplat.superword.tools,ProxyIp,stopDetect,3,1,0,147,0,,
+superword,org.apdplat.superword.tools,ProxyIp,startDetect,3,1,0,150,0,,
+superword,org.apdplat.superword.tools,ProxyIp,save,28,1,0,153,0,org.apdplat.superword.tools.ProxyIp,org.apdplat.superword.tools.ProxyIp
+superword,org.apdplat.superword.tools,ProxyIp,toVerify,18,2,1,183,0,org.apdplat.superword.tools.ProxyIp,org.apdplat.superword.tools.ProxyIp
+superword,org.apdplat.superword.tools,ProxyIp,getNextProxyIp,5,1,0,201,0,,
+superword,org.apdplat.superword.tools,ProxyIp,toNewIp,54,5,0,207,0,org.apdplat.superword.tools.ProxyIp,org.apdplat.superword.tools.ProxyIp
+superword,org.apdplat.superword.tools,ProxyIp,useNewProxyIp,9,1,0,267,0,org.apdplat.superword.tools.ProxyIp,org.apdplat.superword.tools.ProxyIp
+superword,org.apdplat.superword.tools,ProxyIp,verify,26,3,2,276,0,,
+superword,org.apdplat.superword.tools,ProxyIp,getCurrentIp,21,3,0,307,0,,
+superword,org.apdplat.superword.tools,ProxyIp,getProxyIps,8,1,0,342,0,org.apdplat.superword.tools.ProxyIp,org.apdplat.superword.tools.ProxyIp
+superword,org.apdplat.superword.tools,ProxyIp,getProxyIpOne,5,1,0,350,0,org.apdplat.superword.tools.ProxyIp,org.apdplat.superword.tools.ProxyIp
+superword,org.apdplat.superword.tools,ProxyIp,getProxyIpTwo,5,1,0,355,0,org.apdplat.superword.tools.ProxyIp,org.apdplat.superword.tools.ProxyIp
+superword,org.apdplat.superword.tools,ProxyIp,getProxyIp,40,4,2,360,0,,
+superword,org.apdplat.superword.tools,ProxyIp,getProxyIpThree,7,2,0,398,0,org.apdplat.superword.tools.ProxyIp,org.apdplat.superword.tools.ProxyIp
+superword,org.apdplat.superword.tools,ProxyIp,getProxyIpThree,56,5,1,405,0,,
+superword,org.apdplat.superword.tools,ProxyIp,getProxyIpFour,7,2,0,457,0,org.apdplat.superword.tools.ProxyIp,org.apdplat.superword.tools.ProxyIp
+superword,org.apdplat.superword.tools,ProxyIp,getProxyIpFour,56,5,1,464,0,,
+superword,org.apdplat.superword.tools,ProxyIp,getIps,38,4,1,516,0,,
+superword,org.apdplat.superword.tools,ProxyIp,main,6,2,1,552,0,org.apdplat.superword.tools.ProxyIp,org.apdplat.superword.tools.ProxyIp
+superword,org.apdplat.superword.tools,TextAnalyzer,TextAnalyzer,2,1,0,42,0,,
+superword,org.apdplat.superword.tools,TextAnalyzer,frequency,16,1,1,48,0,,
+superword,org.apdplat.superword.tools,TextAnalyzer,frequency,9,1,1,69,0,,
+superword,org.apdplat.superword.tools,TextAnalyzer,frequency,23,3,1,78,0,org.apdplat.superword.tools.TextAnalyzer,org.apdplat.superword.tools.TextAnalyzer
+superword,org.apdplat.superword.tools,TextAnalyzer,seg,42,11,1,104,0,org.apdplat.superword.tools.TextAnalyzer,org.apdplat.superword.tools.TextAnalyzer
+superword,org.apdplat.superword.tools,TextAnalyzer,irregularity,35,12,1,163,0,,
+superword,org.apdplat.superword.tools,TextAnalyzer,distribute,11,1,1,206,0,,
+superword,org.apdplat.superword.tools,TextAnalyzer,parse,13,1,1,223,0,org.apdplat.superword.tools.HtmlFormatter,org.apdplat.superword.tools.HtmlFormatter; org.apdplat.superword.tools.TextAnalyzer
+superword,org.apdplat.superword.tools,TextAnalyzer,getFileNames,32,4,1,244,0,,
+superword,org.apdplat.superword.tools,TextAnalyzer,visitFile,12,3,2,256,0,,
+superword,org.apdplat.superword.tools,TextAnalyzer,sentence,47,10,3,277,0,org.apdplat.superword.tools.TextAnalyzer,org.apdplat.superword.tools.TextAnalyzer
+superword,org.apdplat.superword.tools,TextAnalyzer,toDic,10,1,2,340,0,org.apdplat.superword.tools.TextAnalyzer,org.apdplat.superword.tools.TextAnalyzer
+superword,org.apdplat.superword.tools,TextAnalyzer,importantWords,6,1,1,362,0,org.apdplat.superword.tools.WordSources,org.apdplat.superword.tools.WordSources; org.apdplat.superword.tools.TextAnalyzer
+superword,org.apdplat.superword.tools,TextAnalyzer,main,3,1,1,385,0,org.apdplat.superword.tools.TextAnalyzer,org.apdplat.superword.tools.TextAnalyzer
+superword,org.apdplat.superword.tools,WordClassifierForYouDao,WordClassifierForYouDao,2,1,0,48,0,,
+superword,org.apdplat.superword.tools,WordClassifierForYouDao,classify,32,6,1,66,0,org.apdplat.superword.tools.WordClassifierForYouDao,org.apdplat.superword.tools.WordClassifierForYouDao; org.apdplat.superword.tools.DynamicIp; org.apdplat.superword.model.Word
+superword,org.apdplat.superword.tools,WordClassifierForYouDao,parse,11,3,1,102,0,org.apdplat.superword.tools.WordClassifierForYouDao,org.apdplat.superword.tools.WordClassifierForYouDao
+superword,org.apdplat.superword.tools,WordClassifierForYouDao,parseDir,15,1,1,112,0,org.apdplat.superword.tools.WordClassifierForYouDao,org.apdplat.superword.tools.WordClassifierForYouDao
+superword,org.apdplat.superword.tools,WordClassifierForYouDao,visitFile,4,1,2,117,0,org.apdplat.superword.tools.WordClassifierForYouDao,org.apdplat.superword.tools.WordClassifierForYouDao
+superword,org.apdplat.superword.tools,WordClassifierForYouDao,parseZip,21,2,1,129,0,org.apdplat.superword.tools.WordClassifierForYouDao,org.apdplat.superword.tools.WordClassifierForYouDao
+superword,org.apdplat.superword.tools,WordClassifierForYouDao,visitFile,7,1,2,136,0,org.apdplat.superword.tools.WordClassifierForYouDao,org.apdplat.superword.tools.WordClassifierForYouDao
+superword,org.apdplat.superword.tools,WordClassifierForYouDao,parseFile,14,2,1,153,0,org.apdplat.superword.tools.WordClassifierForYouDao,org.apdplat.superword.tools.WordClassifierForYouDao
+superword,org.apdplat.superword.tools,WordClassifierForYouDao,parse,12,2,2,169,0,org.apdplat.superword.tools.WordClassifierForYouDao,org.apdplat.superword.tools.WordClassifierForYouDao
+superword,org.apdplat.superword.tools,WordClassifierForYouDao,showStatus,7,1,4,182,0,,
+superword,org.apdplat.superword.tools,WordClassifierForYouDao,save,61,8,1,189,0,,
+superword,org.apdplat.superword.tools,WordClassifierForYouDao,getContent,14,1,1,257,0,,
+superword,org.apdplat.superword.tools,WordClassifierForYouDao,parse,22,6,3,280,0,,
+superword,org.apdplat.superword.tools,WordClassifierForYouDao,main,3,1,1,305,0,org.apdplat.superword.tools.WordClassifierForYouDao,org.apdplat.superword.tools.WordClassifierForYouDao
+superword,org.apdplat.superword.tools,TimeUtils,toString,4,1,2,33,0,,
+superword,org.apdplat.superword.tools,TimeUtils,toString,4,1,2,38,0,,
+superword,org.apdplat.superword.tools,TimeUtils,toString,4,1,1,44,0,,
+superword,org.apdplat.superword.tools,TimeUtils,toString,4,1,1,49,0,,
+superword,org.apdplat.superword.tools,TimeUtils,fromString,14,2,1,54,0,,
+superword,org.apdplat.superword.tools,TimeUtils,getTimeEnglishDes,42,10,1,68,0,,
+superword,org.apdplat.superword.tools,TimeUtils,getTimeDes,42,10,1,116,0,,
+superword,org.apdplat.superword.tools,TimeUtils,main,10,1,1,164,0,org.apdplat.superword.tools.TimeUtils,org.apdplat.superword.tools.TimeUtils
+superword,org.apdplat.superword.tools,HtmlFormatter,HtmlFormatter,2,1,0,39,0,,
+superword,org.apdplat.superword.tools,HtmlFormatter,toHtmlFragmentForText,3,1,2,45,0,org.apdplat.superword.tools.HtmlFormatter,org.apdplat.superword.tools.HtmlFormatter
+superword,org.apdplat.superword.tools,HtmlFormatter,toHtmlFragmentForText,39,3,3,48,0,org.apdplat.superword.tools.TextAnalyzer,org.apdplat.superword.tools.TextAnalyzer; org.apdplat.superword.tools.WordLinker
+superword,org.apdplat.superword.tools,HtmlFormatter,toHtmlForSentence,3,1,2,153,0,org.apdplat.superword.tools.HtmlFormatter,org.apdplat.superword.tools.HtmlFormatter
+superword,org.apdplat.superword.tools,HtmlFormatter,toHtmlForSentence,8,1,3,156,0,org.apdplat.superword.tools.HtmlFormatter,org.apdplat.superword.tools.HtmlFormatter
+superword,org.apdplat.superword.tools,HtmlFormatter,processSentence,3,1,2,182,0,org.apdplat.superword.tools.HtmlFormatter,org.apdplat.superword.tools.HtmlFormatter
+superword,org.apdplat.superword.tools,HtmlFormatter,processSentence,25,5,3,185,0,org.apdplat.superword.tools.WordLinker,org.apdplat.superword.tools.WordLinker; org.apdplat.superword.model.Word
+superword,org.apdplat.superword.tools,HtmlFormatter,toHtmlForCompoundWord,3,1,2,219,0,org.apdplat.superword.tools.HtmlFormatter,org.apdplat.superword.tools.HtmlFormatter
+superword,org.apdplat.superword.tools,HtmlFormatter,toHtmlForCompoundWord,28,2,3,222,0,org.apdplat.superword.tools.WordLinker,org.apdplat.superword.tools.WordLinker; org.apdplat.superword.model.Word
+superword,org.apdplat.superword.tools,HtmlFormatter,toHtmlForPartOfSpeech,3,1,1,276,0,org.apdplat.superword.tools.HtmlFormatter,org.apdplat.superword.tools.HtmlFormatter
+superword,org.apdplat.superword.tools,HtmlFormatter,toHtmlForPartOfSpeech,17,1,2,279,0,org.apdplat.superword.rule.PartOfSpeech,org.apdplat.superword.rule.PartOfSpeech; org.apdplat.superword.tools.WordLinker
+superword,org.apdplat.superword.tools,HtmlFormatter,toHtmlForPluralFormat,3,1,1,323,0,org.apdplat.superword.tools.HtmlFormatter,org.apdplat.superword.tools.HtmlFormatter
+superword,org.apdplat.superword.tools,HtmlFormatter,toHtmlForPluralFormat,11,1,2,326,0,org.apdplat.superword.tools.WordLinker,org.apdplat.superword.tools.WordLinker
+superword,org.apdplat.superword.tools,HtmlFormatter,toHtmlForWordDefinition,3,1,2,340,0,org.apdplat.superword.tools.HtmlFormatter,org.apdplat.superword.tools.HtmlFormatter
+superword,org.apdplat.superword.tools,HtmlFormatter,toHtmlForWordDefinition,18,1,3,343,0,org.apdplat.superword.model.Word,org.apdplat.superword.model.Word; org.apdplat.superword.tools.WordLinker
+superword,org.apdplat.superword.tools,HtmlFormatter,toHtmlForAntonym,3,1,2,367,0,org.apdplat.superword.tools.HtmlFormatter,org.apdplat.superword.tools.HtmlFormatter
+superword,org.apdplat.superword.tools,HtmlFormatter,toHtmlForAntonym,13,2,3,370,0,org.apdplat.superword.tools.WordLinker,org.apdplat.superword.tools.WordLinker; org.apdplat.superword.model.SynonymAntonym; org.apdplat.superword.model.Word
+superword,org.apdplat.superword.tools,HtmlFormatter,toHtmlForSynonymAntonym,3,1,2,394,0,org.apdplat.superword.tools.HtmlFormatter,org.apdplat.superword.tools.HtmlFormatter
+superword,org.apdplat.superword.tools,HtmlFormatter,toHtmlForSynonymAntonym,20,3,3,397,0,org.apdplat.superword.model.SynonymAntonym,org.apdplat.superword.model.SynonymAntonym; org.apdplat.superword.tools.WordLinker; org.apdplat.superword.model.Word
+superword,org.apdplat.superword.tools,HtmlFormatter,toHtmlForSynonymDiscrimination,3,1,1,424,0,org.apdplat.superword.tools.HtmlFormatter,org.apdplat.superword.tools.HtmlFormatter
+superword,org.apdplat.superword.tools,HtmlFormatter,toHtmlForSynonymDiscrimination,19,3,2,427,0,org.apdplat.superword.tools.WordLinker,org.apdplat.superword.tools.WordLinker; org.apdplat.superword.model.SynonymDiscrimination; org.apdplat.superword.model.Word
+superword,org.apdplat.superword.tools,HtmlFormatter,toHtmlTableFragmentForRootAffix,3,1,2,459,0,org.apdplat.superword.tools.HtmlFormatter,org.apdplat.superword.tools.HtmlFormatter
+superword,org.apdplat.superword.tools,HtmlFormatter,toHtmlTableFragmentForRootAffix,22,2,3,462,0,org.apdplat.superword.tools.HtmlFormatter,org.apdplat.superword.tools.HtmlFormatter; org.apdplat.superword.model.Word
+superword,org.apdplat.superword.tools,HtmlFormatter,emphasize,3,1,2,499,0,org.apdplat.superword.tools.HtmlFormatter,org.apdplat.superword.tools.HtmlFormatter
+superword,org.apdplat.superword.tools,HtmlFormatter,emphasize,17,5,3,502,0,org.apdplat.superword.tools.WordLinker,org.apdplat.superword.tools.WordLinker; org.apdplat.superword.model.Word
+superword,org.apdplat.superword.tools,HtmlFormatter,toHtmlTableFragment,3,1,2,526,0,org.apdplat.superword.tools.HtmlFormatter,org.apdplat.superword.tools.HtmlFormatter
+superword,org.apdplat.superword.tools,HtmlFormatter,toHtmlTableFragment,3,1,3,529,0,,
+superword,org.apdplat.superword.tools,HtmlFormatter,toHtmlTableFragment,3,1,2,533,0,,
+superword,org.apdplat.superword.tools,HtmlFormatter,toHtmlTableFragment,11,2,3,536,0,org.apdplat.superword.tools.WordLinker,org.apdplat.superword.tools.WordLinker; org.apdplat.superword.model.Word
+superword,org.apdplat.superword.tools,HtmlFormatter,toHtmlTableFragmentForIndependentWord,3,1,3,554,0,org.apdplat.superword.tools.HtmlFormatter,org.apdplat.superword.tools.HtmlFormatter
+superword,org.apdplat.superword.tools,HtmlFormatter,toHtmlTableFragmentForIndependentWord,23,3,4,557,0,org.apdplat.superword.tools.HtmlFormatter,org.apdplat.superword.tools.HtmlFormatter; org.apdplat.superword.model.Word
+superword,org.apdplat.superword.tools,HtmlFormatter,toHtmlTableFragment,29,4,2,598,0,,
+superword,org.apdplat.superword.tools,DynamicIp,DynamicIp,2,1,0,43,0,,
+superword,org.apdplat.superword.tools,DynamicIp,main,3,1,1,55,0,org.apdplat.superword.tools.DynamicIp,org.apdplat.superword.tools.DynamicIp
+superword,org.apdplat.superword.tools,DynamicIp,toNewIp,52,6,0,59,0,org.apdplat.superword.tools.DynamicIp,org.apdplat.superword.tools.DynamicIp
+superword,org.apdplat.superword.tools,DynamicIp,connect,3,1,1,134,0,org.apdplat.superword.tools.DynamicIp,org.apdplat.superword.tools.DynamicIp
+superword,org.apdplat.superword.tools,DynamicIp,disConnect,3,1,1,137,0,org.apdplat.superword.tools.DynamicIp,org.apdplat.superword.tools.DynamicIp
+superword,org.apdplat.superword.tools,DynamicIp,execute,29,4,2,140,0,org.apdplat.superword.tools.DynamicIp,org.apdplat.superword.tools.DynamicIp
+superword,org.apdplat.superword.tools,DynamicIp,isConnected,18,3,0,179,0,,
+superword,org.apdplat.superword.tools,DynamicIp,login,28,2,3,205,0,,
+superword,org.apdplat.superword.tools,SentenceScorer,SentenceScorer,2,1,0,38,0,,
+superword,org.apdplat.superword.tools,SentenceScorer,score,3,1,1,42,0,org.apdplat.superword.tools.SentenceScorer,org.apdplat.superword.tools.SentenceScorer
+superword,org.apdplat.superword.tools,SentenceScorer,score,47,7,2,45,0,org.apdplat.superword.tools.TextAnalyzer,org.apdplat.superword.tools.TextAnalyzer
+superword,org.apdplat.superword.tools,SentenceScorer,toTextFile,32,1,2,99,0,org.apdplat.superword.tools.SentenceScorer,org.apdplat.superword.tools.SentenceScorer
+superword,org.apdplat.superword.tools,SentenceScorer,writeLine,8,1,2,130,0,,
+superword,org.apdplat.superword.tools,SentenceScorer,score,27,6,2,137,0,org.apdplat.superword.tools.TextAnalyzer,org.apdplat.superword.tools.TextAnalyzer
+superword,org.apdplat.superword.tools,SentenceScorer,main,4,1,1,169,0,org.apdplat.superword.tools.SentenceScorer,org.apdplat.superword.tools.SentenceScorer
+superword,org.apdplat.superword.tools,AidReading,main,5,1,1,39,0,,
+superword,org.apdplat.superword.tools,AidReading,analyse,3,1,3,55,0,,
+superword,org.apdplat.superword.tools,AidReading,analyse,3,1,4,58,0,,
+superword,org.apdplat.superword.tools,AidReading,analyse,3,1,5,61,0,,
+superword,org.apdplat.superword.tools,AidReading,analyse,7,2,6,64,0,org.apdplat.superword.tools.FileUtils,org.apdplat.superword.tools.FileUtils
+superword,org.apdplat.superword.tools,AidReading,analyse,3,1,5,71,0,,
+superword,org.apdplat.superword.tools,AidReading,analyse,146,33,6,74,0,org.apdplat.superword.tools.WordLinker,org.apdplat.superword.tools.WordLinker; org.apdplat.superword.tools.IrregularVerbs; org.apdplat.superword.tools.IrregularPlurals; org.apdplat.superword.model.Word
+superword,org.apdplat.superword.tools,WordSources,WordSources,2,1,0,42,0,,
+superword,org.apdplat.superword.tools,WordSources,getLevels,65,21,1,45,0,,
+superword,org.apdplat.superword.tools,WordSources,getSyllabusVocabulary,3,1,0,110,0,,
+superword,org.apdplat.superword.tools,WordSources,getAll,5,1,0,136,0,org.apdplat.superword.tools.WordSources,org.apdplat.superword.tools.WordSources
+superword,org.apdplat.superword.tools,WordSources,get,3,1,1,141,0,,
+superword,org.apdplat.superword.tools,WordSources,convert,5,1,1,152,0,,
+superword,org.apdplat.superword.tools,WordSources,isEnglish,8,3,1,158,0,,
+superword,org.apdplat.superword.tools,WordSources,intersection,7,1,2,167,0,,
+superword,org.apdplat.superword.tools,WordSources,minus,7,1,2,183,0,,
+superword,org.apdplat.superword.tools,WordSources,save,13,1,2,193,0,org.apdplat.superword.model.Word,org.apdplat.superword.model.Word
+superword,org.apdplat.superword.tools,WordSources,get,34,5,2,209,0,org.apdplat.superword.tools.WordSources,org.apdplat.superword.tools.WordSources; org.apdplat.superword.model.Word
+superword,org.apdplat.superword.tools,WordSources,getExistWords,8,1,1,253,0,,
+superword,org.apdplat.superword.tools,WordSources,stem,3,1,1,260,0,org.apdplat.superword.tools.WordSources,org.apdplat.superword.tools.WordSources; org.apdplat.superword.model.Word
+superword,org.apdplat.superword.tools,WordSources,plural,8,1,1,267,0,org.apdplat.superword.tools.WordSources,org.apdplat.superword.tools.WordSources; org.apdplat.superword.model.Word
+superword,org.apdplat.superword.tools,WordSources,isPlural,3,1,2,277,0,org.apdplat.superword.tools.WordSources,org.apdplat.superword.tools.WordSources
+superword,org.apdplat.superword.tools,WordSources,isPlural,33,9,3,280,0,org.apdplat.superword.tools.WordSources,org.apdplat.superword.tools.WordSources; org.apdplat.superword.model.Word
+superword,org.apdplat.superword.tools,WordSources,log,3,1,2,323,0,,
+superword,org.apdplat.superword.tools,WordSources,isVowel,15,6,1,326,0,,
+superword,org.apdplat.superword.tools,WordSources,main,4,1,1,336,0,org.apdplat.superword.tools.WordSources,org.apdplat.superword.tools.WordSources; org.apdplat.superword.tools.HtmlFormatter
+superword,org.apdplat.superword.tools,IrregularPlurals,getSingular,7,2,1,38,0,,
+superword,org.apdplat.superword.tools,MySQLUtils,MySQLUtils,2,1,0,64,0,,
+superword,org.apdplat.superword.tools,MySQLUtils,getWordPurePronunciation,4,1,2,67,0,org.apdplat.superword.tools.MySQLUtils,org.apdplat.superword.tools.MySQLUtils
+superword,org.apdplat.superword.tools,MySQLUtils,extractPurePronunciation,18,5,1,72,0,,
+superword,org.apdplat.superword.tools,MySQLUtils,getWordPronunciation,25,3,2,98,0,org.apdplat.superword.tools.MySQLUtils,org.apdplat.superword.tools.MySQLUtils
+superword,org.apdplat.superword.tools,MySQLUtils,saveWordPronunciation,22,2,3,122,0,org.apdplat.superword.tools.MySQLUtils,org.apdplat.superword.tools.MySQLUtils
+superword,org.apdplat.superword.tools,MySQLUtils,deleteWordDefinition,21,2,1,143,0,org.apdplat.superword.tools.MySQLUtils,org.apdplat.superword.tools.MySQLUtils
+superword,org.apdplat.superword.tools,MySQLUtils,getWordAndPronunciationBySymbol,32,5,4,163,0,org.apdplat.superword.tools.MySQLUtils,org.apdplat.superword.tools.MySQLUtils
+superword,org.apdplat.superword.tools,MySQLUtils,getWordsByPOS,36,6,3,196,0,org.apdplat.superword.tools.MySQLUtils,org.apdplat.superword.tools.MySQLUtils
+superword,org.apdplat.superword.tools,MySQLUtils,getAllWordPronunciation,32,5,2,232,0,org.apdplat.superword.tools.MySQLUtils,org.apdplat.superword.tools.MySQLUtils
+superword,org.apdplat.superword.tools,MySQLUtils,getAllWordDefinition,3,1,2,265,0,org.apdplat.superword.tools.MySQLUtils,org.apdplat.superword.tools.MySQLUtils
+superword,org.apdplat.superword.tools,MySQLUtils,getAllWordDefinition,3,1,3,269,0,org.apdplat.superword.tools.MySQLUtils,org.apdplat.superword.tools.MySQLUtils
+superword,org.apdplat.superword.tools,MySQLUtils,getAllWordDefinitionMap,29,4,2,277,0,org.apdplat.superword.tools.MySQLUtils,org.apdplat.superword.tools.MySQLUtils
+superword,org.apdplat.superword.tools,MySQLUtils,getWordDefinition,25,3,2,307,0,org.apdplat.superword.tools.MySQLUtils,org.apdplat.superword.tools.MySQLUtils
+superword,org.apdplat.superword.tools,MySQLUtils,saveWordDefinition,22,2,3,331,0,org.apdplat.superword.tools.MySQLUtils,org.apdplat.superword.tools.MySQLUtils
+superword,org.apdplat.superword.tools,MySQLUtils,existUser,24,3,2,352,0,org.apdplat.superword.tools.MySQLUtils,org.apdplat.superword.tools.MySQLUtils; org.apdplat.superword.model.User
+superword,org.apdplat.superword.tools,MySQLUtils,login,27,4,1,375,0,org.apdplat.superword.tools.MySQLUtils,org.apdplat.superword.tools.MySQLUtils; org.apdplat.superword.model.User
+superword,org.apdplat.superword.tools,MySQLUtils,register,24,2,1,401,0,org.apdplat.superword.tools.MySQLUtils,org.apdplat.superword.tools.MySQLUtils; org.apdplat.superword.model.User
+superword,org.apdplat.superword.tools,MySQLUtils,getUseTextFromDatabase,34,3,1,424,0,org.apdplat.superword.tools.MySQLUtils,org.apdplat.superword.tools.MySQLUtils; org.apdplat.superword.model.UserText; org.apdplat.superword.model.HistoryRecord
+superword,org.apdplat.superword.tools,MySQLUtils,getHistoryUserDynamicPrefixesFromDatabase,33,3,1,456,0,org.apdplat.superword.tools.MySQLUtils,org.apdplat.superword.tools.MySQLUtils; org.apdplat.superword.model.HistoryRecord; org.apdplat.superword.model.UserDynamicPrefix
+superword,org.apdplat.superword.tools,MySQLUtils,getHistoryUserDynamicSuffixesFromDatabase,33,3,1,488,0,org.apdplat.superword.tools.MySQLUtils,org.apdplat.superword.tools.MySQLUtils; org.apdplat.superword.model.HistoryRecord; org.apdplat.superword.model.UserDynamicSuffix
+superword,org.apdplat.superword.tools,MySQLUtils,getHistoryUserSimilarWordsFromDatabase,33,3,1,520,0,org.apdplat.superword.tools.MySQLUtils,org.apdplat.superword.tools.MySQLUtils; org.apdplat.superword.model.HistoryRecord; org.apdplat.superword.model.UserSimilarWord
+superword,org.apdplat.superword.tools,MySQLUtils,getHistoryUserBooksFromDatabase,33,3,1,552,0,org.apdplat.superword.tools.MySQLUtils,org.apdplat.superword.tools.MySQLUtils; org.apdplat.superword.model.HistoryRecord; org.apdplat.superword.model.UserBook
+superword,org.apdplat.superword.tools,MySQLUtils,getHistoryUserUrlsFromDatabase,33,3,1,584,0,org.apdplat.superword.tools.MySQLUtils,org.apdplat.superword.tools.MySQLUtils; org.apdplat.superword.model.HistoryRecord; org.apdplat.superword.model.UserUrl
+superword,org.apdplat.superword.tools,MySQLUtils,getHistoryUserTextsFromDatabase,33,3,1,616,0,org.apdplat.superword.tools.MySQLUtils,org.apdplat.superword.tools.MySQLUtils; org.apdplat.superword.model.UserText; org.apdplat.superword.model.HistoryRecord
+superword,org.apdplat.superword.tools,MySQLUtils,isMyNewWord,25,3,2,648,0,org.apdplat.superword.tools.MySQLUtils,org.apdplat.superword.tools.MySQLUtils
+superword,org.apdplat.superword.tools,MySQLUtils,deleteMyNewWord,21,2,2,672,0,org.apdplat.superword.tools.MySQLUtils,org.apdplat.superword.tools.MySQLUtils
+superword,org.apdplat.superword.tools,MySQLUtils,getMyNewWordsFromDatabase,31,3,1,692,0,org.apdplat.superword.tools.MySQLUtils,org.apdplat.superword.tools.MySQLUtils; org.apdplat.superword.model.HistoryRecord; org.apdplat.superword.model.MyNewWord
+superword,org.apdplat.superword.tools,MySQLUtils,getHistoryUserWordsFromDatabase,33,3,1,722,0,org.apdplat.superword.tools.MySQLUtils,org.apdplat.superword.tools.MySQLUtils; org.apdplat.superword.model.HistoryRecord; org.apdplat.superword.model.UserWord
+superword,org.apdplat.superword.tools,MySQLUtils,saveUserSimilarWordToDatabase,3,1,1,754,0,org.apdplat.superword.tools.MySQLUtils,org.apdplat.superword.tools.MySQLUtils
+superword,org.apdplat.superword.tools,MySQLUtils,_saveUserSimilarWordToDatabase,23,2,1,758,0,org.apdplat.superword.model.UserSimilarWord,org.apdplat.superword.model.UserSimilarWord; org.apdplat.superword.tools.MySQLUtils; org.apdplat.superword.model.HistoryRecord
+superword,org.apdplat.superword.tools,MySQLUtils,saveUserDynamicPrefixToDatabase,3,1,1,780,0,org.apdplat.superword.tools.MySQLUtils,org.apdplat.superword.tools.MySQLUtils
+superword,org.apdplat.superword.tools,MySQLUtils,_saveUserDynamicPrefixToDatabase,23,2,1,784,0,org.apdplat.superword.tools.MySQLUtils,org.apdplat.superword.tools.MySQLUtils; org.apdplat.superword.model.UserDynamicPrefix; org.apdplat.superword.model.HistoryRecord
+superword,org.apdplat.superword.tools,MySQLUtils,saveUserDynamicSuffixToDatabase,3,1,1,806,0,org.apdplat.superword.tools.MySQLUtils,org.apdplat.superword.tools.MySQLUtils
+superword,org.apdplat.superword.tools,MySQLUtils,_saveUserDynamicSuffixToDatabase,23,2,1,810,0,org.apdplat.superword.model.UserDynamicSuffix,org.apdplat.superword.model.UserDynamicSuffix; org.apdplat.superword.tools.MySQLUtils; org.apdplat.superword.model.HistoryRecord
+superword,org.apdplat.superword.tools,MySQLUtils,saveUserBookToDatabase,3,1,1,832,0,org.apdplat.superword.tools.MySQLUtils,org.apdplat.superword.tools.MySQLUtils
+superword,org.apdplat.superword.tools,MySQLUtils,_saveUserBookToDatabase,23,2,1,836,0,org.apdplat.superword.tools.MySQLUtils,org.apdplat.superword.tools.MySQLUtils; org.apdplat.superword.model.HistoryRecord; org.apdplat.superword.model.UserBook
+superword,org.apdplat.superword.tools,MySQLUtils,saveUserUrlToDatabase,3,1,1,858,0,org.apdplat.superword.tools.MySQLUtils,org.apdplat.superword.tools.MySQLUtils
+superword,org.apdplat.superword.tools,MySQLUtils,_saveUserUrlToDatabase,23,2,1,862,0,org.apdplat.superword.tools.MySQLUtils,org.apdplat.superword.tools.MySQLUtils; org.apdplat.superword.model.HistoryRecord; org.apdplat.superword.model.UserUrl
+superword,org.apdplat.superword.tools,MySQLUtils,saveUserTextToDatabase,3,1,1,884,0,org.apdplat.superword.tools.MySQLUtils,org.apdplat.superword.tools.MySQLUtils
+superword,org.apdplat.superword.tools,MySQLUtils,_saveUserTextToDatabase,23,2,1,888,0,org.apdplat.superword.tools.MySQLUtils,org.apdplat.superword.tools.MySQLUtils; org.apdplat.superword.model.HistoryRecord; org.apdplat.superword.model.UserText
+superword,org.apdplat.superword.tools,MySQLUtils,saveWrongWordsInQuizToMyNewWords,17,4,1,910,0,org.apdplat.superword.model.HistoryRecord,org.apdplat.superword.model.HistoryRecord; org.apdplat.superword.model.User; org.apdplat.superword.model.MyNewWord; org.apdplat.superword.tools.MySQLUtils
+superword,org.apdplat.superword.tools,MySQLUtils,saveMyNewWordsToDatabase,3,1,1,934,0,org.apdplat.superword.tools.MySQLUtils,org.apdplat.superword.tools.MySQLUtils
+superword,org.apdplat.superword.tools,MySQLUtils,_saveMyNewWordsToDatabase,22,2,1,938,0,org.apdplat.superword.tools.MySQLUtils,org.apdplat.superword.tools.MySQLUtils; org.apdplat.superword.model.HistoryRecord; org.apdplat.superword.model.MyNewWord
+superword,org.apdplat.superword.tools,MySQLUtils,saveUserWordToDatabase,3,1,1,959,0,org.apdplat.superword.tools.MySQLUtils,org.apdplat.superword.tools.MySQLUtils
+superword,org.apdplat.superword.tools,MySQLUtils,_saveUserWordToDatabase,22,2,1,963,0,org.apdplat.superword.tools.MySQLUtils,org.apdplat.superword.tools.MySQLUtils; org.apdplat.superword.model.UserWord; org.apdplat.superword.model.HistoryRecord
+superword,org.apdplat.superword.tools,MySQLUtils,getConnection,10,1,0,984,0,,
+superword,org.apdplat.superword.tools,MySQLUtils,setupDataSource,8,1,3,994,0,,
+superword,org.apdplat.superword.tools,MySQLUtils,close,3,1,1,1036,0,org.apdplat.superword.tools.MySQLUtils,org.apdplat.superword.tools.MySQLUtils
+superword,org.apdplat.superword.tools,MySQLUtils,close,3,1,2,1040,0,org.apdplat.superword.tools.MySQLUtils,org.apdplat.superword.tools.MySQLUtils
+superword,org.apdplat.superword.tools,MySQLUtils,close,19,4,3,1044,0,,
+superword,org.apdplat.superword.tools,MySQLUtils,close,3,1,2,1063,0,org.apdplat.superword.tools.MySQLUtils,org.apdplat.superword.tools.MySQLUtils
+superword,org.apdplat.superword.tools,MySQLUtils,close,3,1,1,1067,0,org.apdplat.superword.tools.MySQLUtils,org.apdplat.superword.tools.MySQLUtils
+superword,org.apdplat.superword.tools,MySQLUtils,MD5,14,2,1,1070,0,,
+superword,org.apdplat.superword.tools,MySQLUtils,main,8,1,1,1083,0,org.apdplat.superword.tools.MySQLUtils,org.apdplat.superword.tools.MySQLUtils; org.apdplat.superword.model.HistoryRecord; org.apdplat.superword.model.UserWord
+superword,org.apdplat.superword.tools,MySQLUtils,processQQUser,13,4,1,1093,0,org.apdplat.superword.model.User,org.apdplat.superword.model.User; org.apdplat.superword.tools.MySQLUtils
+superword,org.apdplat.superword.tools,MySQLUtils,saveQQUser,30,2,1,1107,0,org.apdplat.superword.model.QQUser,org.apdplat.superword.model.QQUser; org.apdplat.superword.tools.MySQLUtils; org.apdplat.superword.model.User
+superword,org.apdplat.superword.tools,Summary,summaryForPreciousWords,3,1,3,44,0,,
+superword,org.apdplat.superword.tools,Summary,summaryForPreciousWords,14,3,4,47,0,org.apdplat.superword.tools.Summary,org.apdplat.superword.tools.Summary
+superword,org.apdplat.superword.tools,Summary,preciousWords,4,1,2,63,0,,
+superword,org.apdplat.superword.tools,Summary,preciousWords,16,2,2,68,0,org.apdplat.superword.tools.TextAnalyzer,org.apdplat.superword.tools.TextAnalyzer
+superword,org.apdplat.superword.tools,Summary,toHtmlFragment,3,1,1,93,0,org.apdplat.superword.tools.Summary,org.apdplat.superword.tools.Summary
+superword,org.apdplat.superword.tools,Summary,toHtmlFragment,44,5,2,96,0,org.apdplat.superword.tools.WordLinker,org.apdplat.superword.tools.WordLinker
+superword,org.apdplat.superword.tools,Summary,findEvidence,51,5,4,153,0,org.apdplat.superword.tools.TextAnalyzer,org.apdplat.superword.tools.TextAnalyzer
+superword,org.apdplat.superword.tools,Summary,visitFile,35,5,2,169,0,org.apdplat.superword.tools.TextAnalyzer,org.apdplat.superword.tools.TextAnalyzer
+superword,org.apdplat.superword.tools,Summary,summary,7,1,0,217,0,org.apdplat.superword.tools.Summary,org.apdplat.superword.tools.Summary
+superword,org.apdplat.superword.tools,Summary,summary,6,1,3,244,0,org.apdplat.superword.tools.Summary,org.apdplat.superword.tools.Summary
+superword,org.apdplat.superword.tools,Summary,main,12,2,1,252,0,org.apdplat.superword.tools.WordSources,org.apdplat.superword.tools.WordSources
+superword,org.apdplat.superword.tools,WordsFetcher,WordsFetcher,2,1,0,42,0,,
+superword,org.apdplat.superword.tools,WordsFetcher,updatePrimarySchool,32,1,0,55,0,org.apdplat.superword.tools.WordsFetcher,org.apdplat.superword.tools.WordsFetcher
+superword,org.apdplat.superword.tools,WordsFetcher,updateJuniorSchool,28,1,0,93,0,org.apdplat.superword.tools.WordsFetcher,org.apdplat.superword.tools.WordsFetcher
+superword,org.apdplat.superword.tools,WordsFetcher,updateSeniorSchool,17,1,0,130,0,org.apdplat.superword.tools.WordsFetcher,org.apdplat.superword.tools.WordsFetcher
+superword,org.apdplat.superword.tools,WordsFetcher,updateUniversity,8,1,0,153,0,org.apdplat.superword.tools.WordsFetcher,org.apdplat.superword.tools.WordsFetcher
+superword,org.apdplat.superword.tools,WordsFetcher,updateNewConception,6,1,0,165,0,org.apdplat.superword.tools.WordsFetcher,org.apdplat.superword.tools.WordsFetcher
+superword,org.apdplat.superword.tools,WordsFetcher,updateCET4,4,1,0,174,0,org.apdplat.superword.tools.WordsFetcher,org.apdplat.superword.tools.WordsFetcher
+superword,org.apdplat.superword.tools,WordsFetcher,updateCET6,4,1,0,178,0,org.apdplat.superword.tools.WordsFetcher,org.apdplat.superword.tools.WordsFetcher
+superword,org.apdplat.superword.tools,WordsFetcher,updateKY,4,1,0,182,0,org.apdplat.superword.tools.WordsFetcher,org.apdplat.superword.tools.WordsFetcher
+superword,org.apdplat.superword.tools,WordsFetcher,updateTOEFL,3,1,0,186,0,org.apdplat.superword.tools.WordsFetcher,org.apdplat.superword.tools.WordsFetcher
+superword,org.apdplat.superword.tools,WordsFetcher,updateIELTS,3,1,0,189,0,org.apdplat.superword.tools.WordsFetcher,org.apdplat.superword.tools.WordsFetcher
+superword,org.apdplat.superword.tools,WordsFetcher,updateGRE,3,1,0,192,0,org.apdplat.superword.tools.WordsFetcher,org.apdplat.superword.tools.WordsFetcher
+superword,org.apdplat.superword.tools,WordsFetcher,updateGMAT,5,1,0,195,0,org.apdplat.superword.tools.WordsFetcher,org.apdplat.superword.tools.WordsFetcher
+superword,org.apdplat.superword.tools,WordsFetcher,updateTOEIC,3,1,0,200,0,org.apdplat.superword.tools.WordsFetcher,org.apdplat.superword.tools.WordsFetcher
+superword,org.apdplat.superword.tools,WordsFetcher,updateSAT,3,1,0,203,0,org.apdplat.superword.tools.WordsFetcher,org.apdplat.superword.tools.WordsFetcher
+superword,org.apdplat.superword.tools,WordsFetcher,updateBEC,4,1,0,206,0,org.apdplat.superword.tools.WordsFetcher,org.apdplat.superword.tools.WordsFetcher
+superword,org.apdplat.superword.tools,WordsFetcher,updateADULT,11,1,0,210,0,org.apdplat.superword.tools.WordsFetcher,org.apdplat.superword.tools.WordsFetcher
+superword,org.apdplat.superword.tools,WordsFetcher,updateMBA,3,1,0,221,0,org.apdplat.superword.tools.WordsFetcher,org.apdplat.superword.tools.WordsFetcher
+superword,org.apdplat.superword.tools,WordsFetcher,updateTEM4,3,1,0,224,0,org.apdplat.superword.tools.WordsFetcher,org.apdplat.superword.tools.WordsFetcher
+superword,org.apdplat.superword.tools,WordsFetcher,updateTEM8,3,1,0,227,0,org.apdplat.superword.tools.WordsFetcher,org.apdplat.superword.tools.WordsFetcher
+superword,org.apdplat.superword.tools,WordsFetcher,updateCATTI,5,1,0,230,0,org.apdplat.superword.tools.WordsFetcher,org.apdplat.superword.tools.WordsFetcher
+superword,org.apdplat.superword.tools,WordsFetcher,updateComputer,3,1,0,236,0,org.apdplat.superword.tools.WordsFetcher,org.apdplat.superword.tools.WordsFetcher
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,46,1,0,243,0,org.apdplat.superword.tools.WordsFetcher,org.apdplat.superword.tools.WordsFetcher
+superword,org.apdplat.superword.tools,WordsFetcher,update,17,1,3,306,0,org.apdplat.superword.tools.WordsFetcher,org.apdplat.superword.tools.WordsFetcher; org.apdplat.superword.model.Word
+superword,org.apdplat.superword.tools,WordsFetcher,fetch,20,4,2,326,0,org.apdplat.superword.tools.WordsFetcher,org.apdplat.superword.tools.WordsFetcher; org.apdplat.superword.tools.DynamicIp
+superword,org.apdplat.superword.tools,WordsFetcher,parse,16,3,1,349,0,org.apdplat.superword.tools.WordSources,org.apdplat.superword.tools.WordSources
+superword,org.apdplat.superword.tools,WordsFetcher,getContent,13,1,1,365,0,,
+superword,org.apdplat.superword.tools,WordsFetcher,main,24,1,1,386,0,org.apdplat.superword.tools.WordsFetcher,org.apdplat.superword.tools.WordsFetcher
+superword,org.apdplat.superword.freemarker,TemplateUtils,TemplateUtils,2,1,0,21,0,,
+superword,org.apdplat.superword.freemarker,TemplateUtils,getIdentifyQuizFailure,3,1,1,38,0,org.apdplat.superword.freemarker.TemplateUtils,org.apdplat.superword.freemarker.TemplateUtils
+superword,org.apdplat.superword.freemarker,TemplateUtils,getIdentifyQuizForm,3,1,1,47,0,org.apdplat.superword.freemarker.TemplateUtils,org.apdplat.superword.freemarker.TemplateUtils
+superword,org.apdplat.superword.freemarker,TemplateUtils,getVocabularyTestForm,3,1,1,56,0,org.apdplat.superword.freemarker.TemplateUtils,org.apdplat.superword.freemarker.TemplateUtils
+superword,org.apdplat.superword.freemarker,TemplateUtils,getVocabularyTestResult,3,1,1,65,0,org.apdplat.superword.freemarker.TemplateUtils,org.apdplat.superword.freemarker.TemplateUtils
+superword,org.apdplat.superword.freemarker,TemplateUtils,getWordDefinition,3,1,1,74,0,org.apdplat.superword.freemarker.TemplateUtils,org.apdplat.superword.freemarker.TemplateUtils
+superword,org.apdplat.superword.freemarker,TemplateUtils,getDefinitionSimilarResult,3,1,1,104,0,org.apdplat.superword.freemarker.TemplateUtils,org.apdplat.superword.freemarker.TemplateUtils
+superword,org.apdplat.superword.freemarker,TemplateUtils,merge,12,1,2,118,0,,
+superword,org.apdplat.superword.freemarker,TemplateUtils,main,17,1,1,130,0,org.apdplat.superword.freemarker.TemplateUtils,org.apdplat.superword.freemarker.TemplateUtils; org.apdplat.superword.model.QuizItem
+superword,org.apdplat.superword.system,WordsFilter,destroy,2,1,0,34,0,,
+superword,org.apdplat.superword.system,WordsFilter,doFilter,29,6,3,37,0,org.apdplat.superword.tools.WordSources,org.apdplat.superword.tools.WordSources
+superword,org.apdplat.superword.system,WordsFilter,init,2,1,1,67,0,,
+superword,org.apdplat.superword.system,InstantTipServlet,doPost,3,1,2,36,0,org.apdplat.superword.system.InstantTipServlet,org.apdplat.superword.system.InstantTipServlet
+superword,org.apdplat.superword.system,InstantTipServlet,doGet,11,2,2,40,0,org.apdplat.superword.system.InstantTip,org.apdplat.superword.system.InstantTip
+superword,org.apdplat.superword.system,AntiRobotFilter,destroy,2,1,0,62,0,,
+superword,org.apdplat.superword.system,AntiRobotFilter,getKey,6,1,1,65,0,org.apdplat.superword.model.User,org.apdplat.superword.model.User
+superword,org.apdplat.superword.system,AntiRobotFilter,doFilter,98,16,3,72,0,org.apdplat.superword.model.QuizItem,org.apdplat.superword.model.QuizItem; org.apdplat.superword.freemarker.TemplateUtils; org.apdplat.superword.system.AntiRobotFilter; org.apdplat.superword.model.Word
+superword,org.apdplat.superword.system,AntiRobotFilter,init,40,5,1,197,0,org.apdplat.superword.tools.IPUtils,org.apdplat.superword.tools.IPUtils
+superword,org.apdplat.superword.system,AntiRobotFilter,getData,11,3,0,240,0,,
+superword,org.apdplat.superword.system,AntiRobotFilter,main,5,1,1,257,0,,
+superword,org.apdplat.superword.system,HistoryFilter,destroy,2,1,0,33,0,,
+superword,org.apdplat.superword.system,HistoryFilter,doFilter,18,2,3,36,0,,
+superword,org.apdplat.superword.system,HistoryFilter,init,2,1,1,61,0,,
+superword,org.apdplat.superword.system,ViewWordServlet,doPost,3,1,2,36,0,org.apdplat.superword.system.ViewWordServlet,org.apdplat.superword.system.ViewWordServlet
+superword,org.apdplat.superword.system,ViewWordServlet,doGet,3,1,2,40,0,org.apdplat.superword.system.ViewWordServlet,org.apdplat.superword.system.ViewWordServlet
+superword,org.apdplat.superword.system,ViewWordServlet,doIt,15,2,2,44,0,org.apdplat.superword.tools.MySQLUtils,org.apdplat.superword.tools.MySQLUtils; org.apdplat.superword.model.HistoryRecord; org.apdplat.superword.model.User; org.apdplat.superword.model.UserWord
+superword,org.apdplat.superword.system,InstantTip,getWordsByPrefix,16,4,1,49,0,org.apdplat.superword.tools.WordLinker,org.apdplat.superword.tools.WordLinker
+superword,org.apdplat.superword.system,InstantTip,main,3,1,1,66,0,org.apdplat.superword.system.InstantTip,org.apdplat.superword.system.InstantTip
+superword,org.apdplat.superword.system.qq,IndexServlet,doGet,9,1,2,30,0,,
+superword,org.apdplat.superword.system.qq,IndexServlet,doPost,3,1,2,39,0,org.apdplat.superword.system.qq.IndexServlet,org.apdplat.superword.system.qq.IndexServlet
+superword,org.apdplat.superword.system.qq,AfterLoginRedirectServlet,doGet,3,1,2,38,0,org.apdplat.superword.system.qq.AfterLoginRedirectServlet,org.apdplat.superword.system.qq.AfterLoginRedirectServlet
+superword,org.apdplat.superword.system.qq,AfterLoginRedirectServlet,doPost,52,8,2,42,0,org.apdplat.superword.model.QQUser,org.apdplat.superword.model.QQUser; org.apdplat.superword.tools.MySQLUtils; org.apdplat.superword.model.User
+superword,org.apdplat.superword.model,QQUser,getNickname,3,1,0,34,0,,
+superword,org.apdplat.superword.model,QQUser,setNickname,3,1,1,38,0,,
+superword,org.apdplat.superword.model,QQUser,getGender,3,1,0,42,0,,
+superword,org.apdplat.superword.model,QQUser,setGender,3,1,1,46,0,,
+superword,org.apdplat.superword.model,QQUser,getBirthday,3,1,0,50,0,,
+superword,org.apdplat.superword.model,QQUser,setBirthday,3,1,1,54,0,,
+superword,org.apdplat.superword.model,QQUser,getLocation,3,1,0,58,0,,
+superword,org.apdplat.superword.model,QQUser,setLocation,3,1,1,62,0,,
+superword,org.apdplat.superword.model,QQUser,getAvatarURL30,3,1,0,66,0,,
+superword,org.apdplat.superword.model,QQUser,setAvatarURL30,3,1,1,70,0,,
+superword,org.apdplat.superword.model,QQUser,getAvatarURL50,3,1,0,74,0,,
+superword,org.apdplat.superword.model,QQUser,setAvatarURL50,3,1,1,78,0,,
+superword,org.apdplat.superword.model,QQUser,getAvatarURL100,3,1,0,82,0,,
+superword,org.apdplat.superword.model,QQUser,setAvatarURL100,3,1,1,86,0,,
+superword,org.apdplat.superword.model,QQUser,toString,3,1,0,90,0,,
+superword,org.apdplat.superword.model,MyNewWord,getWord,3,1,0,28,0,,
+superword,org.apdplat.superword.model,MyNewWord,setWord,3,1,1,32,0,,
+superword,org.apdplat.superword.model,MyNewWord,toString,3,1,0,36,0,,
+superword,org.apdplat.superword.model,Prefix,Prefix,2,1,0,31,0,,
+superword,org.apdplat.superword.model,Prefix,Prefix,4,1,2,32,0,,
+superword,org.apdplat.superword.model,Prefix,getDes,3,1,0,37,0,,
+superword,org.apdplat.superword.model,Prefix,setDes,3,1,1,41,0,,
+superword,org.apdplat.superword.model,Prefix,getPrefix,3,1,0,45,0,,
+superword,org.apdplat.superword.model,Prefix,setPrefix,3,1,1,49,0,,
+superword,org.apdplat.superword.model,Prefix,compareTo,19,6,1,53,0,org.apdplat.superword.model.Prefix,org.apdplat.superword.model.Prefix
+superword,org.apdplat.superword.model,Prefix,equals,7,4,1,74,0,,
+superword,org.apdplat.superword.model,Prefix,hashCode,3,1,0,86,0,,
+superword,org.apdplat.superword.model,UserDynamicPrefix,getDynamicPrefix,3,1,0,28,0,,
+superword,org.apdplat.superword.model,UserDynamicPrefix,setDynamicPrefix,3,1,1,32,0,,
+superword,org.apdplat.superword.model,UserDynamicPrefix,toString,3,1,0,36,0,,
+superword,org.apdplat.superword.model,SynonymDiscrimination,getTitle,3,1,0,36,0,,
+superword,org.apdplat.superword.model,SynonymDiscrimination,setTitle,3,1,1,40,0,,
+superword,org.apdplat.superword.model,SynonymDiscrimination,getDes,3,1,0,44,0,,
+superword,org.apdplat.superword.model,SynonymDiscrimination,setDes,3,1,1,48,0,,
+superword,org.apdplat.superword.model,SynonymDiscrimination,getWords,3,1,0,52,0,,
+superword,org.apdplat.superword.model,SynonymDiscrimination,addWord,3,1,1,56,0,,
+superword,org.apdplat.superword.model,SynonymDiscrimination,removeWord,3,1,1,60,0,,
+superword,org.apdplat.superword.model,SynonymDiscrimination,toString,6,1,0,64,0,org.apdplat.superword.model.Word,org.apdplat.superword.model.Word
+superword,org.apdplat.superword.model,SynonymDiscrimination,compareTo,19,6,1,72,0,org.apdplat.superword.model.SynonymDiscrimination,org.apdplat.superword.model.SynonymDiscrimination
+superword,org.apdplat.superword.model,SynonymDiscrimination,equals,7,4,1,93,0,,
+superword,org.apdplat.superword.model,SynonymDiscrimination,hashCode,3,1,0,105,0,,
+superword,org.apdplat.superword.model,Word,Word,2,1,0,37,0,,
+superword,org.apdplat.superword.model,Word,Word,4,1,2,38,0,,
+superword,org.apdplat.superword.model,Word,getMeaning,3,1,0,43,0,,
+superword,org.apdplat.superword.model,Word,setMeaning,3,1,1,47,0,,
+superword,org.apdplat.superword.model,Word,getWord,3,1,0,51,0,,
+superword,org.apdplat.superword.model,Word,setWord,3,1,1,55,0,,
+superword,org.apdplat.superword.model,Word,getDefinitions,3,1,0,59,0,,
+superword,org.apdplat.superword.model,Word,addDefinition,3,1,1,63,0,,
+superword,org.apdplat.superword.model,Word,removeDefinition,3,1,1,67,0,,
+superword,org.apdplat.superword.model,Word,getPartOfSpeeches,3,1,0,71,0,,
+superword,org.apdplat.superword.model,Word,getFormatPartOfSpeeches,9,2,0,75,0,,
+superword,org.apdplat.superword.model,Word,addPartOfSpeech,3,1,1,85,0,,
+superword,org.apdplat.superword.model,Word,removePartOfSpeech,3,1,1,89,0,,
+superword,org.apdplat.superword.model,Word,toString,3,1,0,93,0,,
+superword,org.apdplat.superword.model,Word,compareTo,19,6,1,98,0,org.apdplat.superword.model.Word,org.apdplat.superword.model.Word
+superword,org.apdplat.superword.model,Word,equals,7,4,1,119,0,,
+superword,org.apdplat.superword.model,Word,hashCode,3,1,0,131,0,,
+superword,org.apdplat.superword.model,User,getId,3,1,0,36,0,,
+superword,org.apdplat.superword.model,User,setId,3,1,1,40,0,,
+superword,org.apdplat.superword.model,User,getUserName,3,1,0,44,0,,
+superword,org.apdplat.superword.model,User,setUserName,3,1,1,48,0,,
+superword,org.apdplat.superword.model,User,getPassword,3,1,0,52,0,,
+superword,org.apdplat.superword.model,User,setPassword,3,1,1,56,0,,
+superword,org.apdplat.superword.model,User,getDateTime,3,1,0,60,0,,
+superword,org.apdplat.superword.model,User,getDateTimeString,3,1,0,64,0,,
+superword,org.apdplat.superword.model,User,setDateTime,3,1,1,68,0,,
+superword,org.apdplat.superword.model,User,toString,3,1,0,72,0,,
+superword,org.apdplat.superword.model,UserBook,getBook,3,1,0,28,0,,
+superword,org.apdplat.superword.model,UserBook,setBook,3,1,1,32,0,,
+superword,org.apdplat.superword.model,UserBook,toString,3,1,0,36,0,,
+superword,org.apdplat.superword.model,ComplexPrefix,ComplexPrefix,4,1,2,36,0,,
+superword,org.apdplat.superword.model,ComplexPrefix,simplify,12,3,0,41,0,,
+superword,org.apdplat.superword.model,UserSimilarWord,getSimilarWord,3,1,0,28,0,,
+superword,org.apdplat.superword.model,UserSimilarWord,setSimilarWord,3,1,1,32,0,,
+superword,org.apdplat.superword.model,UserSimilarWord,toString,3,1,0,36,0,,
+superword,org.apdplat.superword.model,Quiz,Quiz,2,1,0,46,0,,
+superword,org.apdplat.superword.model,Quiz,getConsumedTime,3,1,0,48,0,org.apdplat.superword.tools.TimeUtils,org.apdplat.superword.tools.TimeUtils
+superword,org.apdplat.superword.model,Quiz,getRightCount,9,3,0,52,0,org.apdplat.superword.model.Quiz,org.apdplat.superword.model.Quiz; org.apdplat.superword.model.QuizItem
+superword,org.apdplat.superword.model,Quiz,getWrongCount,9,3,0,62,0,org.apdplat.superword.model.Quiz,org.apdplat.superword.model.Quiz; org.apdplat.superword.model.QuizItem
+superword,org.apdplat.superword.model,Quiz,getEvaluationCount,39,8,0,72,0,org.apdplat.superword.model.QuizItem,org.apdplat.superword.model.QuizItem
+superword,org.apdplat.superword.model,Quiz,getQuizItem,6,2,0,130,0,,
+superword,org.apdplat.superword.model,Quiz,step,3,1,0,137,0,,
+superword,org.apdplat.superword.model,Quiz,answer,10,3,2,141,0,org.apdplat.superword.model.QuizItem,org.apdplat.superword.model.QuizItem; org.apdplat.superword.model.Word
+superword,org.apdplat.superword.model,Quiz,buildQuiz,68,1,1,152,0,org.apdplat.superword.model.Quiz,org.apdplat.superword.model.Quiz; org.apdplat.superword.tools.WordSources
+superword,org.apdplat.superword.model,Quiz,build,27,6,5,233,0,org.apdplat.superword.model.QuizItem,org.apdplat.superword.model.QuizItem; org.apdplat.superword.model.Word
+superword,org.apdplat.superword.model,Quiz,size,3,1,0,260,0,,
+superword,org.apdplat.superword.model,Quiz,getQuizItems,3,1,0,264,0,,
+superword,org.apdplat.superword.model,Quiz,print,8,1,0,268,0,org.apdplat.superword.model.QuizItem,org.apdplat.superword.model.QuizItem; org.apdplat.superword.model.Quiz; org.apdplat.superword.model.Word
+superword,org.apdplat.superword.model,HistoryRecord,getDateTimeString,3,1,0,35,0,,
+superword,org.apdplat.superword.model,HistoryRecord,getDateTime,3,1,0,39,0,,
+superword,org.apdplat.superword.model,HistoryRecord,setDateTime,3,1,1,43,0,,
+superword,org.apdplat.superword.model,HistoryRecord,getId,3,1,0,47,0,,
+superword,org.apdplat.superword.model,HistoryRecord,setId,3,1,1,51,0,,
+superword,org.apdplat.superword.model,HistoryRecord,getUserName,3,1,0,55,0,,
+superword,org.apdplat.superword.model,HistoryRecord,setUserName,3,1,1,59,0,,
+superword,org.apdplat.superword.model,QuizItem,QuizItem,2,1,0,42,0,,
+superword,org.apdplat.superword.model,QuizItem,getWordLink,3,1,0,44,0,org.apdplat.superword.model.QuizItem,org.apdplat.superword.model.QuizItem; org.apdplat.superword.tools.WordLinker; org.apdplat.superword.model.Word
+superword,org.apdplat.superword.model,QuizItem,setLevel,3,1,1,48,0,,
+superword,org.apdplat.superword.model,QuizItem,getLevel,3,1,0,52,0,,
+superword,org.apdplat.superword.model,QuizItem,setAnswer,3,1,1,56,0,,
+superword,org.apdplat.superword.model,QuizItem,getAnswer,3,1,0,60,0,,
+superword,org.apdplat.superword.model,QuizItem,isRight,6,2,0,64,0,org.apdplat.superword.model.Word,org.apdplat.superword.model.Word
+superword,org.apdplat.superword.model,QuizItem,getDefinition,25,8,2,71,0,org.apdplat.superword.tools.MySQLUtils,org.apdplat.superword.tools.MySQLUtils
+superword,org.apdplat.superword.model,QuizItem,buildIdentifyHumanQuiz,11,3,1,98,0,org.apdplat.superword.model.QuizItem,org.apdplat.superword.model.QuizItem; org.apdplat.superword.model.Word
+superword,org.apdplat.superword.model,QuizItem,buildQuizItem,3,1,3,114,0,org.apdplat.superword.model.QuizItem,org.apdplat.superword.model.QuizItem
+superword,org.apdplat.superword.model,QuizItem,buildQuizItem,28,6,4,118,0,org.apdplat.superword.model.QuizItem,org.apdplat.superword.model.QuizItem; org.apdplat.superword.model.Word
+superword,org.apdplat.superword.model,QuizItem,getMeanings,6,1,0,148,0,org.apdplat.superword.model.Word,org.apdplat.superword.model.Word
+superword,org.apdplat.superword.model,QuizItem,print,5,1,0,155,0,org.apdplat.superword.model.Word,org.apdplat.superword.model.Word; org.apdplat.superword.model.QuizItem
+superword,org.apdplat.superword.model,QuizItem,getWord,3,1,0,161,0,,
+superword,org.apdplat.superword.model,QuizItem,equals,6,3,1,165,0,org.apdplat.superword.model.Word,org.apdplat.superword.model.Word
+superword,org.apdplat.superword.model,QuizItem,hashCode,3,1,0,176,0,org.apdplat.superword.model.Word,org.apdplat.superword.model.Word
+superword,org.apdplat.superword.model,QuizItem,compareTo,19,6,1,181,0,org.apdplat.superword.model.QuizItem,org.apdplat.superword.model.QuizItem; org.apdplat.superword.model.Word
+superword,org.apdplat.superword.model,QuizItem,main,4,1,1,201,0,org.apdplat.superword.model.QuizItem,org.apdplat.superword.model.QuizItem
+superword,org.apdplat.superword.model,ComplexSuffix,ComplexSuffix,4,1,2,36,0,,
+superword,org.apdplat.superword.model,ComplexSuffix,simplify,12,3,0,41,0,,
+superword,org.apdplat.superword.model,UserWord,getWord,3,1,0,28,0,,
+superword,org.apdplat.superword.model,UserWord,setWord,3,1,1,32,0,,
+superword,org.apdplat.superword.model,UserWord,toString,3,1,0,36,0,,
+superword,org.apdplat.superword.model,CharMap,CharMap,2,1,0,31,0,,
+superword,org.apdplat.superword.model,CharMap,CharMap,4,1,2,32,0,,
+superword,org.apdplat.superword.model,CharMap,getFrom,3,1,0,37,0,,
+superword,org.apdplat.superword.model,CharMap,setFrom,3,1,1,41,0,,
+superword,org.apdplat.superword.model,CharMap,getTo,3,1,0,45,0,,
+superword,org.apdplat.superword.model,CharMap,setTo,3,1,1,49,0,,
+superword,org.apdplat.superword.model,CharMap,equals,8,5,1,53,0,,
+superword,org.apdplat.superword.model,CharMap,hashCode,5,1,0,66,0,,
+superword,org.apdplat.superword.model,CharMap,compareTo,19,6,1,73,0,org.apdplat.superword.model.CharMap,org.apdplat.superword.model.CharMap
+superword,org.apdplat.superword.model,UserDynamicSuffix,getDynamicSuffix,3,1,0,28,0,,
+superword,org.apdplat.superword.model,UserDynamicSuffix,setDynamicSuffix,3,1,1,32,0,,
+superword,org.apdplat.superword.model,UserDynamicSuffix,toString,3,1,0,36,0,,
+superword,org.apdplat.superword.model,SynonymAntonym,size,3,1,0,34,0,,
+superword,org.apdplat.superword.model,SynonymAntonym,valid,3,1,0,38,0,,
+superword,org.apdplat.superword.model,SynonymAntonym,getWord,3,1,0,42,0,,
+superword,org.apdplat.superword.model,SynonymAntonym,setWord,3,1,1,46,0,,
+superword,org.apdplat.superword.model,SynonymAntonym,getSynonym,3,1,0,50,0,,
+superword,org.apdplat.superword.model,SynonymAntonym,addSynonym,3,1,1,54,0,,
+superword,org.apdplat.superword.model,SynonymAntonym,removeSynonym,3,1,1,58,0,,
+superword,org.apdplat.superword.model,SynonymAntonym,getAntonym,3,1,0,62,0,,
+superword,org.apdplat.superword.model,SynonymAntonym,addAntonym,3,1,1,66,0,,
+superword,org.apdplat.superword.model,SynonymAntonym,removeAntonym,3,1,1,70,0,,
+superword,org.apdplat.superword.model,SynonymAntonym,compareTo,19,6,1,74,0,org.apdplat.superword.model.Word,org.apdplat.superword.model.Word; org.apdplat.superword.model.SynonymAntonym
+superword,org.apdplat.superword.model,SynonymAntonym,equals,7,4,1,95,0,org.apdplat.superword.model.Word,org.apdplat.superword.model.Word
+superword,org.apdplat.superword.model,SynonymAntonym,hashCode,3,1,0,107,0,org.apdplat.superword.model.Word,org.apdplat.superword.model.Word
+superword,org.apdplat.superword.model,SynonymAntonym,toString,11,1,0,112,0,org.apdplat.superword.model.Word,org.apdplat.superword.model.Word
+superword,org.apdplat.superword.model,UserText,getText,3,1,0,28,0,,
+superword,org.apdplat.superword.model,UserText,setText,3,1,1,32,0,,
+superword,org.apdplat.superword.model,UserText,toString,3,1,0,36,0,,
+superword,org.apdplat.superword.model,Suffix,Suffix,2,1,0,31,0,,
+superword,org.apdplat.superword.model,Suffix,Suffix,4,1,2,32,0,,
+superword,org.apdplat.superword.model,Suffix,getDes,3,1,0,37,0,,
+superword,org.apdplat.superword.model,Suffix,setDes,3,1,1,41,0,,
+superword,org.apdplat.superword.model,Suffix,getSuffix,3,1,0,45,0,,
+superword,org.apdplat.superword.model,Suffix,setSuffix,3,1,1,49,0,,
+superword,org.apdplat.superword.model,Suffix,compareTo,19,6,1,53,0,org.apdplat.superword.model.Suffix,org.apdplat.superword.model.Suffix
+superword,org.apdplat.superword.model,Suffix,equals,7,4,1,74,0,,
+superword,org.apdplat.superword.model,Suffix,hashCode,3,1,0,86,0,,
+superword,org.apdplat.superword.model,UserUrl,getUrl,3,1,0,28,0,,
+superword,org.apdplat.superword.model,UserUrl,setUrl,3,1,1,32,0,,
+superword,org.apdplat.superword.model,UserUrl,toString,3,1,0,36,0,,
+superword,org.apdplat.superword.extract,SynonymAntonymExtractor,SynonymAntonymExtractor,2,1,0,48,0,,
+superword,org.apdplat.superword.extract,SynonymAntonymExtractor,parse,11,3,1,54,0,org.apdplat.superword.extract.SynonymAntonymExtractor,org.apdplat.superword.extract.SynonymAntonymExtractor
+superword,org.apdplat.superword.extract,SynonymAntonymExtractor,parseDir,17,1,1,65,0,org.apdplat.superword.extract.SynonymAntonymExtractor,org.apdplat.superword.extract.SynonymAntonymExtractor
+superword,org.apdplat.superword.extract,SynonymAntonymExtractor,visitFile,4,1,2,71,0,org.apdplat.superword.extract.SynonymAntonymExtractor,org.apdplat.superword.extract.SynonymAntonymExtractor
+superword,org.apdplat.superword.extract,SynonymAntonymExtractor,parseZip,23,2,1,84,0,org.apdplat.superword.extract.SynonymAntonymExtractor,org.apdplat.superword.extract.SynonymAntonymExtractor
+superword,org.apdplat.superword.extract,SynonymAntonymExtractor,visitFile,7,1,2,92,0,org.apdplat.superword.extract.SynonymAntonymExtractor,org.apdplat.superword.extract.SynonymAntonymExtractor
+superword,org.apdplat.superword.extract,SynonymAntonymExtractor,parseFile,25,4,1,110,0,org.apdplat.superword.extract.SynonymAntonymExtractor,org.apdplat.superword.extract.SynonymAntonymExtractor; org.apdplat.superword.model.SynonymAntonym
+superword,org.apdplat.superword.extract,SynonymAntonymExtractor,parseSynonymAntonym,0,6,2,139,0,org.apdplat.superword.model.SynonymAntonym,org.apdplat.superword.model.SynonymAntonym
+superword,org.apdplat.superword.extract,SynonymAntonymExtractor,inSyllabusVocabulary,4,1,1,172,0,org.apdplat.superword.model.SynonymAntonym,org.apdplat.superword.model.SynonymAntonym; org.apdplat.superword.tools.WordSources
+superword,org.apdplat.superword.extract,SynonymAntonymExtractor,notInSyllabusVocabulary,4,1,1,176,0,org.apdplat.superword.model.SynonymAntonym,org.apdplat.superword.model.SynonymAntonym; org.apdplat.superword.tools.WordSources
+superword,org.apdplat.superword.extract,SynonymAntonymExtractor,parseSynonymAntonym,12,1,0,180,0,org.apdplat.superword.extract.SynonymAntonymExtractor,org.apdplat.superword.extract.SynonymAntonymExtractor; org.apdplat.superword.tools.HtmlFormatter
+superword,org.apdplat.superword.extract,SynonymAntonymExtractor,parseAntonym,12,1,0,191,0,org.apdplat.superword.extract.SynonymAntonymExtractor,org.apdplat.superword.extract.SynonymAntonymExtractor; org.apdplat.superword.tools.HtmlFormatter
+superword,org.apdplat.superword.extract,SynonymAntonymExtractor,parseSynonymAntonym,9,1,1,203,0,org.apdplat.superword.extract.SynonymAntonymExtractor,org.apdplat.superword.extract.SynonymAntonymExtractor
+superword,org.apdplat.superword.extract,SynonymAntonymExtractor,main,3,1,1,212,0,org.apdplat.superword.extract.SynonymAntonymExtractor,org.apdplat.superword.extract.SynonymAntonymExtractor
+superword,org.apdplat.superword.extract,DefinitionExtractor,DefinitionExtractor,2,1,0,48,0,,
+superword,org.apdplat.superword.extract,DefinitionExtractor,parse,11,3,1,53,0,org.apdplat.superword.extract.DefinitionExtractor,org.apdplat.superword.extract.DefinitionExtractor
+superword,org.apdplat.superword.extract,DefinitionExtractor,parseDir,17,1,1,64,0,org.apdplat.superword.extract.DefinitionExtractor,org.apdplat.superword.extract.DefinitionExtractor
+superword,org.apdplat.superword.extract,DefinitionExtractor,visitFile,4,1,2,70,0,org.apdplat.superword.extract.DefinitionExtractor,org.apdplat.superword.extract.DefinitionExtractor
+superword,org.apdplat.superword.extract,DefinitionExtractor,parseZip,23,2,1,83,0,org.apdplat.superword.extract.DefinitionExtractor,org.apdplat.superword.extract.DefinitionExtractor
+superword,org.apdplat.superword.extract,DefinitionExtractor,visitFile,7,1,2,91,0,org.apdplat.superword.extract.DefinitionExtractor,org.apdplat.superword.extract.DefinitionExtractor
+superword,org.apdplat.superword.extract,DefinitionExtractor,parseFile,24,4,1,109,0,org.apdplat.superword.model.Word,org.apdplat.superword.model.Word; org.apdplat.superword.extract.DefinitionExtractor
+superword,org.apdplat.superword.extract,DefinitionExtractor,parseWord,17,3,2,137,0,org.apdplat.superword.model.Word,org.apdplat.superword.model.Word
+superword,org.apdplat.superword.extract,DefinitionExtractor,inSyllabusVocabulary,4,1,1,158,0,org.apdplat.superword.tools.WordSources,org.apdplat.superword.tools.WordSources
+superword,org.apdplat.superword.extract,DefinitionExtractor,notInSyllabusVocabulary,4,1,1,162,0,org.apdplat.superword.tools.WordSources,org.apdplat.superword.tools.WordSources
+superword,org.apdplat.superword.extract,DefinitionExtractor,parseWord,14,1,0,166,0,org.apdplat.superword.extract.DefinitionExtractor,org.apdplat.superword.extract.DefinitionExtractor; org.apdplat.superword.tools.HtmlFormatter
+superword,org.apdplat.superword.extract,DefinitionExtractor,compensate,12,2,1,181,0,org.apdplat.superword.model.Word,org.apdplat.superword.model.Word; org.apdplat.superword.tools.WordSources; org.apdplat.superword.extract.DefinitionExtractor
+superword,org.apdplat.superword.extract,DefinitionExtractor,parseWord,9,1,1,193,0,org.apdplat.superword.extract.DefinitionExtractor,org.apdplat.superword.extract.DefinitionExtractor
+superword,org.apdplat.superword.extract,DefinitionExtractor,main,3,1,1,202,0,org.apdplat.superword.extract.DefinitionExtractor,org.apdplat.superword.extract.DefinitionExtractor
+superword,org.apdplat.superword.extract,PartOfSpeechExtractor,PartOfSpeechExtractor,2,1,0,52,0,,
+superword,org.apdplat.superword.extract,PartOfSpeechExtractor,parse,11,3,1,57,0,org.apdplat.superword.extract.PartOfSpeechExtractor,org.apdplat.superword.extract.PartOfSpeechExtractor
+superword,org.apdplat.superword.extract,PartOfSpeechExtractor,parseDir,17,1,1,68,0,org.apdplat.superword.extract.PartOfSpeechExtractor,org.apdplat.superword.extract.PartOfSpeechExtractor
+superword,org.apdplat.superword.extract,PartOfSpeechExtractor,visitFile,4,1,2,74,0,org.apdplat.superword.extract.PartOfSpeechExtractor,org.apdplat.superword.extract.PartOfSpeechExtractor
+superword,org.apdplat.superword.extract,PartOfSpeechExtractor,parseZip,23,2,1,87,0,org.apdplat.superword.extract.PartOfSpeechExtractor,org.apdplat.superword.extract.PartOfSpeechExtractor
+superword,org.apdplat.superword.extract,PartOfSpeechExtractor,visitFile,7,1,2,95,0,org.apdplat.superword.extract.PartOfSpeechExtractor,org.apdplat.superword.extract.PartOfSpeechExtractor
+superword,org.apdplat.superword.extract,PartOfSpeechExtractor,parseFile,24,4,1,113,0,org.apdplat.superword.model.Word,org.apdplat.superword.model.Word; org.apdplat.superword.extract.PartOfSpeechExtractor
+superword,org.apdplat.superword.extract,PartOfSpeechExtractor,parseWord,40,9,2,141,0,org.apdplat.superword.model.Word,org.apdplat.superword.model.Word
+superword,org.apdplat.superword.extract,PartOfSpeechExtractor,inSyllabusVocabulary,4,1,1,197,0,org.apdplat.superword.tools.WordSources,org.apdplat.superword.tools.WordSources
+superword,org.apdplat.superword.extract,PartOfSpeechExtractor,notInSyllabusVocabulary,4,1,1,201,0,org.apdplat.superword.tools.WordSources,org.apdplat.superword.tools.WordSources
+superword,org.apdplat.superword.extract,PartOfSpeechExtractor,parseWord,18,1,0,205,0,org.apdplat.superword.extract.PartOfSpeechExtractor,org.apdplat.superword.extract.PartOfSpeechExtractor; org.apdplat.superword.tools.HtmlFormatter
+superword,org.apdplat.superword.extract,PartOfSpeechExtractor,group,12,1,1,224,0,org.apdplat.superword.model.Word,org.apdplat.superword.model.Word
+superword,org.apdplat.superword.extract,PartOfSpeechExtractor,formatPartOfSpeech,7,1,1,235,0,org.apdplat.superword.model.Word,org.apdplat.superword.model.Word; org.apdplat.superword.extract.PartOfSpeechExtractor
+superword,org.apdplat.superword.extract,PartOfSpeechExtractor,formatPartOfSpeechType,11,1,1,250,0,org.apdplat.superword.model.Word,org.apdplat.superword.model.Word; org.apdplat.superword.rule.PartOfSpeech
+superword,org.apdplat.superword.extract,PartOfSpeechExtractor,compensate,12,2,1,261,0,org.apdplat.superword.model.Word,org.apdplat.superword.model.Word; org.apdplat.superword.tools.WordSources; org.apdplat.superword.extract.PartOfSpeechExtractor
+superword,org.apdplat.superword.extract,PartOfSpeechExtractor,parseWord,9,1,1,273,0,org.apdplat.superword.extract.PartOfSpeechExtractor,org.apdplat.superword.extract.PartOfSpeechExtractor
+superword,org.apdplat.superword.extract,PartOfSpeechExtractor,main,3,1,1,282,0,org.apdplat.superword.extract.PartOfSpeechExtractor,org.apdplat.superword.extract.PartOfSpeechExtractor
+superword,org.apdplat.superword.extract,SuffixExtractor,extract,9,1,0,40,0,,
+superword,org.apdplat.superword.extract,SuffixExtractor,extractSuffix,13,3,1,55,0,,
+superword,org.apdplat.superword.extract,SuffixExtractor,main,3,1,1,68,0,org.apdplat.superword.extract.SuffixExtractor,org.apdplat.superword.extract.SuffixExtractor; org.apdplat.superword.model.Suffix
+superword,org.apdplat.superword.extract,RootAffixExtractor,RootAffixExtractor,2,1,0,41,0,,
+superword,org.apdplat.superword.extract,RootAffixExtractor,parse,11,3,1,49,0,org.apdplat.superword.extract.RootAffixExtractor,org.apdplat.superword.extract.RootAffixExtractor
+superword,org.apdplat.superword.extract,RootAffixExtractor,parseDir,21,2,1,60,0,org.apdplat.superword.extract.RootAffixExtractor,org.apdplat.superword.extract.RootAffixExtractor
+superword,org.apdplat.superword.extract,RootAffixExtractor,visitFile,8,2,2,66,0,org.apdplat.superword.extract.RootAffixExtractor,org.apdplat.superword.extract.RootAffixExtractor
+superword,org.apdplat.superword.extract,RootAffixExtractor,parseZip,27,3,1,83,0,org.apdplat.superword.extract.RootAffixExtractor,org.apdplat.superword.extract.RootAffixExtractor
+superword,org.apdplat.superword.extract,RootAffixExtractor,visitFile,11,2,2,91,0,org.apdplat.superword.extract.RootAffixExtractor,org.apdplat.superword.extract.RootAffixExtractor
+superword,org.apdplat.superword.extract,RootAffixExtractor,parseFile,28,4,1,113,0,org.apdplat.superword.extract.RootAffixExtractor,org.apdplat.superword.extract.RootAffixExtractor
+superword,org.apdplat.superword.extract,RootAffixExtractor,parseRootAffix,25,4,1,145,0,,
+superword,org.apdplat.superword.extract,RootAffixExtractor,parseRootAffixes,32,4,0,175,0,org.apdplat.superword.tools.HtmlFormatter,org.apdplat.superword.tools.HtmlFormatter; org.apdplat.superword.model.Word; org.apdplat.superword.extract.RootAffixExtractor
+superword,org.apdplat.superword.extract,RootAffixExtractor,main,3,1,1,209,0,org.apdplat.superword.extract.RootAffixExtractor,org.apdplat.superword.extract.RootAffixExtractor
+superword,org.apdplat.superword.extract,PhraseExtractor,PhraseExtractor,2,1,0,47,0,,
+superword,org.apdplat.superword.extract,PhraseExtractor,parse,11,3,1,52,0,org.apdplat.superword.extract.PhraseExtractor,org.apdplat.superword.extract.PhraseExtractor
+superword,org.apdplat.superword.extract,PhraseExtractor,parseDir,17,1,1,63,0,org.apdplat.superword.extract.PhraseExtractor,org.apdplat.superword.extract.PhraseExtractor
+superword,org.apdplat.superword.extract,PhraseExtractor,visitFile,4,1,2,69,0,org.apdplat.superword.extract.PhraseExtractor,org.apdplat.superword.extract.PhraseExtractor
+superword,org.apdplat.superword.extract,PhraseExtractor,parseZip,23,2,1,82,0,org.apdplat.superword.extract.PhraseExtractor,org.apdplat.superword.extract.PhraseExtractor
+superword,org.apdplat.superword.extract,PhraseExtractor,visitFile,7,1,2,90,0,org.apdplat.superword.extract.PhraseExtractor,org.apdplat.superword.extract.PhraseExtractor
+superword,org.apdplat.superword.extract,PhraseExtractor,parseFile,22,3,1,108,0,org.apdplat.superword.extract.PhraseExtractor,org.apdplat.superword.extract.PhraseExtractor
+superword,org.apdplat.superword.extract,PhraseExtractor,parsePhrase,38,9,2,134,0,,
+superword,org.apdplat.superword.extract,PhraseExtractor,parsePhrase,11,1,0,177,0,org.apdplat.superword.tools.WordLinker,org.apdplat.superword.tools.WordLinker; org.apdplat.superword.extract.PhraseExtractor
+superword,org.apdplat.superword.extract,PhraseExtractor,parsePhrase,9,1,1,192,0,org.apdplat.superword.extract.PhraseExtractor,org.apdplat.superword.extract.PhraseExtractor
+superword,org.apdplat.superword.extract,PhraseExtractor,main,3,1,1,201,0,org.apdplat.superword.extract.PhraseExtractor,org.apdplat.superword.extract.PhraseExtractor
+superword,org.apdplat.superword.extract,SynonymDiscriminationExtractor,SynonymDiscriminationExtractor,2,1,0,44,0,,
+superword,org.apdplat.superword.extract,SynonymDiscriminationExtractor,parse,11,3,1,51,0,org.apdplat.superword.extract.SynonymDiscriminationExtractor,org.apdplat.superword.extract.SynonymDiscriminationExtractor
+superword,org.apdplat.superword.extract,SynonymDiscriminationExtractor,parseDir,17,1,1,62,0,org.apdplat.superword.extract.SynonymDiscriminationExtractor,org.apdplat.superword.extract.SynonymDiscriminationExtractor
+superword,org.apdplat.superword.extract,SynonymDiscriminationExtractor,visitFile,4,1,2,68,0,org.apdplat.superword.extract.SynonymDiscriminationExtractor,org.apdplat.superword.extract.SynonymDiscriminationExtractor
+superword,org.apdplat.superword.extract,SynonymDiscriminationExtractor,parseZip,23,2,1,81,0,org.apdplat.superword.extract.SynonymDiscriminationExtractor,org.apdplat.superword.extract.SynonymDiscriminationExtractor
+superword,org.apdplat.superword.extract,SynonymDiscriminationExtractor,visitFile,7,1,2,89,0,org.apdplat.superword.extract.SynonymDiscriminationExtractor,org.apdplat.superword.extract.SynonymDiscriminationExtractor
+superword,org.apdplat.superword.extract,SynonymDiscriminationExtractor,parseFile,22,3,1,107,0,org.apdplat.superword.extract.SynonymDiscriminationExtractor,org.apdplat.superword.extract.SynonymDiscriminationExtractor
+superword,org.apdplat.superword.extract,SynonymDiscriminationExtractor,parseSynonymDiscrimination,34,5,1,133,0,org.apdplat.superword.model.SynonymDiscrimination,org.apdplat.superword.model.SynonymDiscrimination
+superword,org.apdplat.superword.extract,SynonymDiscriminationExtractor,parseSynonymDiscrimination,10,1,0,170,0,org.apdplat.superword.extract.SynonymDiscriminationExtractor,org.apdplat.superword.extract.SynonymDiscriminationExtractor; org.apdplat.superword.tools.HtmlFormatter
+superword,org.apdplat.superword.extract,SynonymDiscriminationExtractor,main,3,1,1,180,0,org.apdplat.superword.extract.SynonymDiscriminationExtractor,org.apdplat.superword.extract.SynonymDiscriminationExtractor
+superword,org.apdplat.superword.extract,PrefixExtractor,extract,9,1,0,40,0,,
+superword,org.apdplat.superword.extract,PrefixExtractor,extractPrefix,13,3,1,55,0,,
+superword,org.apdplat.superword.extract,PrefixExtractor,main,3,1,1,69,0,org.apdplat.superword.model.Prefix,org.apdplat.superword.model.Prefix; org.apdplat.superword.extract.PrefixExtractor
+superword,org.apdplat.superword.extract,SentenceExtractor,SentenceExtractor,2,1,0,53,0,,
+superword,org.apdplat.superword.extract,SentenceExtractor,extract,26,5,1,74,0,org.apdplat.superword.extract.SentenceExtractor,org.apdplat.superword.extract.SentenceExtractor; org.apdplat.superword.tools.DynamicIp
+superword,org.apdplat.superword.extract,SentenceExtractor,extract2,28,5,1,104,0,org.apdplat.superword.extract.SentenceExtractor,org.apdplat.superword.extract.SentenceExtractor; org.apdplat.superword.tools.ProxyIp
+superword,org.apdplat.superword.extract,SentenceExtractor,getContent2,13,1,1,135,0,,
+superword,org.apdplat.superword.extract,SentenceExtractor,parse,36,6,1,148,0,org.apdplat.superword.tools.TextAnalyzer,org.apdplat.superword.tools.TextAnalyzer
+superword,org.apdplat.superword.extract,SentenceExtractor,parse2,34,5,1,184,0,org.apdplat.superword.tools.TextAnalyzer,org.apdplat.superword.tools.TextAnalyzer
+superword,org.apdplat.superword.extract,SentenceExtractor,getContent,16,1,1,218,0,,
+superword,org.apdplat.superword.extract,SentenceExtractor,main,14,1,1,242,0,org.apdplat.superword.extract.SentenceExtractor,org.apdplat.superword.extract.SentenceExtractor; org.apdplat.superword.tools.HtmlFormatter
+superword,org.apdplat.superword.extract,HyphenExtractor,HyphenExtractor,2,1,0,46,0,,
+superword,org.apdplat.superword.extract,HyphenExtractor,parse,11,3,1,59,0,org.apdplat.superword.extract.HyphenExtractor,org.apdplat.superword.extract.HyphenExtractor
+superword,org.apdplat.superword.extract,HyphenExtractor,parseDir,22,1,1,70,0,org.apdplat.superword.extract.HyphenExtractor,org.apdplat.superword.extract.HyphenExtractor
+superword,org.apdplat.superword.extract,HyphenExtractor,visitFile,9,1,2,76,0,org.apdplat.superword.extract.HyphenExtractor,org.apdplat.superword.extract.HyphenExtractor
+superword,org.apdplat.superword.extract,HyphenExtractor,parseZip,28,2,1,93,0,org.apdplat.superword.extract.HyphenExtractor,org.apdplat.superword.extract.HyphenExtractor
+superword,org.apdplat.superword.extract,HyphenExtractor,visitFile,12,1,2,101,0,org.apdplat.superword.extract.HyphenExtractor,org.apdplat.superword.extract.HyphenExtractor
+superword,org.apdplat.superword.extract,HyphenExtractor,parseFile,25,5,1,123,0,org.apdplat.superword.tools.WordSources,org.apdplat.superword.tools.WordSources
+superword,org.apdplat.superword.extract,HyphenExtractor,parseWord,17,3,2,156,0,org.apdplat.superword.model.Word,org.apdplat.superword.model.Word
+superword,org.apdplat.superword.extract,HyphenExtractor,getContent,14,1,1,179,0,,
+superword,org.apdplat.superword.extract,HyphenExtractor,verify,22,5,1,201,0,org.apdplat.superword.model.Word,org.apdplat.superword.model.Word; org.apdplat.superword.extract.HyphenExtractor; org.apdplat.superword.tools.DynamicIp
+superword,org.apdplat.superword.extract,HyphenExtractor,extract,36,2,4,227,0,org.apdplat.superword.extract.HyphenExtractor,org.apdplat.superword.extract.HyphenExtractor; org.apdplat.superword.tools.WordLinker
+superword,org.apdplat.superword.extract,HyphenExtractor,main,3,1,1,275,0,org.apdplat.superword.extract.HyphenExtractor,org.apdplat.superword.extract.HyphenExtractor
+superword,org.apdplat.superword.extract,ChineseSynonymAntonymExtractor,ChineseSynonymAntonymExtractor,2,1,0,55,0,,
+superword,org.apdplat.superword.extract,ChineseSynonymAntonymExtractor,parseSynonymAntonym,56,13,2,83,0,org.apdplat.superword.model.SynonymAntonym,org.apdplat.superword.model.SynonymAntonym; org.apdplat.superword.extract.ChineseSynonymAntonymExtractor
+superword,org.apdplat.superword.extract,ChineseSynonymAntonymExtractor,parseSynonymAntonym,76,10,1,139,0,org.apdplat.superword.model.SynonymAntonym,org.apdplat.superword.model.SynonymAntonym; org.apdplat.superword.tools.ProxyIp; org.apdplat.superword.extract.ChineseSynonymAntonymExtractor; org.apdplat.superword.model.Word
+superword,org.apdplat.superword.extract,ChineseSynonymAntonymExtractor,save,45,3,0,213,0,org.apdplat.superword.model.Word,org.apdplat.superword.model.Word
+superword,org.apdplat.superword.extract,ChineseSynonymAntonymExtractor,getContent,19,3,1,258,0,org.apdplat.superword.extract.ChineseSynonymAntonymExtractor,org.apdplat.superword.extract.ChineseSynonymAntonymExtractor
+superword,org.apdplat.superword.extract,ChineseSynonymAntonymExtractor,isNotChineseChar,9,2,1,287,0,,
+superword,org.apdplat.superword.extract,ChineseSynonymAntonymExtractor,parseSynonymAntonym,9,1,1,296,0,org.apdplat.superword.extract.ChineseSynonymAntonymExtractor,org.apdplat.superword.extract.ChineseSynonymAntonymExtractor
+superword,org.apdplat.superword.extract,ChineseSynonymAntonymExtractor,getRandomIp,18,4,0,304,0,,
+superword,org.apdplat.superword.extract,ChineseSynonymAntonymExtractor,filterSameRecord,23,2,1,326,0,,
+superword,org.apdplat.superword.extract,ChineseSynonymAntonymExtractor,main,3,1,1,355,0,org.apdplat.superword.extract.ChineseSynonymAntonymExtractor,org.apdplat.superword.extract.ChineseSynonymAntonymExtractor
