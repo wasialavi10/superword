@@ -44,7 +44,7 @@ public class SynonymDiscriminationExtractor {
     private SynonymDiscriminationExtractor(){}
 
     private static final Logger LOGGER = LoggerFactory.getLogger(SynonymDiscriminationExtractor.class);
-    private static final String SYNONYM_DISCRIMINATION_CSS_PATH = "html body.bg_main div#layout div#center div#main_box div#dict_main div.simple div#dict_content_5.dict_content.more_data dl.def_list dd";
+    private static final String SD_CSS_PATH = "html body.bg_main div#layout div#center div#main_box div#dict_main div.simple div#dict_content_5.dict_content.more_data dl.def_list dd";
     private static final String TITLE = "h4";
     private static final String DES = "div";
     private static final String WORDS = "div ul li";
@@ -138,7 +138,7 @@ public class SynonymDiscriminationExtractor {
     public static Set<SynonymDiscrimination> parseSynonymDiscrimination(String html){
         Set<SynonymDiscrimination> data = new HashSet<>();
         try {
-            for(Element element : Jsoup.parse(html).select(SYNONYM_DISCRIMINATION_CSS_PATH)){
+            for(Element element : Jsoup.parse(html).select(SD_CSS_PATH)){
                 String title = element.select(TITLE).text().trim();
                 Elements elements = element.select(DES);
                 if(elements.size() != 2){
