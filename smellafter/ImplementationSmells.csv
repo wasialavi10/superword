@@ -1,0 +1,911 @@
+Project Name,Package Name,Type Name,Method Name,Implementation Smell,Cause of the Smell,Method start line no
+superword,org.apdplat.superword.rule,WordVectorTest,testOf,Magic Number,The method contains a magic number: 12,32
+superword,org.apdplat.superword.rule,WordVectorTest,testOf,Magic Number,The method contains a magic number: 12,32
+superword,org.apdplat.superword.rule,WordVectorTest,testOf,Magic Number,The method contains a magic number: 3,32
+superword,org.apdplat.superword.rule,WordVectorTest,testOf,Magic Number,The method contains a magic number: 3,32
+superword,org.apdplat.superword.rule,CompoundWordTest,testFind,Magic Number,The method contains a magic number: 2,41
+superword,org.apdplat.superword.rule,CompoundWordTest,testFind,Magic Number,The method contains a magic number: 4,41
+superword,org.apdplat.superword.rule,CompoundWordTest,testFind,Magic Number,The method contains a magic number: 5,41
+superword,org.apdplat.superword.rule,SimilarWord,interact,Complex Method,Cyclomatic complexity of the method is 10,108
+superword,org.apdplat.superword.rule,SimilarWord,interact,Magic Number,The method contains a magic number: 3,108
+superword,org.apdplat.superword.rule,SimilarWord,getTimeDes,Magic Number,The method contains a magic number: 1000,162
+superword,org.apdplat.superword.rule,SimilarWord,getTimeDes,Magic Number,The method contains a magic number: 60,162
+superword,org.apdplat.superword.rule,SimilarWord,getTimeDes,Magic Number,The method contains a magic number: 60,162
+superword,org.apdplat.superword.rule,SimilarWord,getTimeDes,Magic Number,The method contains a magic number: 24,162
+superword,org.apdplat.superword.rule,SimilarWord,main,Long Statement,"The length of the statement ""List<String> words=WordSources.getSyllabusVocabulary().parallelStream().map(word -> word.getWord()).collect(Collectors.toList());"" is 129.",207
+superword,org.apdplat.superword.rule,IndependentWordRule,getIndependentWord,Long Statement,"The length of the statement ""return WordSources.minus(words`rs).stream().map(word -> WordLinker.toLink(word.getWord()`dictionary)).sorted().collect(Collectors.toList());"" is 140.",49
+superword,org.apdplat.superword.rule,IndependentWordRule,main,Magic Number,The method contains a magic number: 5,70
+superword,org.apdplat.superword.rule,DependenceWordRule,main,Magic Number,The method contains a magic number: 5,92
+superword,org.apdplat.superword.rule,DependenceWordRule,main,Magic Number,The method contains a magic number: 640,92
+superword,org.apdplat.superword.rule,CharTransformRule,toHtmlFragmentForWord,Long Statement,"The length of the statement ""result.append(""\t"").append(j.incrementAndGet()).append("". "").append(charMap.getFrom()).append("" - "").append(charMap.getTo()).append(""\n"");"" is 138.",129
+superword,org.apdplat.superword.rule,CharTransformRule,toHtmlFragmentForWord,Long Statement,"The length of the statement ""result.append(""\t\t"").append(""<li>"").append(WordLinker.toLink(word.getWord()`from)).append("" -> "").append(WordLinker.toLink(word.getWord().replaceAll(from`to)`to)).append(""</li>\n"");"" is 182.",129
+superword,org.apdplat.superword.rule,CharTransformRule,transform,Long Statement,"The length of the statement ""List<Word> list=words.parallelStream().filter(word -> word.getWord().contains(from) && words.contains(new Word(word.getWord().replaceAll(from`to)`null))).sorted().collect(Collectors.toList());"" is 192.",205
+superword,org.apdplat.superword.rule,CharTransformRule,toHtmlFragmentForRule,Long Statement,"The length of the statement ""html.append(""<h2>"").append(i.incrementAndGet()).append(""、"").append(from).append("" - "").append(to).append("" rule total number: "").append(list.size()).append(""</h2></br>\n"");"" is 172.",229
+superword,org.apdplat.superword.rule,CharTransformRule,toHtmlFragmentForRule,Long Statement,"The length of the statement ""list.stream().forEach(word -> html.append(""\t"").append(j.incrementAndGet()).append(""、"").append(WordLinker.toLink(word.getWord())).append("" -> "").append(WordLinker.toLink(word.getWord().replaceAll(from`to))).append(""</br>\n""));"" is 226.",229
+superword,org.apdplat.superword.rule,WordVector,of,Magic Number,The method contains a magic number: 25,39
+superword,org.apdplat.superword.rule,WordVector,of,Magic Number,The method contains a magic number: 5,39
+superword,org.apdplat.superword.rule,WordVector,score,Complex Method,Cyclomatic complexity of the method is 9,67
+superword,org.apdplat.superword.rule,WordVector,score,Magic Number,The method contains a magic number: 26,67
+superword,org.apdplat.superword.rule,WordVector,score,Magic Number,The method contains a magic number: 26,67
+superword,org.apdplat.superword.rule,WordVector,score,Magic Number,The method contains a magic number: 2,67
+superword,org.apdplat.superword.rule,PrefixRule,getAllPrefixes,Complex Conditional,"The conditional expression StringUtils.isNotBlank(line) && !line.startsWith(""#"") && line.startsWith(""前缀："") is complex.",47
+superword,org.apdplat.superword.rule,PrefixRule,getAllPrefixes,Long Statement,"The length of the statement ""try (BufferedReader bufferedReader=new BufferedReader(new InputStreamReader(PrefixRule.class.getResourceAsStream(""/root_affix.txt"")))){"" is 135.",47
+superword,org.apdplat.superword.rule,PrefixRule,getAllPrefixes,Magic Number,The method contains a magic number: 3,47
+superword,org.apdplat.superword.rule,PrefixRule,getAllPrefixes,Magic Number,The method contains a magic number: 2,47
+superword,org.apdplat.superword.rule,PrefixRule,findByPrefix,Complex Conditional,"The conditional expression w.startsWith(p) && w.length() - p.length() > 2 && words.contains(new Word(w.substring(p.length())`"""")) is complex.",86
+superword,org.apdplat.superword.rule,PrefixRule,findByPrefix,Magic Number,The method contains a magic number: 2,86
+superword,org.apdplat.superword.rule,PrefixRule,main,Magic Number,The method contains a magic number: 6,118
+superword,org.apdplat.superword.rule,SuffixRule,getAllSuffixes,Complex Conditional,"The conditional expression StringUtils.isNotBlank(line) && !line.startsWith(""#"") && line.startsWith(""后缀："") is complex.",47
+superword,org.apdplat.superword.rule,SuffixRule,getAllSuffixes,Long Statement,"The length of the statement ""try (BufferedReader bufferedReader=new BufferedReader(new InputStreamReader(PrefixRule.class.getResourceAsStream(""/root_affix.txt"")))){"" is 135.",47
+superword,org.apdplat.superword.rule,SuffixRule,getAllSuffixes,Magic Number,The method contains a magic number: 3,47
+superword,org.apdplat.superword.rule,SuffixRule,getAllSuffixes,Magic Number,The method contains a magic number: 2,47
+superword,org.apdplat.superword.rule,SuffixRule,findBySuffix,Complex Conditional,"The conditional expression w.endsWith(s) && w.length() - s.length() > 2 && words.contains(new Word(w.substring(0`w.length() - s.length())`"""")) is complex.",86
+superword,org.apdplat.superword.rule,SuffixRule,findBySuffix,Long Statement,"The length of the statement ""if (w.endsWith(s) && w.length() - s.length() > 2 && words.contains(new Word(w.substring(0`w.length() - s.length())`""""))) {"" is 122.",86
+superword,org.apdplat.superword.rule,SuffixRule,findBySuffix,Magic Number,The method contains a magic number: 2,86
+superword,org.apdplat.superword.rule,SuffixRule,main,Magic Number,The method contains a magic number: 6,118
+superword,org.apdplat.superword.rule,RootAffixRule,main,Magic Number,The method contains a magic number: 5,77
+superword,org.apdplat.superword.rule,RootAffixRule,main,Magic Number,The method contains a magic number: 640,77
+superword,org.apdplat.superword.rule,RootRule,getAllRoots,Complex Conditional,"The conditional expression StringUtils.isNotBlank(line) && !line.startsWith(""#"") && line.startsWith(""词根："") is complex.",45
+superword,org.apdplat.superword.rule,RootRule,getAllRoots,Long Statement,"The length of the statement ""try (BufferedReader bufferedReader=new BufferedReader(new InputStreamReader(PrefixRule.class.getResourceAsStream(""/root_affix.txt"")))){"" is 135.",45
+superword,org.apdplat.superword.rule,RootRule,getAllRoots,Magic Number,The method contains a magic number: 3,45
+superword,org.apdplat.superword.rule,RootRule,getAllRoots,Magic Number,The method contains a magic number: 2,45
+superword,org.apdplat.superword.rule,DynamicPrefixRule,findByPrefix,Magic Number,The method contains a magic number: 2,48
+superword,org.apdplat.superword.rule,SimilarityRule,similarity,Long Statement,"The length of the statement ""List<Score> scores=words.parallelStream().map(word -> targetWordVecotr.score(WordVector.of(word.getWord())`true)).filter(item -> item.getScore() > 5).sorted().collect(Collectors.toList());"" is 188.",47
+superword,org.apdplat.superword.rule,SimilarityRule,similarity,Long Statement,"The length of the statement ""scores.forEach(score -> System.out.println(""\t"" + i.incrementAndGet() + ""、""+ score.getWord()+ "" ""+ score.getScore()+ "" ""+ score.getExplain()));"" is 143.",47
+superword,org.apdplat.superword.rule,SimilarityRule,similarity,Magic Number,The method contains a magic number: 5,47
+superword,org.apdplat.superword.rule,WordLengthStatistics,toHtmlFragment,Long Statement,"The length of the statement ""data.get(length).stream().sorted().forEach(word -> html.append(""\t"").append(i.incrementAndGet()).append(""、"").append(WordLinker.toLink(word.getWord())).append(""</br>\n""));"" is 170.",51
+superword,org.apdplat.superword.rule,DefinitionSimilarRule,run,Magic Number,The method contains a magic number: 2,59
+superword,org.apdplat.superword.rule,DynamicSuffixRule,findBySuffix,Magic Number,The method contains a magic number: 2,49
+superword,org.apdplat.superword.rule,CompoundWord,check,Magic Number,The method contains a magic number: 3,65
+superword,org.apdplat.superword.rule,CompoundWord,check,Magic Number,The method contains a magic number: 3,65
+superword,org.apdplat.superword.rule,CompoundWord,main,Magic Number,The method contains a magic number: 5,80
+superword,org.apdplat.superword.tools,FootNSentence,main,Magic Number,The method contains a magic number: 100,34
+superword,org.apdplat.superword.tools,PrefixSuffixOptimizer,replace,Long Statement,"The length of the statement ""newText.append(""<strong><a target=\""_blank\"" href=\""http://www.iciba.com/"").append(item).append(""\"">"").append(item).append(""</a></strong>"").append(""` "");"" is 153.",64
+superword,org.apdplat.superword.tools,PrefixSuffixOptimizer,replace,Long Statement,"The length of the statement ""newText.append(""<a target=\""_blank\"" href=\""http://www.iciba.com/"").append(item).append(""\"">"").append(item).append(""</a>"").append(""` "");"" is 136.",64
+superword,org.apdplat.superword.tools,PrefixSuffixOptimizer,replace,Magic Number,The method contains a magic number: 2,64
+superword,org.apdplat.superword.tools,PrefixSuffixOptimizer,replace,Magic Number,The method contains a magic number: 2,64
+superword,org.apdplat.superword.tools,Definition,getDefinition,Complex Method,Cyclomatic complexity of the method is 12,80
+superword,org.apdplat.superword.tools,Definition,parseDefinitionFromHtml,Complex Method,Cyclomatic complexity of the method is 9,144
+superword,org.apdplat.superword.tools,Definition,parseDefinitionForWebster,Long Statement,"The length of the statement ""for ( Element element : Jsoup.parse(html).select(""div.tense-box.quick-def-box.simple-def-box.card-box.def-text div.inner-box-wrapper"")) {"" is 137.",178
+superword,org.apdplat.superword.tools,Definition,parseDefinitionForWebster,Long Statement,"The length of the statement ""for ( Element defElement : element.select(""div.definition-block.def-text ul.definition-list.no-count li p.definition-inner-item span"")) {"" is 137.",178
+superword,org.apdplat.superword.tools,Definition,parseDefinitionForWebster,Magic Number,The method contains a magic number: 3,178
+superword,org.apdplat.superword.tools,Definition,getContent,Magic Number,The method contains a magic number: 1000,238
+superword,org.apdplat.superword.tools,Definition,getContent,Magic Number,The method contains a magic number: 2,238
+superword,org.apdplat.superword.tools,Definition,_getContent,Long Statement,"The length of the statement ""Connection conn=Jsoup.connect(url).header(""Accept""`ACCEPT).header(""Accept-Encoding""`ENCODING).header(""Accept-Language""`LANGUAGE).header(""Connection""`CONNECTION).header(""Referer""`REFERER).header(""Host""`HOST).header(""User-Agent""`USER_AGENT).timeout(1000).ignoreContentType(true);"" is 277.",265
+superword,org.apdplat.superword.tools,Definition,_getContent,Magic Number,The method contains a magic number: 1000,265
+superword,org.apdplat.superword.tools,WordLinker,getLinkPrefix,Complex Method,Cyclomatic complexity of the method is 12,74
+superword,org.apdplat.superword.tools,WordLinker,getValidDictionary,Empty catch clause,The method has an empty catch block.,91
+superword,org.apdplat.superword.tools,WordLinker,toLink,Complex Method,Cyclomatic complexity of the method is 13,129
+superword,org.apdplat.superword.tools,WordLinker,toLink,Long Parameter List,The method has 5 parameters. ,129
+superword,org.apdplat.superword.tools,WordLinker,linkTo,Long Parameter List,The method has 6 parameters. ,183
+superword,org.apdplat.superword.tools,WordClassifierForWebster,download,Magic Number,The method contains a magic number: 100,64
+superword,org.apdplat.superword.tools,WordClassifierForWebster,download,Magic Number,The method contains a magic number: 99,64
+superword,org.apdplat.superword.tools,WordClassifierForWebster,parseFile,Long Statement,"The length of the statement ""try (BufferedReader reader=new BufferedReader(new InputStreamReader(new BufferedInputStream(new FileInputStream(file))))){"" is 122.",141
+superword,org.apdplat.superword.tools,WordClassifierForWebster,parseHtml,Magic Number,The method contains a magic number: 2,155
+superword,org.apdplat.superword.tools,WordClassifierForWebster,showStatus,Magic Number,The method contains a magic number: 100,167
+superword,org.apdplat.superword.tools,WordClassifierForWebster,save,Long Statement,"The length of the statement ""List<String> list=NOT_FOUND_WORDS.stream().sorted().map(word -> i.incrementAndGet() + ""\t"" + word).collect(Collectors.toList());"" is 128.",171
+superword,org.apdplat.superword.tools,WordClassifierForWebster,getContent,Long Statement,"The length of the statement ""Connection conn=Jsoup.connect(url).header(""Accept""`ACCEPT).header(""Accept-Encoding""`ENCODING).header(""Accept-Language""`LANGUAGE).header(""Connection""`CONNECTION).header(""Referer""`REFERER).header(""Host""`HOST).header(""User-Agent""`USER_AGENT).timeout(60000).ignoreContentType(true);"" is 278.",199
+superword,org.apdplat.superword.tools,WordClassifierForWebster,getContent,Magic Number,The method contains a magic number: 899999,199
+superword,org.apdplat.superword.tools,WordClassifierForWebster,getContent,Magic Number,The method contains a magic number: 100000,199
+superword,org.apdplat.superword.tools,WordClassifierForWebster,getContent,Magic Number,The method contains a magic number: 60000,199
+superword,org.apdplat.superword.tools,PdfParser,toSentence,Complex Method,Cyclomatic complexity of the method is 8,189
+superword,org.apdplat.superword.tools,PdfParser,toSentence,Long Statement,"The length of the statement ""while (line.endsWith(""-"") || line.endsWith(""‐"") || line.endsWith(""‑"")|| line.endsWith(""‒"")|| line.endsWith(""–"")|| line.endsWith(""—"")|| line.endsWith(""―"")) {"" is 156.",189
+superword,org.apdplat.superword.tools,PdfParser,toSentence,Magic Number,The method contains a magic number: 2,189
+superword,org.apdplat.superword.tools,PdfParser,addLineToParagraph,Complex Conditional,The conditional expression Character.isDigit(line.charAt(0)) && Character.isAlphabetic(line.charAt(line.length() - 1)) && (StringUtils.isBlank(nextLine) || Character.isDigit(nextLine.charAt(0)) || Character.isUpperCase(nextLine.charAt(0))) is complex.,249
+superword,org.apdplat.superword.tools,PdfParser,addLineToParagraph,Long Statement,"The length of the statement ""if (Character.isDigit(line.charAt(0)) && Character.isAlphabetic(line.charAt(line.length() - 1)) && (StringUtils.isBlank(nextLine) || Character.isDigit(nextLine.charAt(0)) || Character.isUpperCase(nextLine.charAt(0)))) {"" is 219.",249
+superword,org.apdplat.superword.tools,PdfParser,isProgramCode,Complex Conditional,"The conditional expression paragraph.startsWith(""package"") || paragraph.startsWith(""import"") || paragraph.startsWith(""public"")|| paragraph.startsWith(""private"")|| paragraph.startsWith(""/**"")|| paragraph.contains("");"")|| paragraph.contains(""}"")|| paragraph.contains(""{"")|| paragraph.startsWith(""<"") is complex.",268
+superword,org.apdplat.superword.tools,PdfParser,isProgramCode,Long Statement,"The length of the statement ""if (paragraph.startsWith(""package"") || paragraph.startsWith(""import"") || paragraph.startsWith(""public"")|| paragraph.startsWith(""private"")|| paragraph.startsWith(""/**"")|| paragraph.contains("");"")|| paragraph.contains(""}"")|| paragraph.contains(""{"")|| paragraph.startsWith(""<"")) {"" is 277.",268
+superword,org.apdplat.superword.tools,PdfParser,paragraphValid,Magic Number,The method contains a magic number: 8208,299
+superword,org.apdplat.superword.tools,PdfParser,paragraphValid,Magic Number,The method contains a magic number: 8231,299
+superword,org.apdplat.superword.tools,PdfParser,paragraphValid,Magic Number,The method contains a magic number: 32,299
+superword,org.apdplat.superword.tools,PdfParser,paragraphValid,Magic Number,The method contains a magic number: 126,299
+superword,org.apdplat.superword.tools,PdfParser,paragraphValid,Magic Number,The method contains a magic number: 64256,299
+superword,org.apdplat.superword.tools,PdfParser,paragraphValid,Magic Number,The method contains a magic number: 64262,299
+superword,org.apdplat.superword.tools,PdfParser,processSentence,Complex Method,Cyclomatic complexity of the method is 10,497
+superword,org.apdplat.superword.tools,PdfParser,hasSpecialWords,Magic Number,The method contains a magic number: 2,591
+superword,org.apdplat.superword.tools,PdfParser,hasUnknownWords,Magic Number,The method contains a magic number: 0.4,604
+superword,org.apdplat.superword.tools,PdfParser,areBracketsAndQuotesPaired,Complex Method,Cyclomatic complexity of the method is 9,615
+superword,org.apdplat.superword.tools,PdfParser,areBracketsAndQuotesPaired,Magic Number,The method contains a magic number: 2,615
+superword,org.apdplat.superword.tools,PdfParser,prepareSeg,Complex Method,Cyclomatic complexity of the method is 9,636
+superword,org.apdplat.superword.tools,PdfParser,prepareTarget,Long Statement,"The length of the statement ""String targetName=""src/main/resources/it"" + fileName.replace(file.getParent().getParent().toFile().getAbsolutePath()`"""").replace("".pdf""`"""") + "".txt"";"" is 149.",697
+superword,org.apdplat.superword.tools,WordClassifierForOxford,download,Magic Number,The method contains a magic number: 1000,64
+superword,org.apdplat.superword.tools,WordClassifierForOxford,download,Magic Number,The method contains a magic number: 999,64
+superword,org.apdplat.superword.tools,WordClassifierForOxford,parseFile,Long Statement,"The length of the statement ""try (BufferedReader reader=new BufferedReader(new InputStreamReader(new BufferedInputStream(new FileInputStream(file))))){"" is 122.",142
+superword,org.apdplat.superword.tools,WordClassifierForOxford,parseHtml,Magic Number,The method contains a magic number: 2,156
+superword,org.apdplat.superword.tools,WordClassifierForOxford,showStatus,Magic Number,The method contains a magic number: 100,168
+superword,org.apdplat.superword.tools,WordClassifierForOxford,save,Long Statement,"The length of the statement ""List<String> list=NOT_FOUND_WORDS.stream().sorted().map(word -> i.incrementAndGet() + ""\t"" + word).collect(Collectors.toList());"" is 128.",172
+superword,org.apdplat.superword.tools,WordClassifierForOxford,getContent,Long Statement,"The length of the statement ""Connection conn=Jsoup.connect(url).header(""Accept""`ACCEPT).header(""Accept-Encoding""`ENCODING).header(""Accept-Language""`LANGUAGE).header(""Connection""`CONNECTION).header(""Referer""`REFERER).header(""Host""`HOST).header(""User-Agent""`USER_AGENT).timeout(60000).ignoreContentType(true);"" is 278.",200
+superword,org.apdplat.superword.tools,WordClassifierForOxford,getContent,Magic Number,The method contains a magic number: 899999,200
+superword,org.apdplat.superword.tools,WordClassifierForOxford,getContent,Magic Number,The method contains a magic number: 100000,200
+superword,org.apdplat.superword.tools,WordClassifierForOxford,getContent,Magic Number,The method contains a magic number: 60000,200
+superword,org.apdplat.superword.tools,TopNSentence,main,Magic Number,The method contains a magic number: 100,34
+superword,org.apdplat.superword.tools,Pronunciation,getPronunciation,Complex Method,Cyclomatic complexity of the method is 12,79
+superword,org.apdplat.superword.tools,Pronunciation,getContent,Magic Number,The method contains a magic number: 1000,162
+superword,org.apdplat.superword.tools,Pronunciation,getContent,Magic Number,The method contains a magic number: 2,162
+superword,org.apdplat.superword.tools,Pronunciation,_getContent,Long Statement,"The length of the statement ""Connection conn=Jsoup.connect(url).header(""Accept""`ACCEPT).header(""Accept-Encoding""`ENCODING).header(""Accept-Language""`LANGUAGE).header(""Connection""`CONNECTION).header(""Referer""`REFERER).header(""Host""`HOST).header(""User-Agent""`USER_AGENT).timeout(1000).ignoreContentType(true);"" is 277.",189
+superword,org.apdplat.superword.tools,Pronunciation,_getContent,Magic Number,The method contains a magic number: 1000,189
+superword,org.apdplat.superword.tools,WordClassifier,classify,Magic Number,The method contains a magic number: 1000,67
+superword,org.apdplat.superword.tools,WordClassifier,classify,Magic Number,The method contains a magic number: 999,67
+superword,org.apdplat.superword.tools,WordClassifier,classify,Magic Number,The method contains a magic number: 2,67
+superword,org.apdplat.superword.tools,WordClassifier,parseFile,Long Statement,"The length of the statement ""try (BufferedReader reader=new BufferedReader(new InputStreamReader(new BufferedInputStream(new FileInputStream(file))))){"" is 122.",154
+superword,org.apdplat.superword.tools,WordClassifier,parse,Magic Number,The method contains a magic number: 2,170
+superword,org.apdplat.superword.tools,WordClassifier,showStatus,Magic Number,The method contains a magic number: 100,183
+superword,org.apdplat.superword.tools,WordClassifier,save,Complex Method,Cyclomatic complexity of the method is 8,190
+superword,org.apdplat.superword.tools,WordClassifier,save,Long Statement,"The length of the statement ""List<String> list=allWords.stream().sorted().map(word -> i.incrementAndGet() + ""\t"" + word).collect(Collectors.toList());"" is 121.",190
+superword,org.apdplat.superword.tools,WordClassifier,save,Long Statement,"The length of the statement ""List<String> list=NOT_FOUND_WORDS.stream().sorted().map(word -> i.incrementAndGet() + ""\t"" + word).collect(Collectors.toList());"" is 128.",190
+superword,org.apdplat.superword.tools,WordClassifier,save,Magic Number,The method contains a magic number: 2,190
+superword,org.apdplat.superword.tools,WordClassifier,getContent,Long Statement,"The length of the statement ""Connection conn=Jsoup.connect(url).header(""Accept""`ACCEPT).header(""Accept-Encoding""`ENCODING).header(""Accept-Language""`LANGUAGE).header(""Connection""`CONNECTION).header(""Referer""`REFERER).header(""Host""`HOST).header(""User-Agent""`USER_AGENT).timeout(60000).ignoreContentType(true);"" is 278.",258
+superword,org.apdplat.superword.tools,WordClassifier,getContent,Magic Number,The method contains a magic number: 899999,258
+superword,org.apdplat.superword.tools,WordClassifier,getContent,Magic Number,The method contains a magic number: 100000,258
+superword,org.apdplat.superword.tools,WordClassifier,getContent,Magic Number,The method contains a magic number: 60000,258
+superword,org.apdplat.superword.tools,WordClassifier,parse,Complex Conditional,"The conditional expression StringUtils.isNotBlank(notFound) && (notFound.contains(""对不起，没有找到"") || notFound.contains(""您要查找的是不是"")) is complex.",281
+superword,org.apdplat.superword.tools,JavaCodeAnalyzer,parseFile,Long Statement,"The length of the statement ""try (BufferedReader reader=new BufferedReader(new InputStreamReader(new BufferedInputStream(new FileInputStream(file))))){"" is 122.",102
+superword,org.apdplat.superword.tools,JavaCodeAnalyzer,importantWords,Long Statement,"The length of the statement ""Set<Word> wordSet=WordSources.get(""/word_CET4.txt""`""/word_CET6.txt""`""/word_GRE.txt""`""/word_IELTS.txt""`""/word_TOEFL.txt""`""/word_KY.txt"");"" is 136.",124
+superword,org.apdplat.superword.tools,JavaCodeAnalyzer,importantWords,Long Statement,"The length of the statement ""Set<Map.Entry<Word`AtomicInteger>> entries=data.entrySet().stream().filter(entry -> wordSet.contains(entry.getKey())).collect(Collectors.toSet());"" is 146.",124
+superword,org.apdplat.superword.tools,JavaCodeAnalyzer,importantWords,Magic Number,The method contains a magic number: 5,124
+superword,org.apdplat.superword.tools,JavaCodeAnalyzer,toDic,Long Statement,"The length of the statement ""List<String> words=data.entrySet().stream().filter(w -> StringUtils.isAlpha(w.getKey()) && w.getKey().length() < 12).sorted((a`b) -> b.getValue().get() - a.getValue().get()).map(e -> e.getValue() + ""\t"" + e.getKey()).collect(Collectors.toList());"" is 246.",145
+superword,org.apdplat.superword.tools,JavaCodeAnalyzer,toDic,Magic Number,The method contains a magic number: 12,145
+superword,org.apdplat.superword.tools,IPUtils,getIPLocation,Magic Number,The method contains a magic number: 60000,39
+superword,org.apdplat.superword.tools,IPUtils,getIPLocation,Magic Number,The method contains a magic number: 2,39
+superword,org.apdplat.superword.tools,ProxyIp,verify,Magic Number,The method contains a magic number: 10000,276
+superword,org.apdplat.superword.tools,ProxyIp,verify,Magic Number,The method contains a magic number: 10000,276
+superword,org.apdplat.superword.tools,ProxyIp,getCurrentIp,Long Statement,"The length of the statement ""String text=Jsoup.connect(url).header(""Accept""`ACCEPT).header(""Accept-Encoding""`ENCODING).header(""Accept-Language""`LANGUAGE).header(""Connection""`CONNECTION).header(""Host""`""1111.ip138.com"").header(""Referer""`""http://ip138.com/"").header(""User-Agent""`USER_AGENT).ignoreContentType(true).timeout(5000).get().text();"" is 310.",307
+superword,org.apdplat.superword.tools,ProxyIp,getCurrentIp,Magic Number,The method contains a magic number: 5000,307
+superword,org.apdplat.superword.tools,ProxyIp,getProxyIpOne,Long Statement,"The length of the statement ""String cssPath=""html body div.wrap.fullwidth div#content div#post-2.post-2.page.type-page.status-publish.hentry div.entry.entry-content div#list table.table tbody tr"";"" is 167.",350
+superword,org.apdplat.superword.tools,ProxyIp,getProxyIpThree,Magic Number,The method contains a magic number: 10,398
+superword,org.apdplat.superword.tools,ProxyIp,getProxyIpFour,Magic Number,The method contains a magic number: 10,457
+superword,org.apdplat.superword.tools,ProxyIp,getIps,Complex Conditional,"The conditional expression ele.hasAttr(""style"") && (ele.attr(""style"").equals(""display: none;"") || ele.attr(""style"").equals(""display:none;"")) is complex.",516
+superword,org.apdplat.superword.tools,ProxyIp,main,Magic Number,The method contains a magic number: 1000,552
+superword,org.apdplat.superword.tools,TextAnalyzer,seg,Complex Conditional,The conditional expression word.length() < 6 || (Character.isUpperCase(word.charAt(word.length() - 1)) && Character.isUpperCase(word.charAt(0))) || PATTERN.matcher(word).find() || StringUtils.isAllUpperCase(word) is complex.,104
+superword,org.apdplat.superword.tools,TextAnalyzer,seg,Complex Method,Cyclomatic complexity of the method is 11,104
+superword,org.apdplat.superword.tools,TextAnalyzer,seg,Long Statement,"The length of the statement ""if (word.length() < 6 || (Character.isUpperCase(word.charAt(word.length() - 1)) && Character.isUpperCase(word.charAt(0))) || PATTERN.matcher(word).find() || StringUtils.isAllUpperCase(word)) {"" is 192.",104
+superword,org.apdplat.superword.tools,TextAnalyzer,seg,Magic Number,The method contains a magic number: 2,104
+superword,org.apdplat.superword.tools,TextAnalyzer,seg,Magic Number,The method contains a magic number: 6,104
+superword,org.apdplat.superword.tools,TextAnalyzer,seg,Magic Number,The method contains a magic number: 2,104
+superword,org.apdplat.superword.tools,TextAnalyzer,irregularity,Complex Method,Cyclomatic complexity of the method is 12,163
+superword,org.apdplat.superword.tools,TextAnalyzer,sentence,Complex Method,Cyclomatic complexity of the method is 10,277
+superword,org.apdplat.superword.tools,TextAnalyzer,sentence,Long Statement,"The length of the statement ""try (BufferedReader reader=new BufferedReader(new InputStreamReader(new BufferedInputStream(new FileInputStream(fileName))))){"" is 126.",277
+superword,org.apdplat.superword.tools,TextAnalyzer,toDic,Long Statement,"The length of the statement ""List<String> words=data.entrySet().stream().filter(w -> StringUtils.isAlpha(w.getKey()) && w.getKey().length() < 12).sorted((a`b) -> b.getValue().get() - a.getValue().get()).map(e -> e.getValue() + ""\t"" + e.getKey()).collect(Collectors.toList());"" is 246.",340
+superword,org.apdplat.superword.tools,TextAnalyzer,toDic,Magic Number,The method contains a magic number: 12,340
+superword,org.apdplat.superword.tools,TextAnalyzer,importantWords,Long Statement,"The length of the statement ""Set<Word> wordSet=WordSources.get(""/word_CET4.txt""`""/word_CET6.txt""`""/word_GRE.txt""`""/word_IELTS.txt""`""/word_TOEFL.txt""`""/word_KY.txt"");"" is 136.",362
+superword,org.apdplat.superword.tools,TextAnalyzer,importantWords,Long Statement,"The length of the statement ""Set<Map.Entry<Word`AtomicInteger>> entries=data.entrySet().stream().filter(entry -> wordSet.contains(entry.getKey())).collect(Collectors.toSet());"" is 146.",362
+superword,org.apdplat.superword.tools,TextAnalyzer,importantWords,Magic Number,The method contains a magic number: 5,362
+superword,org.apdplat.superword.tools,WordClassifierForYouDao,classify,Magic Number,The method contains a magic number: 1000,66
+superword,org.apdplat.superword.tools,WordClassifierForYouDao,classify,Magic Number,The method contains a magic number: 999,66
+superword,org.apdplat.superword.tools,WordClassifierForYouDao,classify,Magic Number,The method contains a magic number: 2,66
+superword,org.apdplat.superword.tools,WordClassifierForYouDao,parseFile,Long Statement,"The length of the statement ""try (BufferedReader reader=new BufferedReader(new InputStreamReader(new BufferedInputStream(new FileInputStream(file))))){"" is 122.",153
+superword,org.apdplat.superword.tools,WordClassifierForYouDao,parse,Magic Number,The method contains a magic number: 2,169
+superword,org.apdplat.superword.tools,WordClassifierForYouDao,showStatus,Magic Number,The method contains a magic number: 100,182
+superword,org.apdplat.superword.tools,WordClassifierForYouDao,save,Complex Method,Cyclomatic complexity of the method is 8,189
+superword,org.apdplat.superword.tools,WordClassifierForYouDao,save,Long Statement,"The length of the statement ""List<String> list=allWords.stream().sorted().map(word -> i.incrementAndGet() + ""\t"" + word).collect(Collectors.toList());"" is 121.",189
+superword,org.apdplat.superword.tools,WordClassifierForYouDao,save,Long Statement,"The length of the statement ""List<String> list=NOT_FOUND_WORDS.stream().sorted().map(word -> i.incrementAndGet() + ""\t"" + word).collect(Collectors.toList());"" is 128.",189
+superword,org.apdplat.superword.tools,WordClassifierForYouDao,save,Magic Number,The method contains a magic number: 2,189
+superword,org.apdplat.superword.tools,WordClassifierForYouDao,getContent,Long Statement,"The length of the statement ""Connection conn=Jsoup.connect(url).header(""Accept""`ACCEPT).header(""Accept-Encoding""`ENCODING).header(""Accept-Language""`LANGUAGE).header(""Connection""`CONNECTION).header(""Referer""`REFERER).header(""Host""`HOST).header(""User-Agent""`USER_AGENT).timeout(60000).ignoreContentType(true);"" is 278.",257
+superword,org.apdplat.superword.tools,WordClassifierForYouDao,getContent,Magic Number,The method contains a magic number: 899999,257
+superword,org.apdplat.superword.tools,WordClassifierForYouDao,getContent,Magic Number,The method contains a magic number: 100000,257
+superword,org.apdplat.superword.tools,WordClassifierForYouDao,getContent,Magic Number,The method contains a magic number: 60000,257
+superword,org.apdplat.superword.tools,WordClassifierForYouDao,parse,Complex Conditional,"The conditional expression StringUtils.isNotBlank(notFound) && (notFound.contains(""对不起，没有找到"") || notFound.contains(""您要查找的是不是"")) is complex.",280
+superword,org.apdplat.superword.tools,TimeUtils,getTimeEnglishDes,Complex Method,Cyclomatic complexity of the method is 10,68
+superword,org.apdplat.superword.tools,TimeUtils,getTimeEnglishDes,Magic Number,The method contains a magic number: 1000,68
+superword,org.apdplat.superword.tools,TimeUtils,getTimeEnglishDes,Magic Number,The method contains a magic number: 60,68
+superword,org.apdplat.superword.tools,TimeUtils,getTimeEnglishDes,Magic Number,The method contains a magic number: 60,68
+superword,org.apdplat.superword.tools,TimeUtils,getTimeEnglishDes,Magic Number,The method contains a magic number: 24,68
+superword,org.apdplat.superword.tools,TimeUtils,main,Magic Number,The method contains a magic number: 10000l,164
+superword,org.apdplat.superword.tools,HtmlFormatter,toHtmlFragmentForText,Long Statement,"The length of the statement ""fileNames.stream().sorted().forEach(fileName -> html.append(i.incrementAndGet()).append(""、"").append(Paths.get(fileName).toFile().getName().replace("".txt""`"""")).append(""<br/>\n""));"" is 178.",48
+superword,org.apdplat.superword.tools,HtmlFormatter,toHtmlFragmentForText,Long Statement,"The length of the statement ""html.append(""共有"").append(data.size()).append(""个单词，出现次数统计：<br/>\n"").append(""<table border=\""1\"" bordercolor=\""#00CCCC\"" width=\""850\"">\n\t<tr><td>序号</td><td>出现次数</td><td>单词个数</td><td>单词</td></tr>\n"");"" is 199.",48
+superword,org.apdplat.superword.tools,HtmlFormatter,toHtmlFragmentForText,Long Statement,"The length of the statement ""html.append(""\t<tr><td>"").append(k.incrementAndGet()).append(""</td><td>"").append(s).append(""</td><td>"").append(stat.get(s).count()).append(""</td><td>"");"" is 152.",48
+superword,org.apdplat.superword.tools,HtmlFormatter,toHtmlFragmentForText,Long Statement,"The length of the statement ""html.append(""</table>"").append(""\n共有("").append(data.size()).append("")个单词：<br/>\n"").append(""<table>\n\t<tr><td>序号</td><td>单词</td><td>词频</td></tr>\n"");"" is 149.",48
+superword,org.apdplat.superword.tools,HtmlFormatter,toHtmlFragmentForText,Long Statement,"The length of the statement ""data.entrySet().stream().filter(entry -> entry.getKey().length() <= 14).sorted((a`b) -> b.getValue().get() - a.getValue().get()).forEach(entry -> {"" is 147.",48
+superword,org.apdplat.superword.tools,HtmlFormatter,toHtmlFragmentForText,Long Statement,"The length of the statement ""html.append(""\t"").append(""<tr><td>"").append(wordCounter.incrementAndGet()).append(""</td><td>"").append(WordLinker.toLink(entry.getKey()`dictionary)).append(""</td><td>"").append(entry.getValue().get()).append(""</td></tr>\n"");"" is 222.",48
+superword,org.apdplat.superword.tools,HtmlFormatter,toHtmlFragmentForText,Long Statement,"The length of the statement ""data.entrySet().stream().filter(entry -> entry.getKey().length() > 14).sorted((a`b) -> b.getValue().get() - a.getValue().get()).forEach(entry -> html.append(""\t"").append(""<tr><td>"").append(j.incrementAndGet()).append(""</td><td>"").append(WordLinker.toLink(entry.getKey()`dictionary)).append(""</td><td>"").append(entry.getValue().get()).append(""</td></tr>\n""));"" is 358.",48
+superword,org.apdplat.superword.tools,HtmlFormatter,toHtmlFragmentForText,Long Statement,"The length of the statement ""data.entrySet().stream().filter(entry -> entry.getKey().length() == 2).sorted((a`b) -> b.getValue().get() - a.getValue().get()).forEach(entry -> html.append(""\t"").append(""<tr><td>"").append(z.incrementAndGet()).append(""</td><td>"").append(WordLinker.toLink(entry.getKey()`dictionary)).append(""</td><td>"").append(entry.getValue().get()).append(""</td></tr>\n""));"" is 358.",48
+superword,org.apdplat.superword.tools,HtmlFormatter,toHtmlFragmentForText,Magic Number,The method contains a magic number: 14,48
+superword,org.apdplat.superword.tools,HtmlFormatter,toHtmlFragmentForText,Magic Number,The method contains a magic number: 14,48
+superword,org.apdplat.superword.tools,HtmlFormatter,toHtmlFragmentForText,Magic Number,The method contains a magic number: 2,48
+superword,org.apdplat.superword.tools,HtmlFormatter,toHtmlForSentence,Long Statement,"The length of the statement ""text.append(""共有 "").append(data.size()).append("" 句子，"").append(wordFrequence.size()).append("" 个单词。<br/>\n"").append(""<h4>一、句子("" + data.size() + "")：</h4>\n"");"" is 154.",156
+superword,org.apdplat.superword.tools,HtmlFormatter,toHtmlForSentence,Long Statement,"The length of the statement ""data.keySet().stream().sorted((a`b) -> a.length() - b.length()).forEach(s -> text.append(i.incrementAndGet()).append(""、"").append(processSentence(s`wordFrequence`dictionary)).append("" "").append(data.get(s)).append(""<br/>\n""));"" is 225.",156
+superword,org.apdplat.superword.tools,HtmlFormatter,toHtmlForSentence,Long Statement,"The length of the statement ""text.append(""<br/>\n<h4>二、单词("" + wordFrequence.size() + "")：</h4>\n"").append(HtmlFormatter.toHtmlTableFragment(wordFrequence`6`dictionary));"" is 139.",156
+superword,org.apdplat.superword.tools,HtmlFormatter,toHtmlForSentence,Magic Number,The method contains a magic number: 6,156
+superword,org.apdplat.superword.tools,HtmlFormatter,processSentence,Complex Conditional,"The conditional expression w.endsWith("";"") || w.endsWith(""`"") || w.endsWith(""."")|| w.endsWith(""?"")|| w.endsWith(""!"") is complex.",185
+superword,org.apdplat.superword.tools,HtmlFormatter,processSentence,Magic Number,The method contains a magic number: 10,185
+superword,org.apdplat.superword.tools,HtmlFormatter,processSentence,Magic Number,The method contains a magic number: 10,185
+superword,org.apdplat.superword.tools,HtmlFormatter,toHtmlForCompoundWord,Long Statement,"The length of the statement ""data.entrySet().stream().filter(entry -> !entry.getValue().isEmpty()).sorted((a`b) -> b.getValue().size() - a.getValue().size()).forEach(entry -> {"" is 147.",222
+superword,org.apdplat.superword.tools,HtmlFormatter,toHtmlForCompoundWord,Long Statement,"The length of the statement ""html.append(""\t<tr><td>"").append(i.incrementAndGet()).append(""</td><td>"").append(WordLinker.toLink(entry.getKey().getWord()`dictionary)).append(""</td>"");"" is 153.",222
+superword,org.apdplat.superword.tools,HtmlFormatter,toHtmlForCompoundWord,Long Statement,"The length of the statement ""List<String> words=elements.stream().sorted().map(word -> WordLinker.toLink(word.getWord()`dictionary)).collect(Collectors.toList());"" is 133.",222
+superword,org.apdplat.superword.tools,HtmlFormatter,toHtmlForPartOfSpeech,Long Statement,"The length of the statement ""html.append(i.incrementAndGet()).append(""、"").append(RED_EM_PRE).append(k).append(RED_EM_SUF).append(""("").append(BLUE_EM_PRE).append(PartOfSpeech.getMeaning(k)).append(BLUE_EM_SUF).append("") (词数:"").append(data.get(k).size()).append("")"").append(""<br/>\n"");"" is 254.",279
+superword,org.apdplat.superword.tools,HtmlFormatter,toHtmlForPartOfSpeech,Long Statement,"The length of the statement ""html.append(""<h4>"").append(j.incrementAndGet()).append(""、"").append(RED_EM_PRE).append(k).append(RED_EM_SUF).append(""("").append(BLUE_EM_PRE).append(PartOfSpeech.getMeaning(k)).append(BLUE_EM_SUF).append("") (词数:"").append(data.get(k).size()).append("")"").append(""</h4>\n"").append(toHtmlTableFragment(data.get(k).stream().sorted().map(w -> WordLinker.toLink(w`dictionary)).collect(Collectors.toList())`5));"" is 401.",279
+superword,org.apdplat.superword.tools,HtmlFormatter,toHtmlForPartOfSpeech,Magic Number,The method contains a magic number: 5,279
+superword,org.apdplat.superword.tools,HtmlFormatter,toHtmlForPluralFormat,Long Statement,"The length of the statement ""html.append(""\t<tr><td>"").append(WordLinker.toLink(origin`dictionary)).append(""</td><td>"").append(WordLinker.toLink(key`origin`BLUE_EM_PRE`BLUE_EM_SUF + ""-""`dictionary)).append(""</td></tr>\n"");"" is 193.",326
+superword,org.apdplat.superword.tools,HtmlFormatter,toHtmlForWordDefinition,Long Statement,"The length of the statement ""List<String> data=words.stream().sorted((a`b) -> b.getDefinitions().size() - a.getDefinitions().size()).map(word -> WordLinker.toLink(word.getWord()`dictionary) + ""-"" + word.getDefinitions().size()).collect(Collectors.toList());"" is 228.",343
+superword,org.apdplat.superword.tools,HtmlFormatter,toHtmlForWordDefinition,Long Statement,"The length of the statement ""html.append(toHtmlTableFragment(data`rowLength)).append(""<table border=\""1\"">\n"").append(""\t<tr><td>定义条数</td><td>单词个数</td></tr>\n"");"" is 132.",343
+superword,org.apdplat.superword.tools,HtmlFormatter,toHtmlForAntonym,Long Statement,"The length of the statement ""html.append(""<h4>"").append(i.incrementAndGet()).append(""、"").append(WordLinker.toLink(sa.getWord().getWord()`dictionary)).append(""</h4>\n"").append(""<b>反义词("").append(sa.getAntonym().size()).append("")：</b><br/>\n"");"" is 212.",370
+superword,org.apdplat.superword.tools,HtmlFormatter,toHtmlForAntonym,Long Statement,"The length of the statement ""List<String> sm=sa.getAntonym().stream().sorted().map(w -> WordLinker.toLink(w.getWord()`dictionary)).collect(Collectors.toList());"" is 131.",370
+superword,org.apdplat.superword.tools,HtmlFormatter,toHtmlForSynonymAntonym,Long Statement,"The length of the statement ""html.append(""<h4>"").append(i.incrementAndGet()).append(""、"").append(WordLinker.toLink(sa.getWord().getWord()`dictionary)).append(""</h4>\n"");"" is 139.",397
+superword,org.apdplat.superword.tools,HtmlFormatter,toHtmlForSynonymAntonym,Long Statement,"The length of the statement ""List<String> sm=sa.getSynonym().stream().sorted().map(w -> WordLinker.toLink(w.getWord()`dictionary)).collect(Collectors.toList());"" is 131.",397
+superword,org.apdplat.superword.tools,HtmlFormatter,toHtmlForSynonymAntonym,Long Statement,"The length of the statement ""List<String> sm=sa.getAntonym().stream().sorted().map(w -> WordLinker.toLink(w.getWord()`dictionary)).collect(Collectors.toList());"" is 131.",397
+superword,org.apdplat.superword.tools,HtmlFormatter,toHtmlForSynonymDiscrimination,Long Statement,"The length of the statement ""html.append(""<h4>"").append(i.incrementAndGet()).append(""、"").append(sd.getTitle()).append(""</h4>\n<b>"").append(sd.getDes().replace(""“""`""“"" + BLUE_EM_PRE).replace(""”""`BLUE_EM_SUF + ""”"")).append(""</b><br/>\n"");"" is 207.",427
+superword,org.apdplat.superword.tools,HtmlFormatter,toHtmlForSynonymDiscrimination,Long Statement,"The length of the statement ""html.append(""\t<li>"").append(WordLinker.toLink(w.getWord()`dictionary)).append(""："").append(w.getMeaning()).append(""</li>\n"");"" is 125.",427
+superword,org.apdplat.superword.tools,HtmlFormatter,emphasize,Complex Conditional,The conditional expression w.length() > r.length() && !w.startsWith(r) && !w.endsWith(r) is complex.,502
+superword,org.apdplat.superword.tools,HtmlFormatter,toHtmlTableFragmentForIndependentWord,Long Statement,"The length of the statement ""html.append(""<h4>"").append(wordCounter.incrementAndGet()).append(""、"").append(word.getWord()).append("" (form "").append(data.get(word).size()).append("")</h4>\n"");"" is 160.",557
+superword,org.apdplat.superword.tools,HtmlFormatter,toHtmlTableFragmentForIndependentWord,Long Statement,"The length of the statement ""List<String> result=data.get(word).stream().map(rootAffix -> emphasize(word`rootAffix`dictionary)).collect(Collectors.toList());"" is 128.",557
+superword,org.apdplat.superword.tools,HtmlFormatter,toHtmlTableFragmentForIndependentWord,Long Statement,"The length of the statement ""result=data.get(word).stream().flatMap(rootAffix -> Arrays.asList(rootAffix.getWord()`rootAffix.getMeaning()).stream()).collect(Collectors.toList());"" is 149.",557
+superword,org.apdplat.superword.tools,HtmlFormatter,toHtmlTableFragmentForIndependentWord,Magic Number,The method contains a magic number: 2,557
+superword,org.apdplat.superword.tools,HtmlFormatter,toHtmlTableFragment,Magic Number,The method contains a magic number: 5,598
+superword,org.apdplat.superword.tools,DynamicIp,execute,Complex Conditional,"The conditional expression (""3"".equals(action) && isConnected()) || (""4"".equals(action) && !isConnected()) is complex.",140
+superword,org.apdplat.superword.tools,DynamicIp,execute,Long Statement,"The length of the statement ""Connection conn=Jsoup.connect(url).header(""Accept""`ACCEPT).header(""Accept-Encoding""`ENCODING).header(""Accept-Language""`LANGUAGE).header(""Connection""`CONNECTION).header(""Host""`HOST).header(""Referer""`REFERER).header(""User-Agent""`USER_AGENT).ignoreContentType(true).timeout(30000);"" is 278.",140
+superword,org.apdplat.superword.tools,DynamicIp,execute,Magic Number,The method contains a magic number: 30000,140
+superword,org.apdplat.superword.tools,DynamicIp,execute,Magic Number,The method contains a magic number: 10000,140
+superword,org.apdplat.superword.tools,DynamicIp,isConnected,Long Statement,"The length of the statement ""Document doc=Jsoup.connect(""http://www.baidu.com/s?wd=杨尚川&t="" + System.currentTimeMillis()).header(""Accept""`ACCEPT).header(""Accept-Encoding""`ENCODING).header(""Accept-Language""`LANGUAGE).header(""Connection""`CONNECTION).header(""Referer""`""https://www.baidu.com"").header(""Host""`""www.baidu.com"").header(""User-Agent""`USER_AGENT).ignoreContentType(true).timeout(30000).get();"" is 368.",179
+superword,org.apdplat.superword.tools,DynamicIp,isConnected,Magic Number,The method contains a magic number: 30000,179
+superword,org.apdplat.superword.tools,DynamicIp,login,Long Statement,"The length of the statement ""Connection conn=Jsoup.connect(""http://192.168.0.1/LoginCheck"").header(""Accept""`ACCEPT).header(""Accept-Encoding""`ENCODING).header(""Accept-Language""`LANGUAGE).header(""Connection""`CONNECTION).header(""Referer""`REFERER).header(""Host""`HOST).header(""User-Agent""`USER_AGENT).ignoreContentType(true).timeout(30000);"" is 306.",205
+superword,org.apdplat.superword.tools,DynamicIp,login,Magic Number,The method contains a magic number: 30000,205
+superword,org.apdplat.superword.tools,SentenceScorer,score,Long Statement,"The length of the statement ""try (BufferedReader reader=new BufferedReader(new InputStreamReader(new BufferedInputStream(new FileInputStream(fileName))))){"" is 126.",45
+superword,org.apdplat.superword.tools,SentenceScorer,toTextFile,Long Statement,"The length of the statement ""try (BufferedWriter writer=new BufferedWriter(new OutputStreamWriter(new BufferedOutputStream(new FileOutputStream(fileName))))){"" is 129.",99
+superword,org.apdplat.superword.tools,SentenceScorer,score,Magic Number,The method contains a magic number: 100,137
+superword,org.apdplat.superword.tools,SentenceScorer,score,Magic Number,The method contains a magic number: 100,137
+superword,org.apdplat.superword.tools,AidReading,main,Magic Number,The method contains a magic number: 6,39
+superword,org.apdplat.superword.tools,AidReading,analyse,Long Parameter List,The method has 5 parameters. ,61
+superword,org.apdplat.superword.tools,AidReading,analyse,Long Parameter List,The method has 6 parameters. ,64
+superword,org.apdplat.superword.tools,AidReading,analyse,Long Parameter List,The method has 5 parameters. ,71
+superword,org.apdplat.superword.tools,AidReading,analyse,Complex Conditional,"The conditional expression w.endsWith(""ed"") && w.length() > 5 && wordSet.contains(w.substring(0`w.length() - 3)) && (w.charAt(w.length() - 3) == w.charAt(w.length() - 4)) is complex.",74
+superword,org.apdplat.superword.tools,AidReading,analyse,Complex Conditional,"The conditional expression w.endsWith(""ing"") && w.length() > 6 && wordSet.contains(w.substring(0`w.length() - 4)) && (w.charAt(w.length() - 4) == w.charAt(w.length() - 5)) is complex.",74
+superword,org.apdplat.superword.tools,AidReading,analyse,Complex Conditional,"The conditional expression w.endsWith(""er"") && w.length() > 5 && wordSet.contains(w.substring(0`w.length() - 3)) && (w.charAt(w.length() - 3) == w.charAt(w.length() - 4)) is complex.",74
+superword,org.apdplat.superword.tools,AidReading,analyse,Complex Conditional,"The conditional expression w.endsWith(""est"") && w.length() > 6 && wordSet.contains(w.substring(0`w.length() - 4)) && (w.charAt(w.length() - 4) == w.charAt(w.length() - 5)) is complex.",74
+superword,org.apdplat.superword.tools,AidReading,analyse,Complex Method,Cyclomatic complexity of the method is 33,74
+superword,org.apdplat.superword.tools,AidReading,analyse,Long Method,The method has 146 lines of code.,74
+superword,org.apdplat.superword.tools,AidReading,analyse,Long Parameter List,The method has 6 parameters. ,74
+superword,org.apdplat.superword.tools,AidReading,analyse,Long Statement,"The length of the statement ""line=line.replaceAll(""[^a-zA-Z0-9]*[a-zA-Z0-9]+'[a-zA-Z0-9]+[^a-zA-Z0-9]*""`"" "").replaceAll(""[^a-zA-Z0-9]*[a-zA-Z0-9]+`[a-zA-Z0-9]+[^a-zA-Z0-9]*""`"" "").replaceAll(""[^a-zA-Z0-9]*[a-zA-Z0-9]+’[a-zA-Z0-9]+[^a-zA-Z0-9]*""`"" "");"" is 220.",74
+superword,org.apdplat.superword.tools,AidReading,analyse,Long Statement,"The length of the statement ""if (w.endsWith(""ed"") && w.length() > 5 && wordSet.contains(w.substring(0`w.length() - 3)) && (w.charAt(w.length() - 3) == w.charAt(w.length() - 4))) {"" is 150.",74
+superword,org.apdplat.superword.tools,AidReading,analyse,Long Statement,"The length of the statement ""if (w.endsWith(""ing"") && w.length() > 6 && wordSet.contains(w.substring(0`w.length() - 4)) && (w.charAt(w.length() - 4) == w.charAt(w.length() - 5))) {"" is 151.",74
+superword,org.apdplat.superword.tools,AidReading,analyse,Long Statement,"The length of the statement ""if (w.endsWith(""er"") && w.length() > 5 && wordSet.contains(w.substring(0`w.length() - 3)) && (w.charAt(w.length() - 3) == w.charAt(w.length() - 4))) {"" is 150.",74
+superword,org.apdplat.superword.tools,AidReading,analyse,Long Statement,"The length of the statement ""if (w.endsWith(""est"") && w.length() > 6 && wordSet.contains(w.substring(0`w.length() - 4)) && (w.charAt(w.length() - 4) == w.charAt(w.length() - 5))) {"" is 151.",74
+superword,org.apdplat.superword.tools,AidReading,analyse,Long Statement,"The length of the statement ""originalText=""\t<a target=\""_blank\"" href=\""book-aid-reading-detail.jsp?book="" + book + ""&word=""+ entry.getKey()+ ""&dict=ICIBA&pageSize=""+ entry.getValue()+ ""\"">[""+ entry.getValue()+ ""]</a>"";"" is 191.",74
+superword,org.apdplat.superword.tools,AidReading,analyse,Long Statement,"The length of the statement ""originalText=""\t<a target=\""_blank\"" href=\""book-aid-reading-detail.jsp?book="" + book + ""&word=""+ entry.getKey()+ ""&dict=ICIBA&pageSize=""+ entry.getValue()+ ""\"">[""+ entry.getValue()+ ""]</a>"";"" is 191.",74
+superword,org.apdplat.superword.tools,AidReading,analyse,Magic Number,The method contains a magic number: 2,74
+superword,org.apdplat.superword.tools,AidReading,analyse,Magic Number,The method contains a magic number: 14,74
+superword,org.apdplat.superword.tools,AidReading,analyse,Magic Number,The method contains a magic number: 3,74
+superword,org.apdplat.superword.tools,AidReading,analyse,Magic Number,The method contains a magic number: 2,74
+superword,org.apdplat.superword.tools,AidReading,analyse,Magic Number,The method contains a magic number: 2,74
+superword,org.apdplat.superword.tools,AidReading,analyse,Magic Number,The method contains a magic number: 2,74
+superword,org.apdplat.superword.tools,AidReading,analyse,Magic Number,The method contains a magic number: 2,74
+superword,org.apdplat.superword.tools,AidReading,analyse,Magic Number,The method contains a magic number: 3,74
+superword,org.apdplat.superword.tools,AidReading,analyse,Magic Number,The method contains a magic number: 3,74
+superword,org.apdplat.superword.tools,AidReading,analyse,Magic Number,The method contains a magic number: 2,74
+superword,org.apdplat.superword.tools,AidReading,analyse,Magic Number,The method contains a magic number: 2,74
+superword,org.apdplat.superword.tools,AidReading,analyse,Magic Number,The method contains a magic number: 5,74
+superword,org.apdplat.superword.tools,AidReading,analyse,Magic Number,The method contains a magic number: 3,74
+superword,org.apdplat.superword.tools,AidReading,analyse,Magic Number,The method contains a magic number: 3,74
+superword,org.apdplat.superword.tools,AidReading,analyse,Magic Number,The method contains a magic number: 4,74
+superword,org.apdplat.superword.tools,AidReading,analyse,Magic Number,The method contains a magic number: 3,74
+superword,org.apdplat.superword.tools,AidReading,analyse,Magic Number,The method contains a magic number: 3,74
+superword,org.apdplat.superword.tools,AidReading,analyse,Magic Number,The method contains a magic number: 3,74
+superword,org.apdplat.superword.tools,AidReading,analyse,Magic Number,The method contains a magic number: 3,74
+superword,org.apdplat.superword.tools,AidReading,analyse,Magic Number,The method contains a magic number: 3,74
+superword,org.apdplat.superword.tools,AidReading,analyse,Magic Number,The method contains a magic number: 6,74
+superword,org.apdplat.superword.tools,AidReading,analyse,Magic Number,The method contains a magic number: 4,74
+superword,org.apdplat.superword.tools,AidReading,analyse,Magic Number,The method contains a magic number: 4,74
+superword,org.apdplat.superword.tools,AidReading,analyse,Magic Number,The method contains a magic number: 5,74
+superword,org.apdplat.superword.tools,AidReading,analyse,Magic Number,The method contains a magic number: 4,74
+superword,org.apdplat.superword.tools,AidReading,analyse,Magic Number,The method contains a magic number: 3,74
+superword,org.apdplat.superword.tools,AidReading,analyse,Magic Number,The method contains a magic number: 3,74
+superword,org.apdplat.superword.tools,AidReading,analyse,Magic Number,The method contains a magic number: 2,74
+superword,org.apdplat.superword.tools,AidReading,analyse,Magic Number,The method contains a magic number: 2,74
+superword,org.apdplat.superword.tools,AidReading,analyse,Magic Number,The method contains a magic number: 5,74
+superword,org.apdplat.superword.tools,AidReading,analyse,Magic Number,The method contains a magic number: 3,74
+superword,org.apdplat.superword.tools,AidReading,analyse,Magic Number,The method contains a magic number: 3,74
+superword,org.apdplat.superword.tools,AidReading,analyse,Magic Number,The method contains a magic number: 4,74
+superword,org.apdplat.superword.tools,AidReading,analyse,Magic Number,The method contains a magic number: 3,74
+superword,org.apdplat.superword.tools,AidReading,analyse,Magic Number,The method contains a magic number: 2,74
+superword,org.apdplat.superword.tools,AidReading,analyse,Magic Number,The method contains a magic number: 2,74
+superword,org.apdplat.superword.tools,AidReading,analyse,Magic Number,The method contains a magic number: 3,74
+superword,org.apdplat.superword.tools,AidReading,analyse,Magic Number,The method contains a magic number: 3,74
+superword,org.apdplat.superword.tools,AidReading,analyse,Magic Number,The method contains a magic number: 6,74
+superword,org.apdplat.superword.tools,AidReading,analyse,Magic Number,The method contains a magic number: 4,74
+superword,org.apdplat.superword.tools,AidReading,analyse,Magic Number,The method contains a magic number: 4,74
+superword,org.apdplat.superword.tools,AidReading,analyse,Magic Number,The method contains a magic number: 5,74
+superword,org.apdplat.superword.tools,AidReading,analyse,Magic Number,The method contains a magic number: 4,74
+superword,org.apdplat.superword.tools,AidReading,analyse,Magic Number,The method contains a magic number: 3,74
+superword,org.apdplat.superword.tools,AidReading,analyse,Magic Number,The method contains a magic number: 3,74
+superword,org.apdplat.superword.tools,AidReading,analyse,Magic Number,The method contains a magic number: 4,74
+superword,org.apdplat.superword.tools,AidReading,analyse,Magic Number,The method contains a magic number: 4,74
+superword,org.apdplat.superword.tools,AidReading,analyse,Magic Number,The method contains a magic number: 3,74
+superword,org.apdplat.superword.tools,AidReading,analyse,Magic Number,The method contains a magic number: 3,74
+superword,org.apdplat.superword.tools,AidReading,analyse,Magic Number,The method contains a magic number: 3,74
+superword,org.apdplat.superword.tools,WordSources,getLevels,Complex Method,Cyclomatic complexity of the method is 21,45
+superword,org.apdplat.superword.tools,WordSources,getSyllabusVocabulary,Long Statement,"The length of the statement ""return get(""/word_primary_school.txt""`""/word_junior_school.txt""`""/word_senior_school.txt""`""/word_university.txt""`""/word_new_conception.txt""`""/word_ADULT.txt""`""/word_CET4.txt""`""/word_CET6.txt""`""/word_TEM4.txt""`""/word_TEM8.txt""`""/word_CATTI.txt""`""/word_GMAT.txt""`""/word_GRE.txt""`""/word_SAT.txt""`""/word_BEC.txt""`""/word_MBA.txt""`""/word_IELTS.txt""`""/word_TOEFL.txt""`""/word_TOEIC.txt""`""/word_KY.txt"");"" is 395.",110
+superword,org.apdplat.superword.tools,WordSources,save,Long Statement,"The length of the statement ""List<String> list=words.stream().sorted().map(word -> i.incrementAndGet() + ""\t"" + word.getWord()).collect(Collectors.toList());"" is 128.",193
+superword,org.apdplat.superword.tools,WordSources,get,Long Statement,"The length of the statement ""Set<Word> wordSet=words.parallelStream().filter(line -> !line.trim().startsWith(""#"") && !"""".equals(line.trim())).filter(line -> line.trim().split(""\\s+"").length >= index + 1).map(line -> new Word(line.trim().split(""\\s+"")[index]`"""")).filter(word -> StringUtils.isAlphanumeric(word.getWord())).collect(Collectors.toSet());"" is 321.",209
+superword,org.apdplat.superword.tools,WordSources,stem,Long Statement,"The length of the statement ""return words.stream().filter(word -> word.getWord().length() > 3).filter(word -> !isPlural(words`word)).collect(Collectors.toSet());"" is 132.",260
+superword,org.apdplat.superword.tools,WordSources,stem,Magic Number,The method contains a magic number: 3,260
+superword,org.apdplat.superword.tools,WordSources,plural,Magic Number,The method contains a magic number: 3,267
+superword,org.apdplat.superword.tools,WordSources,isPlural,Complex Conditional,"The conditional expression w.endsWith(""ces"") || w.endsWith(""ses"") || w.endsWith(""zes"") is complex.",280
+superword,org.apdplat.superword.tools,WordSources,isPlural,Complex Conditional,"The conditional expression w.endsWith(""ses"") || w.endsWith(""shes"") || w.endsWith(""ches"")|| w.endsWith(""xes"") is complex.",280
+superword,org.apdplat.superword.tools,WordSources,isPlural,Complex Method,Cyclomatic complexity of the method is 9,280
+superword,org.apdplat.superword.tools,WordSources,isPlural,Magic Number,The method contains a magic number: 4,280
+superword,org.apdplat.superword.tools,WordSources,isPlural,Magic Number,The method contains a magic number: 4,280
+superword,org.apdplat.superword.tools,WordSources,isPlural,Magic Number,The method contains a magic number: 2,280
+superword,org.apdplat.superword.tools,MySQLUtils,extractPurePronunciation,Long Statement,"The length of the statement ""attr=attr.replace(""英""`"""").replace(""美""`"""").replace(""[""`"""").replace(""]""`"""").replace(""/""`"""").replace(""\\""`"""").replaceAll(""\\s+""`"""");"" is 129.",72
+superword,org.apdplat.superword.tools,MySQLUtils,getWordPronunciation,Magic Number,The method contains a magic number: 2,98
+superword,org.apdplat.superword.tools,MySQLUtils,saveWordPronunciation,Magic Number,The method contains a magic number: 2,122
+superword,org.apdplat.superword.tools,MySQLUtils,saveWordPronunciation,Magic Number,The method contains a magic number: 3,122
+superword,org.apdplat.superword.tools,MySQLUtils,getWordAndPronunciationBySymbol,Complex Conditional,"The conditional expression words.contains(new Word(word`"""")) && StringUtils.isNotBlank(pronunciation) && pronunciation.contains(symbol) is complex.",163
+superword,org.apdplat.superword.tools,MySQLUtils,getWordAndPronunciationBySymbol,Magic Number,The method contains a magic number: 2,163
+superword,org.apdplat.superword.tools,MySQLUtils,getWordsByPOS,Magic Number,The method contains a magic number: 2,196
+superword,org.apdplat.superword.tools,MySQLUtils,getAllWordPronunciation,Complex Conditional,"The conditional expression StringUtils.isNotBlank(word) && StringUtils.isNotBlank(pronunciation) && words.contains(new Word(word`"""")) is complex.",232
+superword,org.apdplat.superword.tools,MySQLUtils,getAllWordPronunciation,Magic Number,The method contains a magic number: 2,232
+superword,org.apdplat.superword.tools,MySQLUtils,getAllWordDefinition,Long Statement,"The length of the statement ""return getAllWordDefinitionMap(dictionary`words).entrySet().parallelStream().map(entry -> entry.getKey() + split + entry.getValue()).collect(Collectors.toList());"" is 162.",269
+superword,org.apdplat.superword.tools,MySQLUtils,getAllWordDefinitionMap,Complex Conditional,"The conditional expression StringUtils.isNotBlank(word) && StringUtils.isNotBlank(definition) && words.contains(new Word(word`"""")) is complex.",277
+superword,org.apdplat.superword.tools,MySQLUtils,getAllWordDefinitionMap,Magic Number,The method contains a magic number: 2,277
+superword,org.apdplat.superword.tools,MySQLUtils,getWordDefinition,Magic Number,The method contains a magic number: 2,307
+superword,org.apdplat.superword.tools,MySQLUtils,saveWordDefinition,Magic Number,The method contains a magic number: 2,331
+superword,org.apdplat.superword.tools,MySQLUtils,saveWordDefinition,Magic Number,The method contains a magic number: 3,331
+superword,org.apdplat.superword.tools,MySQLUtils,register,Magic Number,The method contains a magic number: 2,401
+superword,org.apdplat.superword.tools,MySQLUtils,register,Magic Number,The method contains a magic number: 3,401
+superword,org.apdplat.superword.tools,MySQLUtils,getUseTextFromDatabase,Magic Number,The method contains a magic number: 2,424
+superword,org.apdplat.superword.tools,MySQLUtils,getUseTextFromDatabase,Magic Number,The method contains a magic number: 3,424
+superword,org.apdplat.superword.tools,MySQLUtils,getUseTextFromDatabase,Magic Number,The method contains a magic number: 4,424
+superword,org.apdplat.superword.tools,MySQLUtils,getHistoryUserDynamicPrefixesFromDatabase,Magic Number,The method contains a magic number: 2,456
+superword,org.apdplat.superword.tools,MySQLUtils,getHistoryUserDynamicPrefixesFromDatabase,Magic Number,The method contains a magic number: 3,456
+superword,org.apdplat.superword.tools,MySQLUtils,getHistoryUserDynamicSuffixesFromDatabase,Magic Number,The method contains a magic number: 2,488
+superword,org.apdplat.superword.tools,MySQLUtils,getHistoryUserDynamicSuffixesFromDatabase,Magic Number,The method contains a magic number: 3,488
+superword,org.apdplat.superword.tools,MySQLUtils,getHistoryUserSimilarWordsFromDatabase,Magic Number,The method contains a magic number: 2,520
+superword,org.apdplat.superword.tools,MySQLUtils,getHistoryUserSimilarWordsFromDatabase,Magic Number,The method contains a magic number: 3,520
+superword,org.apdplat.superword.tools,MySQLUtils,getHistoryUserBooksFromDatabase,Magic Number,The method contains a magic number: 2,552
+superword,org.apdplat.superword.tools,MySQLUtils,getHistoryUserBooksFromDatabase,Magic Number,The method contains a magic number: 3,552
+superword,org.apdplat.superword.tools,MySQLUtils,getHistoryUserUrlsFromDatabase,Magic Number,The method contains a magic number: 2,584
+superword,org.apdplat.superword.tools,MySQLUtils,getHistoryUserUrlsFromDatabase,Magic Number,The method contains a magic number: 3,584
+superword,org.apdplat.superword.tools,MySQLUtils,getHistoryUserTextsFromDatabase,Magic Number,The method contains a magic number: 2,616
+superword,org.apdplat.superword.tools,MySQLUtils,getHistoryUserTextsFromDatabase,Magic Number,The method contains a magic number: 3,616
+superword,org.apdplat.superword.tools,MySQLUtils,isMyNewWord,Magic Number,The method contains a magic number: 2,648
+superword,org.apdplat.superword.tools,MySQLUtils,deleteMyNewWord,Magic Number,The method contains a magic number: 2,672
+superword,org.apdplat.superword.tools,MySQLUtils,getMyNewWordsFromDatabase,Magic Number,The method contains a magic number: 2,692
+superword,org.apdplat.superword.tools,MySQLUtils,getHistoryUserWordsFromDatabase,Magic Number,The method contains a magic number: 2,722
+superword,org.apdplat.superword.tools,MySQLUtils,getHistoryUserWordsFromDatabase,Magic Number,The method contains a magic number: 3,722
+superword,org.apdplat.superword.tools,MySQLUtils,_saveUserSimilarWordToDatabase,Magic Number,The method contains a magic number: 2,758
+superword,org.apdplat.superword.tools,MySQLUtils,_saveUserSimilarWordToDatabase,Magic Number,The method contains a magic number: 3,758
+superword,org.apdplat.superword.tools,MySQLUtils,_saveUserSimilarWordToDatabase,Magic Number,The method contains a magic number: 4,758
+superword,org.apdplat.superword.tools,MySQLUtils,_saveUserDynamicPrefixToDatabase,Magic Number,The method contains a magic number: 2,784
+superword,org.apdplat.superword.tools,MySQLUtils,_saveUserDynamicPrefixToDatabase,Magic Number,The method contains a magic number: 3,784
+superword,org.apdplat.superword.tools,MySQLUtils,_saveUserDynamicPrefixToDatabase,Magic Number,The method contains a magic number: 4,784
+superword,org.apdplat.superword.tools,MySQLUtils,_saveUserDynamicSuffixToDatabase,Magic Number,The method contains a magic number: 2,810
+superword,org.apdplat.superword.tools,MySQLUtils,_saveUserDynamicSuffixToDatabase,Magic Number,The method contains a magic number: 3,810
+superword,org.apdplat.superword.tools,MySQLUtils,_saveUserDynamicSuffixToDatabase,Magic Number,The method contains a magic number: 4,810
+superword,org.apdplat.superword.tools,MySQLUtils,_saveUserBookToDatabase,Magic Number,The method contains a magic number: 2,836
+superword,org.apdplat.superword.tools,MySQLUtils,_saveUserBookToDatabase,Magic Number,The method contains a magic number: 3,836
+superword,org.apdplat.superword.tools,MySQLUtils,_saveUserBookToDatabase,Magic Number,The method contains a magic number: 4,836
+superword,org.apdplat.superword.tools,MySQLUtils,_saveUserUrlToDatabase,Magic Number,The method contains a magic number: 2,862
+superword,org.apdplat.superword.tools,MySQLUtils,_saveUserUrlToDatabase,Magic Number,The method contains a magic number: 3,862
+superword,org.apdplat.superword.tools,MySQLUtils,_saveUserUrlToDatabase,Magic Number,The method contains a magic number: 4,862
+superword,org.apdplat.superword.tools,MySQLUtils,_saveUserTextToDatabase,Magic Number,The method contains a magic number: 2,888
+superword,org.apdplat.superword.tools,MySQLUtils,_saveUserTextToDatabase,Magic Number,The method contains a magic number: 3,888
+superword,org.apdplat.superword.tools,MySQLUtils,_saveUserTextToDatabase,Magic Number,The method contains a magic number: 4,888
+superword,org.apdplat.superword.tools,MySQLUtils,saveWrongWordsInQuizToMyNewWords,Complex Conditional,The conditional expression wrongWordsInQuiz != null && user != null && user.getUserName() != null is complex.,910
+superword,org.apdplat.superword.tools,MySQLUtils,_saveMyNewWordsToDatabase,Magic Number,The method contains a magic number: 2,938
+superword,org.apdplat.superword.tools,MySQLUtils,_saveMyNewWordsToDatabase,Magic Number,The method contains a magic number: 3,938
+superword,org.apdplat.superword.tools,MySQLUtils,_saveUserWordToDatabase,Magic Number,The method contains a magic number: 2,963
+superword,org.apdplat.superword.tools,MySQLUtils,_saveUserWordToDatabase,Magic Number,The method contains a magic number: 3,963
+superword,org.apdplat.superword.tools,MySQLUtils,MD5,Empty catch clause,The method has an empty catch block.,1070
+superword,org.apdplat.superword.tools,MySQLUtils,MD5,Magic Number,The method contains a magic number: 0xFF,1070
+superword,org.apdplat.superword.tools,MySQLUtils,MD5,Magic Number,The method contains a magic number: 0x100,1070
+superword,org.apdplat.superword.tools,MySQLUtils,MD5,Magic Number,The method contains a magic number: 3,1070
+superword,org.apdplat.superword.tools,MySQLUtils,saveQQUser,Long Statement,"The length of the statement ""String sql=""insert into user_qq (user_name` password` nickname` gender` birthday` location` avatarURL30` avatarURL50` avatarURL100` date_time) values (?` ?` ?` ?` ?` ?` ?` ?` ?` ?)"";"" is 182.",1107
+superword,org.apdplat.superword.tools,MySQLUtils,saveQQUser,Magic Number,The method contains a magic number: 2,1107
+superword,org.apdplat.superword.tools,MySQLUtils,saveQQUser,Magic Number,The method contains a magic number: 3,1107
+superword,org.apdplat.superword.tools,MySQLUtils,saveQQUser,Magic Number,The method contains a magic number: 4,1107
+superword,org.apdplat.superword.tools,MySQLUtils,saveQQUser,Magic Number,The method contains a magic number: 5,1107
+superword,org.apdplat.superword.tools,MySQLUtils,saveQQUser,Magic Number,The method contains a magic number: 6,1107
+superword,org.apdplat.superword.tools,MySQLUtils,saveQQUser,Magic Number,The method contains a magic number: 7,1107
+superword,org.apdplat.superword.tools,MySQLUtils,saveQQUser,Magic Number,The method contains a magic number: 8,1107
+superword,org.apdplat.superword.tools,MySQLUtils,saveQQUser,Magic Number,The method contains a magic number: 9,1107
+superword,org.apdplat.superword.tools,MySQLUtils,saveQQUser,Magic Number,The method contains a magic number: 10,1107
+superword,org.apdplat.superword.tools,Summary,summaryForPreciousWords,Magic Number,The method contains a magic number: 10,47
+superword,org.apdplat.superword.tools,Summary,preciousWords,Long Statement,"The length of the statement ""List<Map.Entry<String`AtomicInteger>> result=unknown.entrySet().stream().filter(entry -> entry.getKey().length() > 2).sorted((a`b) -> b.getValue().get() - a.getValue().get()).collect(Collectors.toList());"" is 204.",68
+superword,org.apdplat.superword.tools,Summary,preciousWords,Magic Number,The method contains a magic number: 2,68
+superword,org.apdplat.superword.tools,Summary,toHtmlFragment,Long Statement,"The length of the statement ""html.append(""<h1>"").append(i.incrementAndGet()).append(""、单词 "").append(WordLinker.toLink(word)).append("" 的匹配文本：</h1><br/>\n"");"" is 125.",96
+superword,org.apdplat.superword.tools,Summary,toHtmlFragment,Long Statement,"The length of the statement ""books.stream().sorted().forEach(b -> html.append(""\t"").append(j.incrementAndGet()).append(""、"").append(b).append(""<br/>\n""));"" is 124.",96
+superword,org.apdplat.superword.tools,Summary,findEvidence,Complex Conditional,The conditional expression wordSet.contains(word) && wordInOneBookCollectCount.get(wordBook).get() < bookLimitForBook && wordInAllBookCollectCount.get(word).get() < totalLimitForWord is complex.,153
+superword,org.apdplat.superword.tools,Summary,findEvidence,Long Statement,"The length of the statement ""if (wordSet.contains(word) && wordInOneBookCollectCount.get(wordBook).get() < bookLimitForBook && wordInAllBookCollectCount.get(word).get() < totalLimitForWord) {"" is 162.",153
+superword,org.apdplat.superword.tools,Summary,visitFile,Complex Conditional,The conditional expression wordSet.contains(word) && wordInOneBookCollectCount.get(wordBook).get() < bookLimitForBook && wordInAllBookCollectCount.get(word).get() < totalLimitForWord is complex.,169
+superword,org.apdplat.superword.tools,Summary,visitFile,Long Statement,"The length of the statement ""if (wordSet.contains(word) && wordInOneBookCollectCount.get(wordBook).get() < bookLimitForBook && wordInAllBookCollectCount.get(word).get() < totalLimitForWord) {"" is 162.",169
+superword,org.apdplat.superword.tools,Summary,summary,Long Statement,"The length of the statement ""List<String> words=Arrays.asList(""categorically""`""misleadingly""`""weightings""`""uniques""`""alphanumerics""`""misspell""`""conducive""`""dissection""`""marvel""`""graciously""`""inspections""`""appetite""`""visualizations""`""commonalities""`""dissecting""`""fidelity""`""creativity""`""coyote""`""reaction"");"" is 277.",217
+superword,org.apdplat.superword.tools,Summary,summary,Magic Number,The method contains a magic number: 100,217
+superword,org.apdplat.superword.tools,Summary,summary,Magic Number,The method contains a magic number: 10,217
+superword,org.apdplat.superword.tools,Summary,summary,Long Statement,"The length of the statement ""Map<String`Map<String`List<String>>> data=findEvidence(Paths.get(""src/main/resources/it"")`words`totalLimitForWord`bookLimitForBook);"" is 132.",244
+superword,org.apdplat.superword.tools,Summary,main,Magic Number,The method contains a magic number: 2000,252
+superword,org.apdplat.superword.tools,WordsFetcher,updatePrimarySchool,Magic Number,The method contains a magic number: 63,55
+superword,org.apdplat.superword.tools,WordsFetcher,updatePrimarySchool,Magic Number,The method contains a magic number: 5,55
+superword,org.apdplat.superword.tools,WordsFetcher,updatePrimarySchool,Magic Number,The method contains a magic number: 64,55
+superword,org.apdplat.superword.tools,WordsFetcher,updatePrimarySchool,Magic Number,The method contains a magic number: 3,55
+superword,org.apdplat.superword.tools,WordsFetcher,updatePrimarySchool,Magic Number,The method contains a magic number: 65,55
+superword,org.apdplat.superword.tools,WordsFetcher,updatePrimarySchool,Magic Number,The method contains a magic number: 3,55
+superword,org.apdplat.superword.tools,WordsFetcher,updatePrimarySchool,Magic Number,The method contains a magic number: 66,55
+superword,org.apdplat.superword.tools,WordsFetcher,updatePrimarySchool,Magic Number,The method contains a magic number: 3,55
+superword,org.apdplat.superword.tools,WordsFetcher,updatePrimarySchool,Magic Number,The method contains a magic number: 67,55
+superword,org.apdplat.superword.tools,WordsFetcher,updatePrimarySchool,Magic Number,The method contains a magic number: 4,55
+superword,org.apdplat.superword.tools,WordsFetcher,updatePrimarySchool,Magic Number,The method contains a magic number: 68,55
+superword,org.apdplat.superword.tools,WordsFetcher,updatePrimarySchool,Magic Number,The method contains a magic number: 4,55
+superword,org.apdplat.superword.tools,WordsFetcher,updatePrimarySchool,Magic Number,The method contains a magic number: 69,55
+superword,org.apdplat.superword.tools,WordsFetcher,updatePrimarySchool,Magic Number,The method contains a magic number: 4,55
+superword,org.apdplat.superword.tools,WordsFetcher,updatePrimarySchool,Magic Number,The method contains a magic number: 70,55
+superword,org.apdplat.superword.tools,WordsFetcher,updatePrimarySchool,Magic Number,The method contains a magic number: 5,55
+superword,org.apdplat.superword.tools,WordsFetcher,updatePrimarySchool,Magic Number,The method contains a magic number: 71,55
+superword,org.apdplat.superword.tools,WordsFetcher,updatePrimarySchool,Magic Number,The method contains a magic number: 5,55
+superword,org.apdplat.superword.tools,WordsFetcher,updatePrimarySchool,Magic Number,The method contains a magic number: 72,55
+superword,org.apdplat.superword.tools,WordsFetcher,updatePrimarySchool,Magic Number,The method contains a magic number: 4,55
+superword,org.apdplat.superword.tools,WordsFetcher,updatePrimarySchool,Magic Number,The method contains a magic number: 73,55
+superword,org.apdplat.superword.tools,WordsFetcher,updatePrimarySchool,Magic Number,The method contains a magic number: 14,55
+superword,org.apdplat.superword.tools,WordsFetcher,updatePrimarySchool,Magic Number,The method contains a magic number: 74,55
+superword,org.apdplat.superword.tools,WordsFetcher,updatePrimarySchool,Magic Number,The method contains a magic number: 10,55
+superword,org.apdplat.superword.tools,WordsFetcher,updatePrimarySchool,Magic Number,The method contains a magic number: 655,55
+superword,org.apdplat.superword.tools,WordsFetcher,updatePrimarySchool,Magic Number,The method contains a magic number: 8,55
+superword,org.apdplat.superword.tools,WordsFetcher,updatePrimarySchool,Magic Number,The method contains a magic number: 656,55
+superword,org.apdplat.superword.tools,WordsFetcher,updatePrimarySchool,Magic Number,The method contains a magic number: 8,55
+superword,org.apdplat.superword.tools,WordsFetcher,updatePrimarySchool,Magic Number,The method contains a magic number: 657,55
+superword,org.apdplat.superword.tools,WordsFetcher,updatePrimarySchool,Magic Number,The method contains a magic number: 2,55
+superword,org.apdplat.superword.tools,WordsFetcher,updatePrimarySchool,Magic Number,The method contains a magic number: 658,55
+superword,org.apdplat.superword.tools,WordsFetcher,updatePrimarySchool,Magic Number,The method contains a magic number: 3,55
+superword,org.apdplat.superword.tools,WordsFetcher,updatePrimarySchool,Magic Number,The method contains a magic number: 149,55
+superword,org.apdplat.superword.tools,WordsFetcher,updatePrimarySchool,Magic Number,The method contains a magic number: 3,55
+superword,org.apdplat.superword.tools,WordsFetcher,updatePrimarySchool,Magic Number,The method contains a magic number: 150,55
+superword,org.apdplat.superword.tools,WordsFetcher,updatePrimarySchool,Magic Number,The method contains a magic number: 4,55
+superword,org.apdplat.superword.tools,WordsFetcher,updatePrimarySchool,Magic Number,The method contains a magic number: 151,55
+superword,org.apdplat.superword.tools,WordsFetcher,updatePrimarySchool,Magic Number,The method contains a magic number: 3,55
+superword,org.apdplat.superword.tools,WordsFetcher,updatePrimarySchool,Magic Number,The method contains a magic number: 152,55
+superword,org.apdplat.superword.tools,WordsFetcher,updatePrimarySchool,Magic Number,The method contains a magic number: 4,55
+superword,org.apdplat.superword.tools,WordsFetcher,updatePrimarySchool,Magic Number,The method contains a magic number: 154,55
+superword,org.apdplat.superword.tools,WordsFetcher,updatePrimarySchool,Magic Number,The method contains a magic number: 6,55
+superword,org.apdplat.superword.tools,WordsFetcher,updatePrimarySchool,Magic Number,The method contains a magic number: 155,55
+superword,org.apdplat.superword.tools,WordsFetcher,updatePrimarySchool,Magic Number,The method contains a magic number: 8,55
+superword,org.apdplat.superword.tools,WordsFetcher,updatePrimarySchool,Magic Number,The method contains a magic number: 156,55
+superword,org.apdplat.superword.tools,WordsFetcher,updatePrimarySchool,Magic Number,The method contains a magic number: 8,55
+superword,org.apdplat.superword.tools,WordsFetcher,updatePrimarySchool,Magic Number,The method contains a magic number: 265,55
+superword,org.apdplat.superword.tools,WordsFetcher,updatePrimarySchool,Magic Number,The method contains a magic number: 2,55
+superword,org.apdplat.superword.tools,WordsFetcher,updatePrimarySchool,Magic Number,The method contains a magic number: 266,55
+superword,org.apdplat.superword.tools,WordsFetcher,updatePrimarySchool,Magic Number,The method contains a magic number: 3,55
+superword,org.apdplat.superword.tools,WordsFetcher,updatePrimarySchool,Magic Number,The method contains a magic number: 267,55
+superword,org.apdplat.superword.tools,WordsFetcher,updatePrimarySchool,Magic Number,The method contains a magic number: 268,55
+superword,org.apdplat.superword.tools,WordsFetcher,updatePrimarySchool,Magic Number,The method contains a magic number: 2,55
+superword,org.apdplat.superword.tools,WordsFetcher,updatePrimarySchool,Magic Number,The method contains a magic number: 269,55
+superword,org.apdplat.superword.tools,WordsFetcher,updatePrimarySchool,Magic Number,The method contains a magic number: 271,55
+superword,org.apdplat.superword.tools,WordsFetcher,updatePrimarySchool,Magic Number,The method contains a magic number: 2,55
+superword,org.apdplat.superword.tools,WordsFetcher,updatePrimarySchool,Magic Number,The method contains a magic number: 272,55
+superword,org.apdplat.superword.tools,WordsFetcher,updatePrimarySchool,Magic Number,The method contains a magic number: 3,55
+superword,org.apdplat.superword.tools,WordsFetcher,updateJuniorSchool,Magic Number,The method contains a magic number: 57,93
+superword,org.apdplat.superword.tools,WordsFetcher,updateJuniorSchool,Magic Number,The method contains a magic number: 27,93
+superword,org.apdplat.superword.tools,WordsFetcher,updateJuniorSchool,Magic Number,The method contains a magic number: 58,93
+superword,org.apdplat.superword.tools,WordsFetcher,updateJuniorSchool,Magic Number,The method contains a magic number: 24,93
+superword,org.apdplat.superword.tools,WordsFetcher,updateJuniorSchool,Magic Number,The method contains a magic number: 59,93
+superword,org.apdplat.superword.tools,WordsFetcher,updateJuniorSchool,Magic Number,The method contains a magic number: 21,93
+superword,org.apdplat.superword.tools,WordsFetcher,updateJuniorSchool,Magic Number,The method contains a magic number: 60,93
+superword,org.apdplat.superword.tools,WordsFetcher,updateJuniorSchool,Magic Number,The method contains a magic number: 15,93
+superword,org.apdplat.superword.tools,WordsFetcher,updateJuniorSchool,Magic Number,The method contains a magic number: 61,93
+superword,org.apdplat.superword.tools,WordsFetcher,updateJuniorSchool,Magic Number,The method contains a magic number: 20,93
+superword,org.apdplat.superword.tools,WordsFetcher,updateJuniorSchool,Magic Number,The method contains a magic number: 62,93
+superword,org.apdplat.superword.tools,WordsFetcher,updateJuniorSchool,Magic Number,The method contains a magic number: 16,93
+superword,org.apdplat.superword.tools,WordsFetcher,updateJuniorSchool,Magic Number,The method contains a magic number: 105,93
+superword,org.apdplat.superword.tools,WordsFetcher,updateJuniorSchool,Magic Number,The method contains a magic number: 30,93
+superword,org.apdplat.superword.tools,WordsFetcher,updateJuniorSchool,Magic Number,The method contains a magic number: 106,93
+superword,org.apdplat.superword.tools,WordsFetcher,updateJuniorSchool,Magic Number,The method contains a magic number: 20,93
+superword,org.apdplat.superword.tools,WordsFetcher,updateJuniorSchool,Magic Number,The method contains a magic number: 107,93
+superword,org.apdplat.superword.tools,WordsFetcher,updateJuniorSchool,Magic Number,The method contains a magic number: 28,93
+superword,org.apdplat.superword.tools,WordsFetcher,updateJuniorSchool,Magic Number,The method contains a magic number: 108,93
+superword,org.apdplat.superword.tools,WordsFetcher,updateJuniorSchool,Magic Number,The method contains a magic number: 25,93
+superword,org.apdplat.superword.tools,WordsFetcher,updateJuniorSchool,Magic Number,The method contains a magic number: 109,93
+superword,org.apdplat.superword.tools,WordsFetcher,updateJuniorSchool,Magic Number,The method contains a magic number: 37,93
+superword,org.apdplat.superword.tools,WordsFetcher,updateJuniorSchool,Magic Number,The method contains a magic number: 221,93
+superword,org.apdplat.superword.tools,WordsFetcher,updateJuniorSchool,Magic Number,The method contains a magic number: 19,93
+superword,org.apdplat.superword.tools,WordsFetcher,updateJuniorSchool,Magic Number,The method contains a magic number: 222,93
+superword,org.apdplat.superword.tools,WordsFetcher,updateJuniorSchool,Magic Number,The method contains a magic number: 19,93
+superword,org.apdplat.superword.tools,WordsFetcher,updateJuniorSchool,Magic Number,The method contains a magic number: 223,93
+superword,org.apdplat.superword.tools,WordsFetcher,updateJuniorSchool,Magic Number,The method contains a magic number: 18,93
+superword,org.apdplat.superword.tools,WordsFetcher,updateJuniorSchool,Magic Number,The method contains a magic number: 224,93
+superword,org.apdplat.superword.tools,WordsFetcher,updateJuniorSchool,Magic Number,The method contains a magic number: 17,93
+superword,org.apdplat.superword.tools,WordsFetcher,updateJuniorSchool,Magic Number,The method contains a magic number: 225,93
+superword,org.apdplat.superword.tools,WordsFetcher,updateJuniorSchool,Magic Number,The method contains a magic number: 12,93
+superword,org.apdplat.superword.tools,WordsFetcher,updateJuniorSchool,Magic Number,The method contains a magic number: 226,93
+superword,org.apdplat.superword.tools,WordsFetcher,updateJuniorSchool,Magic Number,The method contains a magic number: 8,93
+superword,org.apdplat.superword.tools,WordsFetcher,updateJuniorSchool,Magic Number,The method contains a magic number: 273,93
+superword,org.apdplat.superword.tools,WordsFetcher,updateJuniorSchool,Magic Number,The method contains a magic number: 20,93
+superword,org.apdplat.superword.tools,WordsFetcher,updateJuniorSchool,Magic Number,The method contains a magic number: 224,93
+superword,org.apdplat.superword.tools,WordsFetcher,updateJuniorSchool,Magic Number,The method contains a magic number: 18,93
+superword,org.apdplat.superword.tools,WordsFetcher,updateJuniorSchool,Magic Number,The method contains a magic number: 226,93
+superword,org.apdplat.superword.tools,WordsFetcher,updateJuniorSchool,Magic Number,The method contains a magic number: 16,93
+superword,org.apdplat.superword.tools,WordsFetcher,updateJuniorSchool,Magic Number,The method contains a magic number: 227,93
+superword,org.apdplat.superword.tools,WordsFetcher,updateJuniorSchool,Magic Number,The method contains a magic number: 16,93
+superword,org.apdplat.superword.tools,WordsFetcher,updateJuniorSchool,Magic Number,The method contains a magic number: 228,93
+superword,org.apdplat.superword.tools,WordsFetcher,updateJuniorSchool,Magic Number,The method contains a magic number: 12,93
+superword,org.apdplat.superword.tools,WordsFetcher,updateJuniorSchool,Magic Number,The method contains a magic number: 229,93
+superword,org.apdplat.superword.tools,WordsFetcher,updateJuniorSchool,Magic Number,The method contains a magic number: 14,93
+superword,org.apdplat.superword.tools,WordsFetcher,updateJuniorSchool,Magic Number,The method contains a magic number: 728,93
+superword,org.apdplat.superword.tools,WordsFetcher,updateJuniorSchool,Magic Number,The method contains a magic number: 18,93
+superword,org.apdplat.superword.tools,WordsFetcher,updateJuniorSchool,Magic Number,The method contains a magic number: 729,93
+superword,org.apdplat.superword.tools,WordsFetcher,updateJuniorSchool,Magic Number,The method contains a magic number: 25,93
+superword,org.apdplat.superword.tools,WordsFetcher,updateJuniorSchool,Magic Number,The method contains a magic number: 678,93
+superword,org.apdplat.superword.tools,WordsFetcher,updateJuniorSchool,Magic Number,The method contains a magic number: 17,93
+superword,org.apdplat.superword.tools,WordsFetcher,updateSeniorSchool,Magic Number,The method contains a magic number: 51,130
+superword,org.apdplat.superword.tools,WordsFetcher,updateSeniorSchool,Magic Number,The method contains a magic number: 19,130
+superword,org.apdplat.superword.tools,WordsFetcher,updateSeniorSchool,Magic Number,The method contains a magic number: 52,130
+superword,org.apdplat.superword.tools,WordsFetcher,updateSeniorSchool,Magic Number,The method contains a magic number: 25,130
+superword,org.apdplat.superword.tools,WordsFetcher,updateSeniorSchool,Magic Number,The method contains a magic number: 53,130
+superword,org.apdplat.superword.tools,WordsFetcher,updateSeniorSchool,Magic Number,The method contains a magic number: 24,130
+superword,org.apdplat.superword.tools,WordsFetcher,updateSeniorSchool,Magic Number,The method contains a magic number: 54,130
+superword,org.apdplat.superword.tools,WordsFetcher,updateSeniorSchool,Magic Number,The method contains a magic number: 20,130
+superword,org.apdplat.superword.tools,WordsFetcher,updateSeniorSchool,Magic Number,The method contains a magic number: 55,130
+superword,org.apdplat.superword.tools,WordsFetcher,updateSeniorSchool,Magic Number,The method contains a magic number: 25,130
+superword,org.apdplat.superword.tools,WordsFetcher,updateSeniorSchool,Magic Number,The method contains a magic number: 56,130
+superword,org.apdplat.superword.tools,WordsFetcher,updateSeniorSchool,Magic Number,The method contains a magic number: 23,130
+superword,org.apdplat.superword.tools,WordsFetcher,updateSeniorSchool,Magic Number,The method contains a magic number: 110,130
+superword,org.apdplat.superword.tools,WordsFetcher,updateSeniorSchool,Magic Number,The method contains a magic number: 14,130
+superword,org.apdplat.superword.tools,WordsFetcher,updateSeniorSchool,Magic Number,The method contains a magic number: 111,130
+superword,org.apdplat.superword.tools,WordsFetcher,updateSeniorSchool,Magic Number,The method contains a magic number: 14,130
+superword,org.apdplat.superword.tools,WordsFetcher,updateSeniorSchool,Magic Number,The method contains a magic number: 112,130
+superword,org.apdplat.superword.tools,WordsFetcher,updateSeniorSchool,Magic Number,The method contains a magic number: 19,130
+superword,org.apdplat.superword.tools,WordsFetcher,updateSeniorSchool,Magic Number,The method contains a magic number: 113,130
+superword,org.apdplat.superword.tools,WordsFetcher,updateSeniorSchool,Magic Number,The method contains a magic number: 15,130
+superword,org.apdplat.superword.tools,WordsFetcher,updateSeniorSchool,Magic Number,The method contains a magic number: 114,130
+superword,org.apdplat.superword.tools,WordsFetcher,updateSeniorSchool,Magic Number,The method contains a magic number: 18,130
+superword,org.apdplat.superword.tools,WordsFetcher,updateSeniorSchool,Magic Number,The method contains a magic number: 118,130
+superword,org.apdplat.superword.tools,WordsFetcher,updateSeniorSchool,Magic Number,The method contains a magic number: 20,130
+superword,org.apdplat.superword.tools,WordsFetcher,updateSeniorSchool,Magic Number,The method contains a magic number: 119,130
+superword,org.apdplat.superword.tools,WordsFetcher,updateSeniorSchool,Magic Number,The method contains a magic number: 19,130
+superword,org.apdplat.superword.tools,WordsFetcher,updateSeniorSchool,Magic Number,The method contains a magic number: 139,130
+superword,org.apdplat.superword.tools,WordsFetcher,updateSeniorSchool,Magic Number,The method contains a magic number: 5,130
+superword,org.apdplat.superword.tools,WordsFetcher,updateSeniorSchool,Magic Number,The method contains a magic number: 140,130
+superword,org.apdplat.superword.tools,WordsFetcher,updateSeniorSchool,Magic Number,The method contains a magic number: 194,130
+superword,org.apdplat.superword.tools,WordsFetcher,updateUniversity,Magic Number,The method contains a magic number: 45,153
+superword,org.apdplat.superword.tools,WordsFetcher,updateUniversity,Magic Number,The method contains a magic number: 27,153
+superword,org.apdplat.superword.tools,WordsFetcher,updateUniversity,Magic Number,The method contains a magic number: 46,153
+superword,org.apdplat.superword.tools,WordsFetcher,updateUniversity,Magic Number,The method contains a magic number: 37,153
+superword,org.apdplat.superword.tools,WordsFetcher,updateUniversity,Magic Number,The method contains a magic number: 47,153
+superword,org.apdplat.superword.tools,WordsFetcher,updateUniversity,Magic Number,The method contains a magic number: 40,153
+superword,org.apdplat.superword.tools,WordsFetcher,updateUniversity,Magic Number,The method contains a magic number: 48,153
+superword,org.apdplat.superword.tools,WordsFetcher,updateUniversity,Magic Number,The method contains a magic number: 46,153
+superword,org.apdplat.superword.tools,WordsFetcher,updateUniversity,Magic Number,The method contains a magic number: 49,153
+superword,org.apdplat.superword.tools,WordsFetcher,updateUniversity,Magic Number,The method contains a magic number: 25,153
+superword,org.apdplat.superword.tools,WordsFetcher,updateUniversity,Magic Number,The method contains a magic number: 50,153
+superword,org.apdplat.superword.tools,WordsFetcher,updateUniversity,Magic Number,The method contains a magic number: 65,153
+superword,org.apdplat.superword.tools,WordsFetcher,updateNewConception,Magic Number,The method contains a magic number: 41,165
+superword,org.apdplat.superword.tools,WordsFetcher,updateNewConception,Magic Number,The method contains a magic number: 41,165
+superword,org.apdplat.superword.tools,WordsFetcher,updateNewConception,Magic Number,The method contains a magic number: 42,165
+superword,org.apdplat.superword.tools,WordsFetcher,updateNewConception,Magic Number,The method contains a magic number: 49,165
+superword,org.apdplat.superword.tools,WordsFetcher,updateNewConception,Magic Number,The method contains a magic number: 43,165
+superword,org.apdplat.superword.tools,WordsFetcher,updateNewConception,Magic Number,The method contains a magic number: 81,165
+superword,org.apdplat.superword.tools,WordsFetcher,updateNewConception,Magic Number,The method contains a magic number: 44,165
+superword,org.apdplat.superword.tools,WordsFetcher,updateNewConception,Magic Number,The method contains a magic number: 76,165
+superword,org.apdplat.superword.tools,WordsFetcher,updateCET4,Magic Number,The method contains a magic number: 11,174
+superword,org.apdplat.superword.tools,WordsFetcher,updateCET4,Magic Number,The method contains a magic number: 226,174
+superword,org.apdplat.superword.tools,WordsFetcher,updateCET4,Magic Number,The method contains a magic number: 122,174
+superword,org.apdplat.superword.tools,WordsFetcher,updateCET4,Magic Number,The method contains a magic number: 35,174
+superword,org.apdplat.superword.tools,WordsFetcher,updateCET6,Magic Number,The method contains a magic number: 12,178
+superword,org.apdplat.superword.tools,WordsFetcher,updateCET6,Magic Number,The method contains a magic number: 105,178
+superword,org.apdplat.superword.tools,WordsFetcher,updateCET6,Magic Number,The method contains a magic number: 123,178
+superword,org.apdplat.superword.tools,WordsFetcher,updateCET6,Magic Number,The method contains a magic number: 25,178
+superword,org.apdplat.superword.tools,WordsFetcher,updateKY,Magic Number,The method contains a magic number: 13,182
+superword,org.apdplat.superword.tools,WordsFetcher,updateKY,Magic Number,The method contains a magic number: 274,182
+superword,org.apdplat.superword.tools,WordsFetcher,updateKY,Magic Number,The method contains a magic number: 143,182
+superword,org.apdplat.superword.tools,WordsFetcher,updateKY,Magic Number,The method contains a magic number: 3,182
+superword,org.apdplat.superword.tools,WordsFetcher,updateTOEFL,Magic Number,The method contains a magic number: 14,186
+superword,org.apdplat.superword.tools,WordsFetcher,updateTOEFL,Magic Number,The method contains a magic number: 245,186
+superword,org.apdplat.superword.tools,WordsFetcher,updateIELTS,Magic Number,The method contains a magic number: 15,189
+superword,org.apdplat.superword.tools,WordsFetcher,updateIELTS,Magic Number,The method contains a magic number: 228,189
+superword,org.apdplat.superword.tools,WordsFetcher,updateGRE,Magic Number,The method contains a magic number: 16,192
+superword,org.apdplat.superword.tools,WordsFetcher,updateGRE,Magic Number,The method contains a magic number: 375,192
+superword,org.apdplat.superword.tools,WordsFetcher,updateGMAT,Magic Number,The method contains a magic number: 36,195
+superword,org.apdplat.superword.tools,WordsFetcher,updateGMAT,Magic Number,The method contains a magic number: 40,195
+superword,org.apdplat.superword.tools,WordsFetcher,updateGMAT,Magic Number,The method contains a magic number: 37,195
+superword,org.apdplat.superword.tools,WordsFetcher,updateGMAT,Magic Number,The method contains a magic number: 54,195
+superword,org.apdplat.superword.tools,WordsFetcher,updateGMAT,Magic Number,The method contains a magic number: 38,195
+superword,org.apdplat.superword.tools,WordsFetcher,updateGMAT,Magic Number,The method contains a magic number: 108,195
+superword,org.apdplat.superword.tools,WordsFetcher,updateTOEIC,Magic Number,The method contains a magic number: 682,200
+superword,org.apdplat.superword.tools,WordsFetcher,updateTOEIC,Magic Number,The method contains a magic number: 42,200
+superword,org.apdplat.superword.tools,WordsFetcher,updateSAT,Magic Number,The method contains a magic number: 121,203
+superword,org.apdplat.superword.tools,WordsFetcher,updateSAT,Magic Number,The method contains a magic number: 11,203
+superword,org.apdplat.superword.tools,WordsFetcher,updateBEC,Magic Number,The method contains a magic number: 680,206
+superword,org.apdplat.superword.tools,WordsFetcher,updateBEC,Magic Number,The method contains a magic number: 47,206
+superword,org.apdplat.superword.tools,WordsFetcher,updateBEC,Magic Number,The method contains a magic number: 681,206
+superword,org.apdplat.superword.tools,WordsFetcher,updateBEC,Magic Number,The method contains a magic number: 10,206
+superword,org.apdplat.superword.tools,WordsFetcher,updateADULT,Magic Number,The method contains a magic number: 703,210
+superword,org.apdplat.superword.tools,WordsFetcher,updateADULT,Magic Number,The method contains a magic number: 144,210
+superword,org.apdplat.superword.tools,WordsFetcher,updateADULT,Magic Number,The method contains a magic number: 704,210
+superword,org.apdplat.superword.tools,WordsFetcher,updateADULT,Magic Number,The method contains a magic number: 284,210
+superword,org.apdplat.superword.tools,WordsFetcher,updateADULT,Magic Number,The method contains a magic number: 705,210
+superword,org.apdplat.superword.tools,WordsFetcher,updateADULT,Magic Number,The method contains a magic number: 143,210
+superword,org.apdplat.superword.tools,WordsFetcher,updateADULT,Magic Number,The method contains a magic number: 706,210
+superword,org.apdplat.superword.tools,WordsFetcher,updateADULT,Magic Number,The method contains a magic number: 11,210
+superword,org.apdplat.superword.tools,WordsFetcher,updateADULT,Magic Number,The method contains a magic number: 707,210
+superword,org.apdplat.superword.tools,WordsFetcher,updateADULT,Magic Number,The method contains a magic number: 198,210
+superword,org.apdplat.superword.tools,WordsFetcher,updateADULT,Magic Number,The method contains a magic number: 708,210
+superword,org.apdplat.superword.tools,WordsFetcher,updateADULT,Magic Number,The method contains a magic number: 171,210
+superword,org.apdplat.superword.tools,WordsFetcher,updateADULT,Magic Number,The method contains a magic number: 709,210
+superword,org.apdplat.superword.tools,WordsFetcher,updateADULT,Magic Number,The method contains a magic number: 89,210
+superword,org.apdplat.superword.tools,WordsFetcher,updateADULT,Magic Number,The method contains a magic number: 710,210
+superword,org.apdplat.superword.tools,WordsFetcher,updateADULT,Magic Number,The method contains a magic number: 61,210
+superword,org.apdplat.superword.tools,WordsFetcher,updateADULT,Magic Number,The method contains a magic number: 711,210
+superword,org.apdplat.superword.tools,WordsFetcher,updateADULT,Magic Number,The method contains a magic number: 180,210
+superword,org.apdplat.superword.tools,WordsFetcher,updateMBA,Magic Number,The method contains a magic number: 39,221
+superword,org.apdplat.superword.tools,WordsFetcher,updateMBA,Magic Number,The method contains a magic number: 243,221
+superword,org.apdplat.superword.tools,WordsFetcher,updateTEM4,Magic Number,The method contains a magic number: 90,224
+superword,org.apdplat.superword.tools,WordsFetcher,updateTEM4,Magic Number,The method contains a magic number: 105,224
+superword,org.apdplat.superword.tools,WordsFetcher,updateTEM8,Magic Number,The method contains a magic number: 91,227
+superword,org.apdplat.superword.tools,WordsFetcher,updateTEM8,Magic Number,The method contains a magic number: 47,227
+superword,org.apdplat.superword.tools,WordsFetcher,updateCATTI,Magic Number,The method contains a magic number: 715,230
+superword,org.apdplat.superword.tools,WordsFetcher,updateCATTI,Magic Number,The method contains a magic number: 70,230
+superword,org.apdplat.superword.tools,WordsFetcher,updateCATTI,Magic Number,The method contains a magic number: 716,230
+superword,org.apdplat.superword.tools,WordsFetcher,updateCATTI,Magic Number,The method contains a magic number: 35,230
+superword,org.apdplat.superword.tools,WordsFetcher,updateCATTI,Magic Number,The method contains a magic number: 717,230
+superword,org.apdplat.superword.tools,WordsFetcher,updateCATTI,Magic Number,The method contains a magic number: 94,230
+superword,org.apdplat.superword.tools,WordsFetcher,updateComputer,Magic Number,The method contains a magic number: 78,236
+superword,org.apdplat.superword.tools,WordsFetcher,updateComputer,Magic Number,The method contains a magic number: 191,236
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 75,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 58,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 76,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 46,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 77,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 27,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 79,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 118,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 80,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 18,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 81,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 11,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 97,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 34,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 98,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 14,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 147,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 92,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 721,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 17,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 712,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 3,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 713,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 163,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 363,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 29,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 364,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 25,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 365,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 46,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 366,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 50,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 355,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 31,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 362,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 59,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 361,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 54,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 358,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 55,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 359,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 33,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 293,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 49,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 125,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 24,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 125,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 24,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 126,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 42,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 127,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 60,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 128,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 109,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 129,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 212,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 294,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 53,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 725,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 122,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 720,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 7,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 726,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 3,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 676,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 19,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 175,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 26,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 144,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 13,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 145,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 19,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 146,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 11,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 99,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 12,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 87,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 2,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 83,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 7,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 84,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 11,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 85,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 6,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 86,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 11,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 153,243
+superword,org.apdplat.superword.tools,WordsFetcher,updateOther,Magic Number,The method contains a magic number: 13,243
+superword,org.apdplat.superword.tools,WordsFetcher,update,Long Statement,"The length of the statement ""List<String> allWords=words.stream().sorted().map(w -> i.incrementAndGet() + ""\t"" + w.getWord()).collect(Collectors.toList());"" is 126.",306
+superword,org.apdplat.superword.tools,WordsFetcher,fetch,Magic Number,The method contains a magic number: 4,326
+superword,org.apdplat.superword.tools,WordsFetcher,getContent,Long Statement,"The length of the statement ""Connection conn=Jsoup.connect(url).header(""Accept""`ACCEPT).header(""Accept-Encoding""`ENCODING).header(""Accept-Language""`LANGUAGE).header(""Connection""`CONNECTION).header(""Referer""`REFERER).header(""Host""`HOST).header(""User-Agent""`USER_AGENT).ignoreContentType(true);"" is 263.",365
+superword,org.apdplat.superword.freemarker,TemplateUtils,main,Magic Number,The method contains a magic number: 12,130
+superword,org.apdplat.superword.freemarker,TemplateUtils,main,Magic Number,The method contains a magic number: 12,130
+superword,org.apdplat.superword.freemarker,TemplateUtils,main,Magic Number,The method contains a magic number: 12,130
+superword,org.apdplat.superword.system,AntiRobotFilter,getKey,Long Statement,"The length of the statement ""return ""anti-robot-"" + userString + ""-""+ ip+ ""-""+ request.getHeader(""User-Agent"").replace(""-""`""_"")+ ""-""+ SIMPLE_DATE_FORMAT.format(new Date());"" is 143.",65
+superword,org.apdplat.superword.system,AntiRobotFilter,doFilter,Complex Conditional,"The conditional expression StringUtils.isBlank(userAgent) || userAgent.length() < 50 || userAgent.contains(""Java"") || userAgent.contains(""bingbot"") || userAgent.contains(""360Spider"") || userAgent.contains(""HaosouSpider"") || userAgent.contains(""Googlebot"") is complex.",72
+superword,org.apdplat.superword.system,AntiRobotFilter,doFilter,Complex Conditional,"The conditional expression StringUtils.isNotBlank(_token) && StringUtils.isNotBlank(_word) && StringUtils.isNotBlank(_answer)&& session.getAttribute(""token"") != null && session.getAttribute(""token"").toString().equals(_token) && session.getAttribute(""quizItem"") != null is complex.",72
+superword,org.apdplat.superword.system,AntiRobotFilter,doFilter,Complex Method,Cyclomatic complexity of the method is 16,72
+superword,org.apdplat.superword.system,AntiRobotFilter,doFilter,Long Statement,"The length of the statement ""if (StringUtils.isBlank(userAgent) || userAgent.length() < 50 || userAgent.contains(""Java"") || userAgent.contains(""bingbot"") || userAgent.contains(""360Spider"") || userAgent.contains(""HaosouSpider"") || userAgent.contains(""Googlebot"")) {"" is 235.",72
+superword,org.apdplat.superword.system,AntiRobotFilter,doFilter,Long Statement,"The length of the statement ""response.getWriter().write(""Superword is a Java open source project dedicated in the study of English words analysis and auxiliary reading` including but not limited to` spelling similarity` definition similarity` pronunciation similarity` the transformation rules of the spelling` the prefix and the dynamic prefix` the suffix and the dynamic suffix` roots` compound words` text auxiliary reading` web page auxiliary reading` book auxiliary reading` etc.."");"" is 459.",72
+superword,org.apdplat.superword.system,AntiRobotFilter,doFilter,Long Statement,"The length of the statement ""response.getWriter().write(""System has detected that you may not be a human` because you can't answer the question correctly."");"" is 128.",72
+superword,org.apdplat.superword.system,AntiRobotFilter,doFilter,Long Statement,"The length of the statement ""if (StringUtils.isNotBlank(_token) && StringUtils.isNotBlank(_word) && StringUtils.isNotBlank(_answer)&& session.getAttribute(""token"") != null && session.getAttribute(""token"").toString().equals(_token) && session.getAttribute(""quizItem"") != null) {"" is 248.",72
+superword,org.apdplat.superword.system,AntiRobotFilter,doFilter,Long Statement,"The length of the statement ""response.getWriter().write(""System has detected that your IP visit is too frequent and has automatically forbidden your vist. We are sorry to bring inconvenience to you` please understand` please come back tomorrow. Bye Bye!"");"" is 227.",72
+superword,org.apdplat.superword.system,AntiRobotFilter,doFilter,Magic Number,The method contains a magic number: 50,72
+superword,org.apdplat.superword.system,AntiRobotFilter,doFilter,Magic Number,The method contains a magic number: 200,72
+superword,org.apdplat.superword.system,AntiRobotFilter,doFilter,Magic Number,The method contains a magic number: 12,72
+superword,org.apdplat.superword.system,AntiRobotFilter,init,Long Statement,"The length of the statement ""Files.write(Paths.get(file)`archive.entrySet().stream().map(e -> e.getKey().replace(""anti-robot-""`"""").replace(""-""`""\t"") + ""\t"" + e.getValue()).map(line -> {"" is 156.",197
+superword,org.apdplat.superword.system,AntiRobotFilter,init,Magic Number,The method contains a magic number: 24,197
+superword,org.apdplat.superword.system,AntiRobotFilter,init,Magic Number,The method contains a magic number: 24,197
+superword,org.apdplat.superword.system,AntiRobotFilter,getData,Long Statement,"The length of the statement ""return map.entrySet().stream().sorted((a`b) -> b.getValue().compareTo(a.getValue())).map(e -> e.getKey() + ""-"" + e.getValue()).collect(Collectors.toList());"" is 156.",240
+superword,org.apdplat.superword.system,AntiRobotFilter,getData,Magic Number,The method contains a magic number: 11,240
+superword,org.apdplat.superword.system,ViewWordServlet,doIt,Complex Conditional,The conditional expression url == null || word == null || dict == null is complex.,44
+superword,org.apdplat.superword.system.qq,AfterLoginRedirectServlet,doPost,Complex Method,Cyclomatic complexity of the method is 8,42
+superword,org.apdplat.superword.system.qq,AfterLoginRedirectServlet,doPost,Long Statement,"The length of the statement ""qqUser.setBirthday(weiboUserInfoBean.getBirthday().getYear() + ""-"" + weiboUserInfoBean.getBirthday().getMonth()+ ""-""+ weiboUserInfoBean.getBirthday().getDay());"" is 160.",42
+superword,org.apdplat.superword.system.qq,AfterLoginRedirectServlet,doPost,Long Statement,"The length of the statement ""out.println(""<h1><a href=\"""" + request.getContextPath() + ""/index.jsp\"">Failed to login via QQ` please try again or use other ways.</a></h1>"");"" is 143.",42
+superword,org.apdplat.superword.model,QQUser,toString,Long Statement,"The length of the statement ""return ""QQUser{"" + ""id='"" + id + '\''+ ""` userName='""+ userName+ '\''+ ""` dateTime=""+ simpleDateFormat.format(dateTime)+ ""` password='""+ password+ '\''+ ""` nickname='""+ nickname+ '\''+ ""` gender='""+ gender+ '\''+ ""` birthday='""+ birthday+ '\''+ ""` location='""+ location+ '\''+ ""` avatarURL30='""+ avatarURL30+ '\''+ ""` avatarURL50='""+ avatarURL50+ '\''+ ""` avatarURL100='""+ avatarURL100+ '\''+ '}';"" is 397.",90
+superword,org.apdplat.superword.model,MyNewWord,toString,Long Statement,"The length of the statement ""return ""MyNewWord{"" + ""userName='"" + userName + '\''+ ""` word='""+ word+ '\''+ ""` dateTime=""+ simpleDateFormat.format(dateTime)+ '}';"" is 132.",36
+superword,org.apdplat.superword.model,UserDynamicPrefix,toString,Long Statement,"The length of the statement ""return ""UserDynamicPrefix{"" + ""id='"" + id + '\''+ ""userName='""+ userName+ '\''+ ""` dateTime=""+ simpleDateFormat.format(dateTime)+ ""` dynamicPrefix='""+ dynamicPrefix+ '\''+ '}';"" is 176.",36
+superword,org.apdplat.superword.model,User,toString,Long Statement,"The length of the statement ""return ""UserWord{"" + ""id='"" + id + '\''+ ""userName='""+ userName+ '\''+ ""` dateTime=""+ simpleDateFormat.format(dateTime)+ ""` password='""+ password+ '\''+ '}';"" is 157.",72
+superword,org.apdplat.superword.model,UserBook,toString,Long Statement,"The length of the statement ""return ""UserBook{"" + ""id='"" + id + '\''+ ""userName='""+ userName+ '\''+ ""` dateTime=""+ simpleDateFormat.format(dateTime)+ ""` book='""+ book+ '\''+ '}';"" is 149.",36
+superword,org.apdplat.superword.model,UserSimilarWord,toString,Long Statement,"The length of the statement ""return ""UserSimilarWord{"" + ""id='"" + id + '\''+ ""userName='""+ userName+ '\''+ ""` dateTime=""+ simpleDateFormat.format(dateTime)+ ""` similarWord='""+ similarWord+ '\''+ '}';"" is 170.",36
+superword,org.apdplat.superword.model,Quiz,getEvaluationCount,Complex Method,Cyclomatic complexity of the method is 8,72
+superword,org.apdplat.superword.model,Quiz,getEvaluationCount,Long Statement,"The length of the statement ""float rightRate=levelRightCount.get(quizItem.getLevel()).intValue() / (float)LEVEL_TO_TOTAL_COUNT.get(quizItem.getLevel());"" is 123.",72
+superword,org.apdplat.superword.model,Quiz,getEvaluationCount,Magic Number,The method contains a magic number: 0.1f,72
+superword,org.apdplat.superword.model,Quiz,getEvaluationCount,Magic Number,The method contains a magic number: 480,72
+superword,org.apdplat.superword.model,Quiz,getEvaluationCount,Magic Number,The method contains a magic number: 1000,72
+superword,org.apdplat.superword.model,Quiz,getEvaluationCount,Magic Number,The method contains a magic number: 20,72
+superword,org.apdplat.superword.model,Quiz,getEvaluationCount,Magic Number,The method contains a magic number: 9600,72
+superword,org.apdplat.superword.model,Quiz,getEvaluationCount,Magic Number,The method contains a magic number: 9600,72
+superword,org.apdplat.superword.model,Quiz,getEvaluationCount,Magic Number,The method contains a magic number: 3600,72
+superword,org.apdplat.superword.model,Quiz,getEvaluationCount,Magic Number,The method contains a magic number: 3600,72
+superword,org.apdplat.superword.model,Quiz,getEvaluationCount,Magic Number,The method contains a magic number: 4800,72
+superword,org.apdplat.superword.model,Quiz,buildQuiz,Magic Number,The method contains a magic number: 5,152
+superword,org.apdplat.superword.model,Quiz,buildQuiz,Magic Number,The method contains a magic number: 10,152
+superword,org.apdplat.superword.model,Quiz,buildQuiz,Magic Number,The method contains a magic number: 2,152
+superword,org.apdplat.superword.model,Quiz,buildQuiz,Magic Number,The method contains a magic number: 15,152
+superword,org.apdplat.superword.model,Quiz,buildQuiz,Magic Number,The method contains a magic number: 3,152
+superword,org.apdplat.superword.model,Quiz,buildQuiz,Magic Number,The method contains a magic number: 15,152
+superword,org.apdplat.superword.model,Quiz,buildQuiz,Magic Number,The method contains a magic number: 4,152
+superword,org.apdplat.superword.model,Quiz,buildQuiz,Magic Number,The method contains a magic number: 15,152
+superword,org.apdplat.superword.model,Quiz,buildQuiz,Magic Number,The method contains a magic number: 5,152
+superword,org.apdplat.superword.model,Quiz,buildQuiz,Magic Number,The method contains a magic number: 10,152
+superword,org.apdplat.superword.model,Quiz,buildQuiz,Magic Number,The method contains a magic number: 6,152
+superword,org.apdplat.superword.model,Quiz,buildQuiz,Magic Number,The method contains a magic number: 10,152
+superword,org.apdplat.superword.model,Quiz,buildQuiz,Magic Number,The method contains a magic number: 7,152
+superword,org.apdplat.superword.model,Quiz,buildQuiz,Magic Number,The method contains a magic number: 10,152
+superword,org.apdplat.superword.model,Quiz,buildQuiz,Magic Number,The method contains a magic number: 8,152
+superword,org.apdplat.superword.model,Quiz,buildQuiz,Magic Number,The method contains a magic number: 10,152
+superword,org.apdplat.superword.model,Quiz,buildQuiz,Magic Number,The method contains a magic number: 9,152
+superword,org.apdplat.superword.model,Quiz,build,Long Parameter List,The method has 5 parameters. ,233
+superword,org.apdplat.superword.model,Quiz,build,Magic Number,The method contains a magic number: 3,233
+superword,org.apdplat.superword.model,QuizItem,getDefinition,Complex Conditional,The conditional expression (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') is complex.,71
+superword,org.apdplat.superword.model,QuizItem,getDefinition,Complex Method,Cyclomatic complexity of the method is 8,71
+superword,org.apdplat.superword.model,QuizItem,getDefinition,Magic Number,The method contains a magic number: 25,71
+superword,org.apdplat.superword.model,QuizItem,buildIdentifyHumanQuiz,Long Statement,"The length of the statement ""List<Word> words=WordSources.get(""/word_CET4.txt"").parallelStream().filter(w -> w.getWord().length() > 3).collect(Collectors.toList());"" is 135.",98
+superword,org.apdplat.superword.model,QuizItem,buildIdentifyHumanQuiz,Magic Number,The method contains a magic number: 3,98
+superword,org.apdplat.superword.model,QuizItem,buildQuizItem,Magic Number,The method contains a magic number: 4,114
+superword,org.apdplat.superword.model,QuizItem,buildQuizItem,Magic Number,The method contains a magic number: 4,118
+superword,org.apdplat.superword.model,QuizItem,main,Magic Number,The method contains a magic number: 12,201
+superword,org.apdplat.superword.model,UserWord,toString,Long Statement,"The length of the statement ""return ""UserWord{"" + ""userName='"" + userName + '\''+ ""` word='""+ word+ '\''+ ""` dateTime=""+ simpleDateFormat.format(dateTime)+ '}';"" is 131.",36
+superword,org.apdplat.superword.model,CharMap,hashCode,Magic Number,The method contains a magic number: 31,66
+superword,org.apdplat.superword.model,UserDynamicSuffix,toString,Long Statement,"The length of the statement ""return ""UserDynamicSuffix{"" + ""id='"" + id + '\''+ ""userName='""+ userName+ '\''+ ""` dateTime=""+ simpleDateFormat.format(dateTime)+ ""` dynamicSuffix='""+ dynamicSuffix+ '\''+ '}';"" is 176.",36
+superword,org.apdplat.superword.model,UserText,toString,Long Statement,"The length of the statement ""return ""UserText{"" + ""id='"" + id + '\''+ ""userName='""+ userName+ '\''+ ""` dateTime=""+ simpleDateFormat.format(dateTime)+ ""` text='""+ text+ '\''+ '}';"" is 149.",36
+superword,org.apdplat.superword.model,UserUrl,toString,Long Statement,"The length of the statement ""return ""UserUrl{"" + ""id='"" + id + '\''+ ""userName='""+ userName+ '\''+ ""` dateTime=""+ simpleDateFormat.format(dateTime)+ ""` url='""+ url+ '\''+ '}';"" is 146.",36
+superword,org.apdplat.superword.extract,SynonymAntonymExtractor,parseFile,Long Statement,"The length of the statement ""try (BufferedReader reader=new BufferedReader(new InputStreamReader(new BufferedInputStream(new FileInputStream(file))))){"" is 122.",110
+superword,org.apdplat.superword.extract,SynonymAntonymExtractor,parseFile,Magic Number,The method contains a magic number: 2,110
+superword,org.apdplat.superword.extract,SynonymAntonymExtractor,parseSynonymAntonym,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@13602c1,139
+superword,org.apdplat.superword.extract,SynonymAntonymExtractor,parseSynonymAntonym,Long Statement,"The length of the statement ""Files.write(Paths.get(""src/main/resources/synonym_antonym_in_syllabus_vocabulary.txt"")`inSyllabusVocabularyHtml.getBytes(""utf-8""));"" is 131.",180
+superword,org.apdplat.superword.extract,SynonymAntonymExtractor,parseSynonymAntonym,Long Statement,"The length of the statement ""Files.write(Paths.get(""src/main/resources/synonym_antonym_not_in_syllabus_vocabulary.txt"")`notInSyllabusVocabularyHtml.getBytes(""utf-8""));"" is 138.",180
+superword,org.apdplat.superword.extract,SynonymAntonymExtractor,parseSynonymAntonym,Magic Number,The method contains a magic number: 6,180
+superword,org.apdplat.superword.extract,SynonymAntonymExtractor,parseSynonymAntonym,Magic Number,The method contains a magic number: 6,180
+superword,org.apdplat.superword.extract,SynonymAntonymExtractor,parseAntonym,Long Statement,"The length of the statement ""Files.write(Paths.get(""src/main/resources/antonym_in_syllabus_vocabulary.txt"")`inSyllabusVocabularyHtml.getBytes(""utf-8""));"" is 123.",191
+superword,org.apdplat.superword.extract,SynonymAntonymExtractor,parseAntonym,Long Statement,"The length of the statement ""Files.write(Paths.get(""src/main/resources/antonym_not_in_syllabus_vocabulary.txt"")`notInSyllabusVocabularyHtml.getBytes(""utf-8""));"" is 130.",191
+superword,org.apdplat.superword.extract,SynonymAntonymExtractor,parseAntonym,Magic Number,The method contains a magic number: 6,191
+superword,org.apdplat.superword.extract,SynonymAntonymExtractor,parseAntonym,Magic Number,The method contains a magic number: 6,191
+superword,org.apdplat.superword.extract,SynonymAntonymExtractor,parseSynonymAntonym,Magic Number,The method contains a magic number: 15000,203
+superword,org.apdplat.superword.extract,DefinitionExtractor,parseFile,Long Statement,"The length of the statement ""try (BufferedReader reader=new BufferedReader(new InputStreamReader(new BufferedInputStream(new FileInputStream(file))))){"" is 122.",109
+superword,org.apdplat.superword.extract,DefinitionExtractor,parseFile,Magic Number,The method contains a magic number: 2,109
+superword,org.apdplat.superword.extract,DefinitionExtractor,parseWord,Long Statement,"The length of the statement ""Files.write(Paths.get(""src/main/resources/definition_in_syllabus_vocabulary.txt"")`inSyllabusVocabularyHtml.getBytes(""utf-8""));"" is 126.",166
+superword,org.apdplat.superword.extract,DefinitionExtractor,parseWord,Long Statement,"The length of the statement ""Files.write(Paths.get(""src/main/resources/definition_not_in_syllabus_vocabulary.txt"")`notInSyllabusVocabularyHtml.getBytes(""utf-8""));"" is 133.",166
+superword,org.apdplat.superword.extract,DefinitionExtractor,parseWord,Magic Number,The method contains a magic number: 5,166
+superword,org.apdplat.superword.extract,DefinitionExtractor,parseWord,Magic Number,The method contains a magic number: 5,166
+superword,org.apdplat.superword.extract,DefinitionExtractor,parseWord,Magic Number,The method contains a magic number: 15000,193
+superword,org.apdplat.superword.extract,PartOfSpeechExtractor,parseFile,Long Statement,"The length of the statement ""try (BufferedReader reader=new BufferedReader(new InputStreamReader(new BufferedInputStream(new FileInputStream(file))))){"" is 122.",113
+superword,org.apdplat.superword.extract,PartOfSpeechExtractor,parseFile,Magic Number,The method contains a magic number: 2,113
+superword,org.apdplat.superword.extract,PartOfSpeechExtractor,parseWord,Complex Method,Cyclomatic complexity of the method is 9,141
+superword,org.apdplat.superword.extract,PartOfSpeechExtractor,parseWord,Long Statement,"The length of the statement ""partOfSpeech=partOfSpeech.replace("";""`"""").replace(""COMB in ADJ and N-COUNT""`""COMB-in-ADJ-and-N-COUNT"").replace(""COMB in ADJ and N""`""COMB-in-ADJ-and-N"").replace(""COMB in ADJ""`""COMB-in-ADJ"").replace(""COMB in ADJ-GRADED""`""COMB-in-ADJ-GRADED"").replace(""COMB in N-COUNT""`""COMB-in-N-COUNT"").replace(""COMB in COLOUR""`""COMB-in-COLOUR"").replace(""COMB in N""`""COMB-in-N"").replace(""COMB in N-UNCOUNT""`""COMB-in-N-UNCOUNT"").replace(""COMB in QUANT""`""COMB-in-QUANT"").replace(""COMB in VERB""`""COMB-in-VERB"");"" is 490.",141
+superword,org.apdplat.superword.extract,PartOfSpeechExtractor,parseWord,Long Statement,"The length of the statement ""Files.write(Paths.get(""src/main/resources/part_of_speech_in_syllabus_vocabulary.txt"")`inSyllabusVocabularyText.getBytes(""utf-8""));"" is 130.",205
+superword,org.apdplat.superword.extract,PartOfSpeechExtractor,parseWord,Long Statement,"The length of the statement ""Files.write(Paths.get(""src/main/resources/part_of_speech_not_in_syllabus_vocabulary.txt"")`notInSyllabusVocabularyText.getBytes(""utf-8""));"" is 137.",205
+superword,org.apdplat.superword.extract,PartOfSpeechExtractor,parseWord,Long Statement,"The length of the statement ""Files.write(Paths.get(""src/main/resources/group_part_of_speech_in_syllabus_vocabulary.txt"")`HtmlFormatter.toHtmlForPartOfSpeech(group(inSyllabusVocabulary)).getBytes(""utf-8""));"" is 176.",205
+superword,org.apdplat.superword.extract,PartOfSpeechExtractor,parseWord,Long Statement,"The length of the statement ""Files.write(Paths.get(""src/main/resources/group_part_of_speech_not_in_syllabus_vocabulary.txt"")`HtmlFormatter.toHtmlForPartOfSpeech(group(notInSyllabusVocabulary)).getBytes(""utf-8""));"" is 183.",205
+superword,org.apdplat.superword.extract,PartOfSpeechExtractor,formatPartOfSpeech,Long Statement,"The length of the statement ""words.forEach(w -> text.append(i.incrementAndGet()).append(""\t"").append(w.getWord()).append(""\t"").append(w.getFormatPartOfSpeeches()).append(""\n""));"" is 148.",235
+superword,org.apdplat.superword.extract,PartOfSpeechExtractor,parseWord,Magic Number,The method contains a magic number: 15000,273
+superword,org.apdplat.superword.extract,SuffixExtractor,extract,Long Statement,"The length of the statement ""return document.select(""table tbody tr"").stream().map(SuffixExtractor::extractSuffix).filter(suffix -> suffix.getSuffix() != null).sorted().distinct().collect(Collectors.toList());"" is 180.",40
+superword,org.apdplat.superword.extract,SuffixExtractor,extractSuffix,Magic Number,The method contains a magic number: 3,55
+superword,org.apdplat.superword.extract,SuffixExtractor,main,Long Statement,"The length of the statement ""extract().forEach(suffix -> System.out.println(""suffix(wordSet` \"""" + suffix.getSuffix() + ""\""` \""""+ suffix.getDes()+ ""\"");""));"" is 127.",68
+superword,org.apdplat.superword.extract,RootAffixExtractor,parseFile,Long Statement,"The length of the statement ""try (BufferedReader reader=new BufferedReader(new InputStreamReader(new BufferedInputStream(new FileInputStream(file))))){"" is 122.",113
+superword,org.apdplat.superword.extract,RootAffixExtractor,parseFile,Magic Number,The method contains a magic number: 2,113
+superword,org.apdplat.superword.extract,RootAffixExtractor,parseRootAffixes,Magic Number,The method contains a magic number: 3,175
+superword,org.apdplat.superword.extract,RootAffixExtractor,parseRootAffixes,Magic Number,The method contains a magic number: 3,175
+superword,org.apdplat.superword.extract,RootAffixExtractor,parseRootAffixes,Magic Number,The method contains a magic number: 3,175
+superword,org.apdplat.superword.extract,RootAffixExtractor,parseRootAffixes,Magic Number,The method contains a magic number: 6,175
+superword,org.apdplat.superword.extract,RootAffixExtractor,parseRootAffixes,Magic Number,The method contains a magic number: 6,175
+superword,org.apdplat.superword.extract,RootAffixExtractor,parseRootAffixes,Magic Number,The method contains a magic number: 6,175
+superword,org.apdplat.superword.extract,PhraseExtractor,parseFile,Long Statement,"The length of the statement ""try (BufferedReader reader=new BufferedReader(new InputStreamReader(new BufferedInputStream(new FileInputStream(file))))){"" is 122.",108
+superword,org.apdplat.superword.extract,PhraseExtractor,parseFile,Magic Number,The method contains a magic number: 2,108
+superword,org.apdplat.superword.extract,PhraseExtractor,parsePhrase,Complex Conditional,The conditional expression !(c >= 'a' && c <= 'z' || c >= 'A' && c <= 'Z') is complex.,134
+superword,org.apdplat.superword.extract,PhraseExtractor,parsePhrase,Complex Method,Cyclomatic complexity of the method is 9,134
+superword,org.apdplat.superword.extract,PhraseExtractor,parsePhrase,Magic Number,The method contains a magic number: 50,134
+superword,org.apdplat.superword.extract,PhraseExtractor,parsePhrase,Magic Number,The method contains a magic number: 2,134
+superword,org.apdplat.superword.extract,PhraseExtractor,parsePhrase,Magic Number,The method contains a magic number: 2,177
+superword,org.apdplat.superword.extract,PhraseExtractor,parsePhrase,Magic Number,The method contains a magic number: 15000,192
+superword,org.apdplat.superword.extract,SynonymDiscriminationExtractor,parseFile,Long Statement,"The length of the statement ""try (BufferedReader reader=new BufferedReader(new InputStreamReader(new BufferedInputStream(new FileInputStream(file))))){"" is 122.",107
+superword,org.apdplat.superword.extract,SynonymDiscriminationExtractor,parseFile,Magic Number,The method contains a magic number: 2,107
+superword,org.apdplat.superword.extract,SynonymDiscriminationExtractor,parseSynonymDiscrimination,Magic Number,The method contains a magic number: 2,133
+superword,org.apdplat.superword.extract,SynonymDiscriminationExtractor,parseSynonymDiscrimination,Magic Number,The method contains a magic number: 2,133
+superword,org.apdplat.superword.extract,PrefixExtractor,extract,Long Statement,"The length of the statement ""return document.select(""table tbody tr"").stream().map(PrefixExtractor::extractPrefix).filter(prefix -> prefix.getPrefix() != null).sorted().distinct().collect(Collectors.toList());"" is 180.",40
+superword,org.apdplat.superword.extract,PrefixExtractor,extractPrefix,Magic Number,The method contains a magic number: 3,55
+superword,org.apdplat.superword.extract,PrefixExtractor,main,Long Statement,"The length of the statement ""extract().forEach(prefix -> System.out.println(""prefix(wordSet` \"""" + prefix.getPrefix() + ""\""` \""""+ prefix.getDes()+ ""\"");""));"" is 127.",69
+superword,org.apdplat.superword.extract,SentenceExtractor,extract,Magic Number,The method contains a magic number: 10,74
+superword,org.apdplat.superword.extract,SentenceExtractor,extract2,Magic Number,The method contains a magic number: 29351,104
+superword,org.apdplat.superword.extract,SentenceExtractor,extract2,Magic Number,The method contains a magic number: 10,104
+superword,org.apdplat.superword.extract,SentenceExtractor,parse,Magic Number,The method contains a magic number: 2,148
+superword,org.apdplat.superword.extract,SentenceExtractor,parse2,Magic Number,The method contains a magic number: 3,184
+superword,org.apdplat.superword.extract,SentenceExtractor,parse2,Magic Number,The method contains a magic number: 2,184
+superword,org.apdplat.superword.extract,SentenceExtractor,parse2,Magic Number,The method contains a magic number: 4,184
+superword,org.apdplat.superword.extract,SentenceExtractor,parse2,Magic Number,The method contains a magic number: 5,184
+superword,org.apdplat.superword.extract,SentenceExtractor,getContent,Long Statement,"The length of the statement ""Connection conn=Jsoup.connect(url).header(""Accept""`ACCEPT).header(""Accept-Encoding""`ENCODING).header(""Accept-Language""`LANGUAGE).header(""Connection""`CONNECTION).header(""Referer""`referer).header(""Host""`host).header(""User-Agent""`USER_AGENT).ignoreContentType(true);"" is 263.",218
+superword,org.apdplat.superword.extract,SentenceExtractor,main,Magic Number,The method contains a magic number: 1549,242
+superword,org.apdplat.superword.extract,SentenceExtractor,main,Magic Number,The method contains a magic number: 30364,242
+superword,org.apdplat.superword.extract,HyphenExtractor,parseFile,Complex Conditional,The conditional expression parts.length == 2 && parts[0].length() > 1 && parts[1].length() > 1 && WordSources.isEnglish(parts[0]) && WordSources.isEnglish(parts[1]) is complex.,123
+superword,org.apdplat.superword.extract,HyphenExtractor,parseFile,Long Statement,"The length of the statement ""try (BufferedReader reader=new BufferedReader(new InputStreamReader(new BufferedInputStream(new FileInputStream(file))))){"" is 122.",123
+superword,org.apdplat.superword.extract,HyphenExtractor,parseFile,Long Statement,"The length of the statement ""if (parts.length == 2 && parts[0].length() > 1 && parts[1].length() > 1 && WordSources.isEnglish(parts[0]) && WordSources.isEnglish(parts[1])) {"" is 144.",123
+superword,org.apdplat.superword.extract,HyphenExtractor,parseFile,Magic Number,The method contains a magic number: 2,123
+superword,org.apdplat.superword.extract,HyphenExtractor,getContent,Long Statement,"The length of the statement ""Connection conn=Jsoup.connect(url).header(""Accept""`ACCEPT).header(""Accept-Encoding""`ENCODING).header(""Accept-Language""`LANGUAGE).header(""Connection""`CONNECTION).header(""Referer""`REFERER).header(""Host""`HOST).header(""User-Agent""`USER_AGENT).ignoreContentType(true);"" is 263.",179
+superword,org.apdplat.superword.extract,HyphenExtractor,getContent,Magic Number,The method contains a magic number: 899999,179
+superword,org.apdplat.superword.extract,HyphenExtractor,getContent,Magic Number,The method contains a magic number: 100000,179
+superword,org.apdplat.superword.extract,HyphenExtractor,verify,Magic Number,The method contains a magic number: 4,201
+superword,org.apdplat.superword.extract,HyphenExtractor,extract,Long Statement,"The length of the statement ""Files.write(Paths.get(allPath)`data.entrySet().stream().sorted((a`b) -> b.getValue().get() - a.getValue().get()).map(e -> e.getValue() + ""\t"" + e.getKey()).collect(Collectors.toList()));"" is 186.",227
+superword,org.apdplat.superword.extract,HyphenExtractor,extract,Magic Number,The method contains a magic number: 3,227
+superword,org.apdplat.superword.extract,HyphenExtractor,main,Long Statement,"The length of the statement ""extract(""src/main/resources/hyphen_word_all.txt""`""src/main/resources/hyphen_word.txt""`""src/main/resources/hyphen.txt""`true);"" is 124.",275
+superword,org.apdplat.superword.extract,ChineseSynonymAntonymExtractor,parseSynonymAntonym,Complex Method,Cyclomatic complexity of the method is 13,83
+superword,org.apdplat.superword.extract,ChineseSynonymAntonymExtractor,parseSynonymAntonym,Magic Number,The method contains a magic number: 2,83
+superword,org.apdplat.superword.extract,ChineseSynonymAntonymExtractor,parseSynonymAntonym,Magic Number,The method contains a magic number: 2,83
+superword,org.apdplat.superword.extract,ChineseSynonymAntonymExtractor,parseSynonymAntonym,Magic Number,The method contains a magic number: 2,83
+superword,org.apdplat.superword.extract,ChineseSynonymAntonymExtractor,parseSynonymAntonym,Magic Number,The method contains a magic number: 2,83
+superword,org.apdplat.superword.extract,ChineseSynonymAntonymExtractor,parseSynonymAntonym,Magic Number,The method contains a magic number: 2,83
+superword,org.apdplat.superword.extract,ChineseSynonymAntonymExtractor,parseSynonymAntonym,Magic Number,The method contains a magic number: 2,83
+superword,org.apdplat.superword.extract,ChineseSynonymAntonymExtractor,parseSynonymAntonym,Complex Conditional,"The conditional expression """".equals(word) || isNotChineseChar(word) || word.length() < 2 is complex.",139
+superword,org.apdplat.superword.extract,ChineseSynonymAntonymExtractor,parseSynonymAntonym,Complex Method,Cyclomatic complexity of the method is 10,139
+superword,org.apdplat.superword.extract,ChineseSynonymAntonymExtractor,parseSynonymAntonym,Magic Number,The method contains a magic number: 60000,139
+superword,org.apdplat.superword.extract,ChineseSynonymAntonymExtractor,parseSynonymAntonym,Magic Number,The method contains a magic number: 2,139
+superword,org.apdplat.superword.extract,ChineseSynonymAntonymExtractor,parseSynonymAntonym,Magic Number,The method contains a magic number: 3,139
+superword,org.apdplat.superword.extract,ChineseSynonymAntonymExtractor,parseSynonymAntonym,Magic Number,The method contains a magic number: 3,139
+superword,org.apdplat.superword.extract,ChineseSynonymAntonymExtractor,getContent,Long Statement,"The length of the statement ""Connection conn=Jsoup.connect(url).header(""Accept""`ACCEPT).header(""Accept-Encoding""`ENCODING).header(""Accept-Language""`LANGUAGE).header(""Connection""`CONNECTION).header(""Referer""`REFERER).header(""Host""`HOST).header(""User-Agent""`USER_AGENTS.get(uac.incrementAndGet() % USER_AGENTS.size())).header(""X-Forwarded-For""`getRandomIp()).header(""Proxy-Client-IP""`getRandomIp()).header(""WL-Proxy-Client-IP""`getRandomIp()).ignoreContentType(true);"" is 435.",258
+superword,org.apdplat.superword.extract,ChineseSynonymAntonymExtractor,getContent,Magic Number,The method contains a magic number: 404,258
+superword,org.apdplat.superword.extract,ChineseSynonymAntonymExtractor,parseSynonymAntonym,Magic Number,The method contains a magic number: 15000,296
+superword,org.apdplat.superword.extract,ChineseSynonymAntonymExtractor,getRandomIp,Magic Number,The method contains a magic number: 254,304
+superword,org.apdplat.superword.extract,ChineseSynonymAntonymExtractor,getRandomIp,Magic Number,The method contains a magic number: 10,304
+superword,org.apdplat.superword.extract,ChineseSynonymAntonymExtractor,getRandomIp,Magic Number,The method contains a magic number: 254,304
+superword,org.apdplat.superword.extract,ChineseSynonymAntonymExtractor,getRandomIp,Magic Number,The method contains a magic number: 254,304
+superword,org.apdplat.superword.extract,ChineseSynonymAntonymExtractor,getRandomIp,Magic Number,The method contains a magic number: 172,304
+superword,org.apdplat.superword.extract,ChineseSynonymAntonymExtractor,getRandomIp,Magic Number,The method contains a magic number: 16,304
+superword,org.apdplat.superword.extract,ChineseSynonymAntonymExtractor,getRandomIp,Magic Number,The method contains a magic number: 31,304
+superword,org.apdplat.superword.extract,ChineseSynonymAntonymExtractor,getRandomIp,Magic Number,The method contains a magic number: 254,304
+superword,org.apdplat.superword.extract,ChineseSynonymAntonymExtractor,getRandomIp,Magic Number,The method contains a magic number: 254,304
+superword,org.apdplat.superword.extract,ChineseSynonymAntonymExtractor,getRandomIp,Magic Number,The method contains a magic number: 192,304
+superword,org.apdplat.superword.extract,ChineseSynonymAntonymExtractor,getRandomIp,Magic Number,The method contains a magic number: 168,304
+superword,org.apdplat.superword.extract,ChineseSynonymAntonymExtractor,getRandomIp,Magic Number,The method contains a magic number: 254,304
+superword,org.apdplat.superword.extract,ChineseSynonymAntonymExtractor,getRandomIp,Magic Number,The method contains a magic number: 254,304
+superword,org.apdplat.superword.extract,ChineseSynonymAntonymExtractor,getRandomIp,Magic Number,The method contains a magic number: 254,304
+superword,org.apdplat.superword.extract,ChineseSynonymAntonymExtractor,getRandomIp,Magic Number,The method contains a magic number: 254,304
+superword,org.apdplat.superword.extract,ChineseSynonymAntonymExtractor,main,Long Statement,"The length of the statement ""parseSynonymAntonym(Files.readAllLines(Paths.get(""src/main/resources/dic.txt"")).stream().sorted((a`b) -> new Integer(a.length()).compareTo(b.length())).collect(Collectors.toList()));"" is 182.",355

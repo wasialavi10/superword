@@ -1,0 +1,4 @@
+Project Name,Package Name,Type Name,Method Name,Test Smell,Cause of the Smell
+superword,org.apdplat.superword.rule,WordVectorTest,testOf,Assertion roulette,The tool detected the smell in this test method because the test uses multiple assertion in the test. Total number of assertions in the test are: 18
+superword,org.apdplat.superword.rule,WordVectorTest,testOf,Eager test,The tool detected the smell in this test method because the test checks the results of more than one method from class under test. The called methods are: org.apdplat.superword.rule.WordVector.of; org.apdplat.superword.rule.WordVector.score; org.apdplat.superword.rule.WordVector.score
+superword,org.apdplat.superword.rule,CompoundWordTest,testFind,Assertion roulette,The tool detected the smell in this test method because the test uses multiple assertion in the test. Total number of assertions in the test are: 4
