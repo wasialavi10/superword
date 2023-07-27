@@ -494,148 +494,144 @@ public class PdfParser {
         }
         return data;
     }
-    public static String processSentence(String sentence){
-        //忽略空行
-        if(StringUtils.isBlank(sentence)){
-            LOGGER.debug("忽略没有内容的句子：" + sentence);
+    public static String processSentence(String sentence) {
+        if (isIgnorableSentence(sentence)) {
+            LOGGER.debug("Ignored sentence: " + sentence);
             return null;
         }
-        sentence = sentence.trim();
-        if(sentence.endsWith(",")){
-            LOGGER.debug("以逗号结尾，不做分析："+sentence);
+
+        if (hasInvalidFirstWord(sentence)) {
+            LOGGER.debug("Ignored sentence with an invalid first word: " + sentence);
             return null;
         }
-        //移除行首的非字母字符
-        int i=0;
-        for(char c : sentence.toCharArray()){
-            if(Character.isAlphabetic(c)){
+
+        String[] words = sentence.split("\\s+");
+
+        if (hasInsufficientWordCount(words)) {
+            LOGGER.debug("Ignored sentence with insufficient word count: " + sentence);
+            return null;
+        }
+
+        if (hasNumericLastWord(words)) {
+            LOGGER.debug("Ignored sentence with a numeric last word: " + sentence);
+            return null;
+        }
+
+        if (hasTooManyCapWords(words)) {
+            LOGGER.debug("Ignored sentence with too many capitalized words: " + sentence);
+            return null;
+        }
+
+        if (hasLongWords(words)) {
+            LOGGER.debug("Ignored sentence with too long words: " + sentence);
+            return null;
+        }
+
+        if (hasSpecialWords(words)) {
+            LOGGER.debug("Ignored sentence with special non-alphabetic words: " + sentence);
+            return null;
+        }
+
+        if (hasUnknownWords(sentence)) {
+            LOGGER.debug("Ignored sentence with too many unknown words: " + sentence);
+            return null;
+        }
+
+        if (!areBracketsAndQuotesPaired(sentence)) {
+            LOGGER.debug("Ignored sentence with unpaired brackets or quotes: " + sentence);
+            return null;
+        }
+
+        return sentence;
+    }
+
+    private static boolean isIgnorableSentence(String sentence) {
+        return StringUtils.isBlank(sentence) || sentence.trim().endsWith(",");
+    }
+
+    private static boolean hasInvalidFirstWord(String sentence) {
+        int i = 0;
+        for (char c : sentence.toCharArray()) {
+            if (Character.isAlphabetic(c)) {
                 break;
             }
             i++;
         }
-        if(i>=sentence.length()){
-            LOGGER.debug("忽略没有字母的句子：" + sentence);
-            return null;
-        }
-        if(i>0) {
-            sentence = sentence.substring(i);
-        }
-        if(StringUtils.isBlank(sentence)){
-            LOGGER.debug("忽略没有内容的句子：" + sentence);
-            return null;
-        }
-        //忽略首字母非大写的句子
-        if(!Character.isUpperCase(sentence.charAt(0))){
-            LOGGER.debug("忽略首字母非大写的句子：" + sentence);
-            return null;
-        }
-        String[] words = sentence.split("\\s+");
-        if(words[0].length() == 1
-                && !"A".equals(words[0])
-                && !"I".equals(words[0])){
-            LOGGER.debug("忽略第一个单词不合法的句子：" + sentence);
-            return null;
-        }
-        if(words[0].length() > 1 && StringUtils.isAllUpperCase(words[0])){
-            LOGGER.debug("忽略首单词全大写的句子：" + sentence);
-            return null;
-        }
-        //判断句子长度
-        if(words.length < SENTENCE_WORD_MIN_COUNT){
-            LOGGER.debug("忽略长度小于" + SENTENCE_WORD_MIN_COUNT + "的句子：" + sentence);
-            return null;
-        }
-        //判断是否最后一个单词是数字
-        if(StringUtils.isNumeric(words[words.length-1])){
-            LOGGER.debug("忽略最后一个单词是数字" + words[words.length-1] + "的句子：" + sentence);
-            return null;
-        }
-        //判断句子中的大写字母开头的单词数
+        return i >= sentence.length() || !Character.isUpperCase(sentence.charAt(0));
+    }
+
+    private static boolean hasInsufficientWordCount(String[] words) {
+        return words.length < SENTENCE_WORD_MIN_COUNT;
+    }
+
+    private static boolean hasNumericLastWord(String[] words) {
+        return StringUtils.isNumeric(words[words.length - 1]);
+    }
+
+    private static boolean hasTooManyCapWords(String[] words) {
         int capWordCount = 0;
-        //最长单词
-        int maxWordCharCount = 0;
-        for(String word : words){
-            if(Character.isUpperCase(word.charAt(0))){
+        for (String word : words) {
+            if (Character.isUpperCase(word.charAt(0))) {
                 capWordCount++;
             }
-            if(!word.contains("http://") && word.length() > maxWordCharCount){
+        }
+        return capWordCount > words.length * SENTENCE_CAP_WORD_MAX_RATE;
+    }
+
+    private static boolean hasLongWords(String[] words) {
+        int maxWordCharCount = 0;
+        for (String word : words) {
+            if (!word.contains("http://") && word.length() > maxWordCharCount) {
                 maxWordCharCount = word.length();
             }
         }
-        if(capWordCount > words.length*SENTENCE_CAP_WORD_MAX_RATE){
-            LOGGER.debug("忽略首字母大写单词数" + capWordCount + "多于" + words.length*SENTENCE_CAP_WORD_MAX_RATE + "的句子：" + sentence);
-            return null;
-        }
-        if(maxWordCharCount > MAX_WORD_CHAR_COUNT){
-            LOGGER.debug("忽略有超长单词的句子，单词长度" + maxWordCharCount + "大于" + MAX_WORD_CHAR_COUNT + "的句子：" + sentence);
-            return null;
-        }
-        //判断句子中的非字母单词数
+        return maxWordCharCount > MAX_WORD_CHAR_COUNT;
+    }
+
+    private static boolean hasSpecialWords(String[] words) {
         int specialWordCount = 0;
-        for(String word : words){
-            for(String c : punctuation){
+        for (String word : words) {
+            for (String c : punctuation) {
                 word = word.replace(c, "");
             }
-            if(StringUtils.isNotBlank(word)
-                    && !StringUtils.isAlpha(word)){
-                LOGGER.debug("特殊非字母单词："+word);
+            if (StringUtils.isNotBlank(word) && !StringUtils.isAlpha(word)) {
                 specialWordCount++;
             }
         }
-        if(specialWordCount > Math.log(words.length)/2){
-            LOGGER.debug("总次数："+words.length+"，忽略非字母单词数" + specialWordCount + "多于" + Math.log(words.length)/2 + "的句子：" + sentence);
-            return null;
-        }
-        //不是单词的词数
+        return specialWordCount > Math.log(words.length) / 2;
+    }
+
+    private static boolean hasUnknownWords(String sentence) {
         int notWordCount = 0;
         Set<String> toCheck = TextAnalyzer.seg(sentence).stream().collect(Collectors.toSet());
-        LOGGER.debug("需要检查单词个数："+toCheck.size());
-        for(String word : toCheck){
-            if(!DICTIONARY.contains(new Word(word.toLowerCase(), ""))){
-                LOGGER.debug("未知单词："+word);
+        for (String word : toCheck) {
+            if (!DICTIONARY.contains(new Word(word.toLowerCase(), ""))) {
                 notWordCount++;
             }
         }
-        LOGGER.debug("未知的单词个数："+notWordCount);
-        if(notWordCount > toCheck.size()*0.4){
-            LOGGER.debug("待检查的单词在已有词典中不存在数" + notWordCount + "大于" + toCheck.size()*0.4 + "的句子：" + sentence);
-            return null;
-        }
-        //检查[]()是否配对
-        if(sentence.contains("[")
-                || sentence.contains("]")
-                || sentence.contains("(")
-                || sentence.contains(")")
-                || sentence.contains("“")
-                || sentence.contains("”")
-                || sentence.contains("\"")){
-            char[] chars = sentence.toCharArray();
-            int pre=0;
-            int suf=0;
-            int quotCount=0;
-            for(int j=0; j<chars.length; j++){
-                char c = chars[j];
-                switch (c){
-                    case '[': LOGGER.debug("匹配："+c+"，下标："+j);pre++;break;
-                    case '(': LOGGER.debug("匹配："+c+"，下标："+j);pre++;break;
-                    case ']': LOGGER.debug("匹配："+c+"，下标："+j);suf++;break;
-                    case ')': LOGGER.debug("匹配："+c+"，下标："+j);suf++;break;
-                    case '“': LOGGER.debug("匹配："+c+"，下标："+j);pre++;break;
-                    case '”': LOGGER.debug("匹配："+c+"，下标："+j);suf++;break;
-                    case '"': LOGGER.debug("匹配："+c+"，下标："+j);quotCount++;break;
-                }
-            }
-            if(pre != suf){
-                LOGGER.debug("[]()配对检查失败，前向数："+pre+"，后向数："+suf);
-                return null;
-            }
-            if(quotCount%2==1){
-                LOGGER.debug("[]()配对检查失败，双引号数："+quotCount);
-                return null;
-            }
-        }
-        return sentence;
+        return notWordCount > toCheck.size() * 0.4;
     }
+
+    private static boolean areBracketsAndQuotesPaired(String sentence) {
+        char[] chars = sentence.toCharArray();
+        int pre = 0;
+        int suf = 0;
+        int quotCount = 0;
+        for (int j = 0; j < chars.length; j++) {
+            char c = chars[j];
+            switch (c) {
+                case '[':
+                case '“':
+                case '(': pre++; break;
+                case ']':
+                case '”':
+                case ')': suf++; break;
+                case '"': quotCount++; break;
+            }
+        }
+        return pre == suf && quotCount % 2 == 0;
+    }
+
 
     /**
      * 检查段落是否合法，不合法则放弃切分句子

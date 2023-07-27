@@ -165,43 +165,44 @@ public class SimilarWord {
      * @return 自然语言表示的时间
      */
     public String getTimeDes(Long ms) {
-        //处理参数为NULL的情况
-        if(ms == null){
+        // Handle the case when ms is null
+        if (ms == null) {
             return "";
         }
-        int ss = 1000;
-        int mi = ss * 60;
-        int hh = mi * 60;
-        int dd = hh * 24;
 
-        long day = ms / dd;
-        long hour = (ms - day * dd) / hh;
-        long minute = (ms - day * dd - hour * hh) / mi;
-        long second = (ms - day * dd - hour * hh - minute * mi) / ss;
-        long milliSecond = ms - day * dd - hour * hh - minute * mi - second * ss;
+        final long SECOND_IN_MILLIS = 1000;
+        final long MINUTE_IN_MILLIS = 60 * SECOND_IN_MILLIS;
+        final long HOUR_IN_MILLIS = 60 * MINUTE_IN_MILLIS;
+        final long DAY_IN_MILLIS = 24 * HOUR_IN_MILLIS;
 
-        StringBuilder str=new StringBuilder();
-        if(day>0){
-            str.append(day).append("天,");
+        long days = ms / DAY_IN_MILLIS;
+        ms %= DAY_IN_MILLIS;
+        long hours = ms / HOUR_IN_MILLIS;
+        ms %= HOUR_IN_MILLIS;
+        long minutes = ms / MINUTE_IN_MILLIS;
+        ms %= MINUTE_IN_MILLIS;
+        long seconds = ms / SECOND_IN_MILLIS;
+
+        StringBuilder str = new StringBuilder();
+        if (days > 0) {
+            str.append(days).append("天,");
         }
-        if(hour>0){
-            str.append(hour).append("小时,");
+        if (hours > 0) {
+            str.append(hours).append("小时,");
         }
-        if(minute>0){
-            str.append(minute).append("分钟,");
+        if (minutes > 0) {
+            str.append(minutes).append("分钟,");
         }
-        if(second>0){
-            str.append(second).append("秒,");
+        if (seconds > 0) {
+            str.append(seconds).append("秒,");
         }
-        if(milliSecond>0){
-            str.append(milliSecond).append("毫秒,");
-        }
-        if(str.length()>0){
-            str=str.deleteCharAt(str.length()-1);
+        if (str.length() > 0) {
+            str.deleteCharAt(str.length() - 1);
         }
 
         return str.toString();
     }
+
 
     public static void main(String[] args) throws Exception {
         //所有的英语单词
